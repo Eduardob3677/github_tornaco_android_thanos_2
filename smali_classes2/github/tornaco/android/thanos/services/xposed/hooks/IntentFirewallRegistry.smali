@@ -144,7 +144,7 @@
 .end method
 
 .method private hookCheckBroadcastAOSP(Ljava/lang/Class;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -153,27 +153,13 @@
         }
     .end annotation
 
-    sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    const-string v0, "checkBroadcast"
 
-    const-class v1, Ljava/lang/String;
+    new-instance v1, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$3;
 
-    const-class v2, Landroid/content/Intent;
+    invoke-direct {v1, p0}, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$3;-><init>(Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry;)V
 
-    filled-new-array {v2, v0, v0, v1, v0}, [Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "checkBroadcast"
-
-    invoke-static {p1, v1, v0}, Lutil/XposedHelpers;->findMethodExact(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object p1
-
-    new-instance v0, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$3;
-
-    invoke-direct {v0, p0}, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$3;-><init>(Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry;)V
-
-    invoke-static {p1, v0}, Lde/robv/android/xposed/XposedBridge;->hookMethod(Ljava/lang/reflect/Member;Lde/robv/android/xposed/XC_MethodHook;)Lde/robv/android/xposed/XC_MethodHook$Unhook;
+    invoke-static {p1, v0, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     move-result-object p1
 
@@ -193,7 +179,7 @@
 .end method
 
 .method private hookCheckBroadcastFlyme(Ljava/lang/Class;)V
-    .locals 7
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -202,35 +188,13 @@
         }
     .end annotation
 
-    const-class v4, Ljava/lang/String;
+    const-string v0, "checkBroadcast"
 
-    const-class v5, Ljava/lang/String;
+    new-instance v1, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$4;
 
-    const-class v0, Landroid/content/Intent;
+    invoke-direct {v1, p0}, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$4;-><init>(Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry;)V
 
-    const-class v1, Ljava/lang/String;
-
-    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    move-object v3, v2
-
-    move-object v6, v2
-
-    filled-new-array/range {v0 .. v6}, [Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "checkBroadcast"
-
-    invoke-static {p1, v1, v0}, Lutil/XposedHelpers;->findMethodExact(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object p1
-
-    new-instance v0, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$4;
-
-    invoke-direct {v0, p0}, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry$4;-><init>(Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry;)V
-
-    invoke-static {p1, v0}, Lde/robv/android/xposed/XposedBridge;->hookMethod(Ljava/lang/reflect/Member;Lde/robv/android/xposed/XC_MethodHook;)Lde/robv/android/xposed/XC_MethodHook$Unhook;
+    invoke-static {p1, v0, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     move-result-object p1
 
