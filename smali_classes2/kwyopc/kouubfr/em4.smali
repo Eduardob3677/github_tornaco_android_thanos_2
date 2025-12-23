@@ -17,9 +17,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 p2, 0x1
+
     iput-boolean p2, p0, Lkwyopc/kouubfr/em4;->OooO00o:Z
 
     iput-object p1, p0, Lkwyopc/kouubfr/em4;->OooO0O0:Ljava/lang/String;
+
+    const/4 p3, 0x1
 
     iput-boolean p3, p0, Lkwyopc/kouubfr/em4;->OooO0OO:Z
 
