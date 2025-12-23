@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/activity_common_list_filter_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="?android:windowBackground" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="@dimen/common_coll_appbar_height" android:layout_alignParentTop="true" app:elevation="@dimen/common_toolbar_elevation">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/toolbar_layout" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:collapsedTitleTextAppearance="@style/ToolbarCollapsedTitleTextAppearance" app:expandedTitleTextAppearance="@style/ToolbarExpandedTitleTextAppearance" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleCollapseMode="scale" app:toolbarId="@id/toolbar">
+            <FrameLayout android:id="@id/toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin">
+                <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/ToolbarCollapsedTitleTextAppearance" app:titleTextColor="?colorControlNormal" />
+                <com.miguelcatalan.materialsearchview.MaterialSearchView android:id="@id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SearchViewStyle" />
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/chip_container">
+            <include android:id="@id/switch_bar_container" layout="@layout/module_common_switchbar_container" />
+            <LinearLayout android:orientation="horizontal" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/common_view_margin_default" android:paddingEnd="@dimen/common_view_margin_default">
+                <include android:id="@id/filter_chip_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/common_view_margin_small" layout="@layout/module_common_filter_chip" />
+                <include android:id="@id/custom_filter_chip_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/common_view_margin_small" layout="@layout/module_common_filter_chip" />
+                <include android:id="@id/sort_chip_container" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/module_common_sort_chip" />
+            </LinearLayout>
+            <include android:id="@id/feature_desc_container" layout="@layout/common_feature_description_bar_layout" />
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView android:id="@id/apps" android:tag="binding_4" android:paddingBottom="100.0dp" android:clipChildren="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_content" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <androidx.appcompat.widget.AppCompatImageView android:textAppearance="@style/TextAppearance.AppCompat.Display4" android:id="@id/no_content_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerInParent="true" android:translationY="64.0dp" app:srcCompat="@drawable/module_common_no_content_1" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Headline" android:gravity="center" android:id="@id/no_content_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/module_common_no_data" android:layout_below="@id/no_content_emoji" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/chip_container" android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_alignParentBottom="true">
+            <com.google.android.material.chip.ChipGroup android:layout_gravity="center" android:id="@id/chip_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.google.android.material.chip.Chip android:id="@id/chip1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FilterChipTheme" />
+                <com.google.android.material.chip.Chip android:id="@id/chip2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FilterChipTheme" />
+                <com.google.android.material.chip.Chip android:id="@id/chip3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FilterChipTheme" />
+                <com.google.android.material.chip.Chip android:id="@id/chip4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FilterChipTheme" />
+            </com.google.android.material.chip.ChipGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="end|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_view_margin_default">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:layout_gravity="end|bottom" android:id="@id/fab2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_view_margin_default" android:layout_marginRight="@dimen/common_view_margin_default" android:text="@string/common_fab_title_done" android:layout_marginHorizontal="@dimen/common_view_margin_default" app:icon="@drawable/module_common_ic_check_fill_white" style="@style/FloatingActionButtonStyle" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:layout_gravity="end|bottom" android:id="@id/fab1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/common_view_margin_default" android:text="@string/common_fab_title_done" app:icon="@drawable/module_common_ic_check_fill_white" style="@style/FloatingActionButtonStyle" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

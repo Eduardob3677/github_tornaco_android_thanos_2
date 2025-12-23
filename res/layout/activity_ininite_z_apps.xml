@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_ininite_z_apps_0" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="?android:windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:elevation="@dimen/common_toolbar_elevation">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/feature_title_infinite_z" app:titleTextAppearance="@style/TextAppearance.AppCompat.Subhead" app:titleTextColor="?colorControlNormal" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/appbar">
+        <include android:id="@id/switch_bar_container" layout="@layout/module_common_switchbar_container" />
+        <github.tornaco.android.thanos.module.compose.common.widget.ExperimentalFeatureWarningMessageAndroidView android:id="@id/warning_message_compose_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/common_view_margin_default" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView android:id="@id/apps" android:tag="binding_3" android:paddingTop="@dimen/common_view_margin_small" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/common_view_margin_small" android:paddingEnd="@dimen/common_view_margin_small" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

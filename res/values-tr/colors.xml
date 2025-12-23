@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="running_processes_free_ram">#ffced7db</color>
+    <color name="running_processes_system_ram">#ff384248</color>
+</resources>

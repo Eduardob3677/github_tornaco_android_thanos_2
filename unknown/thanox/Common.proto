@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+option java_package = "tornaco.apps.thanox.core.proto.common";
+option java_outer_classname = "OuterCommon";
+option java_multiple_files = true;
+
+message RequestPayload {
+    repeated string data = 1;
+}
+
+message CommonApiRes {
+    int32 result = 1;
+    string msg = 2;
+    string k = 3;
+    string i = 4;
+    string j = 5;
+    string l = 6;
+    string m = 7;
+}
+
+message AppPkg {
+    string pkgName = 1;
+    int32 userId = 2;
+}
+
+message SmartFreezeSettings {
+    repeated AppPkg freezePkg = 1;
+    bool isScreenOffFreezeEnabled = 2;
+    int32 screenOffFreezeDelay = 3;
+    bool isTaskRemoveFreezeEnabled = 4;
+    FreezeMethod method = 5;
+    bool isDisableDOL = 6;
+}
+
+enum FreezeMethod {
+    FreezeMethod_PM_Disable = 0;
+    FreezeMethod_PM_Suspend = 1;
+}
+
+message SmartFreezePkgSet {
+    repeated AppPkg pkg = 1;
+    string label = 2;
+    string id = 3;
+    int32 sort = 4;
+}
+
+message SmartFreezePkgSetList {
+    repeated SmartFreezePkgSet set = 1;
+}
+
+message BgCleanSettings {
+    repeated AppPkg cleanPkg = 1;
+    bool isScreenOffCleanEnabled = 2;
+    int32 screenOffCleanDelay = 3;
+    bool isTaskRemoveCleanEnabled = 4;
+}

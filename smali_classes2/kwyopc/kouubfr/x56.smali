@@ -1,0 +1,58 @@
+.class public final Lkwyopc/kouubfr/x56;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final OooO00o:Z
+
+.field public final OooO0O0:J
+
+.field public final OooO0OO:F
+
+.field public final OooO0Oo:F
+
+
+# direct methods
+.method public constructor <init>(IJ)V
+    .locals 3
+
+    and-int/lit8 v0, p1, 0x1
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_0
+
+    move v0, v2
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v1
+
+    :goto_0
+    and-int/lit8 p1, p1, 0x2
+
+    if-eqz p1, :cond_1
+
+    sget-wide p2, Lkwyopc/kouubfr/n21;->OooO:J
+
+    :cond_1
+    int-to-float p1, v1
+
+    int-to-float v1, v2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean v0, p0, Lkwyopc/kouubfr/x56;->OooO00o:Z
+
+    iput-wide p2, p0, Lkwyopc/kouubfr/x56;->OooO0O0:J
+
+    iput p1, p0, Lkwyopc/kouubfr/x56;->OooO0OO:F
+
+    iput v1, p0, Lkwyopc/kouubfr/x56;->OooO0Oo:F
+
+    return-void
+.end method

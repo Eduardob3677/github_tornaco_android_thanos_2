@@ -1,0 +1,6 @@
+id=zygisk_thanox
+name=Zygisk - Thanox
+version=8.7
+versionCode=3363252
+author=Tornaco
+description=Provides hooks for Thanox. Support Android11 & Android12. Requires Magisk 24.0+ and Zygisk

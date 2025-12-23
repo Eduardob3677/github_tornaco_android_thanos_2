@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/module_profile_console_editor_0" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amrdeveloper.codeview.CodeView android:textSize="@dimen/module_profile_editor_text_size" android:gravity="start|top" android:id="@id/codeView" android:background="@null" android:padding="@dimen/common_view_margin_default" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/outputTextView" android:dropDownWidth="150.0dp" android:dropDownHorizontalOffset="0.0dp" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="200.0dp" android:layout_above="@id/editor_actions_toolbar_symbols1">
+        <github.tornaco.android.thanos.widget.JetBrainsMonoMediumTextView android:textSize="14.0sp" android:id="@id/outputTextView" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:id="@id/editor_actions_toolbar_symbols1" android:layout_width="match_parent" android:layout_height="@dimen/module_profile_editor_symbol_bar_height" android:layout_above="@id/editor_actions_toolbar_symbols2" app:layout_scrollFlags="scroll|enterAlways" />
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:id="@id/editor_actions_toolbar_symbols2" android:layout_width="match_parent" android:layout_height="@dimen/module_profile_editor_symbol_bar_height" android:layout_above="@id/editor_actions_toolbar_symbols3" app:layout_scrollFlags="scroll|enterAlways" />
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:id="@id/editor_actions_toolbar_symbols3" android:layout_width="match_parent" android:layout_height="@dimen/module_profile_editor_symbol_bar_height" android:layout_alignParentBottom="true" app:layout_scrollFlags="scroll|enterAlways" />
+</RelativeLayout>

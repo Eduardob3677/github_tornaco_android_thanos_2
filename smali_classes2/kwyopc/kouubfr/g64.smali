@@ -1,0 +1,637 @@
+.class public final Lkwyopc/kouubfr/g64;
+.super Lkwyopc/kouubfr/ux0;
+.source "SourceFile"
+
+# interfaces
+.implements Lkwyopc/kouubfr/f64;
+
+
+# instance fields
+.field public OoooO:Ljava/lang/Boolean;
+
+.field public OoooOO0:Ljava/lang/Boolean;
+
+
+# direct methods
+.method public constructor <init>(Lkwyopc/kouubfr/by0;Lkwyopc/kouubfr/g64;Lkwyopc/kouubfr/ko;ZILkwyopc/kouubfr/rx8;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_3
+
+    if-eqz p3, :cond_2
+
+    if-eqz p5, :cond_1
+
+    if-eqz p6, :cond_0
+
+    invoke-direct/range {p0 .. p6}, Lkwyopc/kouubfr/ux0;-><init>(Lkwyopc/kouubfr/by0;Lkwyopc/kouubfr/jl1;Lkwyopc/kouubfr/ko;ZILkwyopc/kouubfr/rx8;)V
+
+    move-object p1, p0
+
+    iput-object v0, p1, Lkwyopc/kouubfr/g64;->OoooO:Ljava/lang/Boolean;
+
+    iput-object v0, p1, Lkwyopc/kouubfr/g64;->OoooOO0:Ljava/lang/Boolean;
+
+    return-void
+
+    :cond_0
+    move-object p1, p0
+
+    const/4 p2, 0x3
+
+    invoke-static {p2}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_1
+    move-object p1, p0
+
+    const/4 p2, 0x2
+
+    invoke-static {p2}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_2
+    move-object p1, p0
+
+    const/4 p2, 0x1
+
+    invoke-static {p2}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_3
+    move-object p1, p0
+
+    const/4 p2, 0x0
+
+    invoke-static {p2}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+.end method
+
+.method public static synthetic o00000O0(I)V
+    .locals 9
+
+    const/16 v0, 0x12
+
+    const/16 v1, 0xb
+
+    if-eq p0, v1, :cond_0
+
+    if-eq p0, v0, :cond_0
+
+    const-string v2, "Argument for @NotNull parameter \'%s\' of %s.%s must not be null"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v2, "@NotNull method %s.%s must not return null"
+
+    :goto_0
+    const/4 v3, 0x2
+
+    if-eq p0, v1, :cond_1
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v4, 0x3
+
+    goto :goto_1
+
+    :cond_1
+    move v4, v3
+
+    :goto_1
+    new-array v4, v4, [Ljava/lang/Object;
+
+    const-string v5, "kotlin/reflect/jvm/internal/impl/load/java/descriptors/JavaClassConstructorDescriptor"
+
+    const/4 v6, 0x0
+
+    packed-switch p0, :pswitch_data_0
+
+    :pswitch_0
+    const-string v7, "containingDeclaration"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_1
+    const-string v7, "enhancedReturnType"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_2
+    const-string v7, "enhancedValueParameterTypes"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_3
+    const-string v7, "sourceElement"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_4
+    aput-object v5, v4, v6
+
+    goto :goto_2
+
+    :pswitch_5
+    const-string v7, "newOwner"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_6
+    const-string v7, "source"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_7
+    const-string v7, "kind"
+
+    aput-object v7, v4, v6
+
+    goto :goto_2
+
+    :pswitch_8
+    const-string v7, "annotations"
+
+    aput-object v7, v4, v6
+
+    :goto_2
+    const-string v6, "createSubstitutedCopy"
+
+    const-string v7, "enhance"
+
+    const/4 v8, 0x1
+
+    if-eq p0, v1, :cond_3
+
+    if-eq p0, v0, :cond_2
+
+    aput-object v5, v4, v8
+
+    goto :goto_3
+
+    :cond_2
+    aput-object v7, v4, v8
+
+    goto :goto_3
+
+    :cond_3
+    aput-object v6, v4, v8
+
+    :goto_3
+    packed-switch p0, :pswitch_data_1
+
+    const-string v5, "<init>"
+
+    aput-object v5, v4, v3
+
+    goto :goto_4
+
+    :pswitch_9
+    aput-object v7, v4, v3
+
+    goto :goto_4
+
+    :pswitch_a
+    const-string v5, "createDescriptor"
+
+    aput-object v5, v4, v3
+
+    goto :goto_4
+
+    :pswitch_b
+    aput-object v6, v4, v3
+
+    goto :goto_4
+
+    :pswitch_c
+    const-string v5, "createJavaConstructor"
+
+    aput-object v5, v4, v3
+
+    :goto_4
+    :pswitch_d
+    invoke-static {v2, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    if-eq p0, v1, :cond_4
+
+    if-eq p0, v0, :cond_4
+
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p0, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_5
+
+    :cond_4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {p0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    :goto_5
+    throw p0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_0
+        :pswitch_8
+        :pswitch_6
+        :pswitch_5
+        :pswitch_7
+        :pswitch_8
+        :pswitch_6
+        :pswitch_4
+        :pswitch_5
+        :pswitch_7
+        :pswitch_3
+        :pswitch_8
+        :pswitch_2
+        :pswitch_1
+        :pswitch_4
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x4
+        :pswitch_c
+        :pswitch_c
+        :pswitch_c
+        :pswitch_b
+        :pswitch_b
+        :pswitch_b
+        :pswitch_b
+        :pswitch_d
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_9
+        :pswitch_9
+        :pswitch_d
+    .end packed-switch
+.end method
+
+.method public static o0000oOo(Lkwyopc/kouubfr/by0;Lkwyopc/kouubfr/ko;ZLkwyopc/kouubfr/gz7;)Lkwyopc/kouubfr/g64;
+    .locals 7
+
+    if-eqz p0, :cond_0
+
+    new-instance v0, Lkwyopc/kouubfr/g64;
+
+    const/4 v5, 0x1
+
+    const/4 v2, 0x0
+
+    move-object v1, p0
+
+    move-object v3, p1
+
+    move v4, p2
+
+    move-object v6, p3
+
+    invoke-direct/range {v0 .. v6}, Lkwyopc/kouubfr/g64;-><init>(Lkwyopc/kouubfr/by0;Lkwyopc/kouubfr/g64;Lkwyopc/kouubfr/ko;ZILkwyopc/kouubfr/rx8;)V
+
+    return-object v0
+
+    :cond_0
+    const/4 p0, 0x4
+
+    invoke-static {p0}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final Oooo00O()Z
+    .locals 1
+
+    iget-object v0, p0, Lkwyopc/kouubfr/g64;->OoooOO0:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final Oooooo0(Lkwyopc/kouubfr/wk4;Ljava/util/ArrayList;Lkwyopc/kouubfr/wk4;Lkwyopc/kouubfr/xn6;)Lkwyopc/kouubfr/f64;
+    .locals 16
+
+    move-object/from16 v0, p1
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/ux0;->o0000o0O()Lkwyopc/kouubfr/by0;
+
+    move-result-object v2
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/uf3;->getKind()I
+
+    move-result v4
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/l21;->OooOOo0()Lkwyopc/kouubfr/ko;
+
+    move-result-object v5
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/z02;->OooO0oO()Lkwyopc/kouubfr/rx8;
+
+    move-result-object v6
+
+    const/4 v3, 0x0
+
+    move-object/from16 v1, p0
+
+    invoke-virtual/range {v1 .. v6}, Lkwyopc/kouubfr/g64;->o0000oo0(Lkwyopc/kouubfr/w02;Lkwyopc/kouubfr/sf3;ILkwyopc/kouubfr/ko;Lkwyopc/kouubfr/rx8;)Lkwyopc/kouubfr/g64;
+
+    move-result-object v7
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    move-object/from16 v1, p0
+
+    move-object v8, v0
+
+    goto :goto_1
+
+    :cond_0
+    sget-object v1, Lkwyopc/kouubfr/sp3;->OooOOO0:Lkwyopc/kouubfr/jo;
+
+    invoke-static {v7, v0, v1}, Lkwyopc/kouubfr/cn8;->OoooO0O(Lkwyopc/kouubfr/co0;Lkwyopc/kouubfr/wk4;Lkwyopc/kouubfr/ko;)Lkwyopc/kouubfr/op4;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :goto_1
+    iget-object v9, v1, Lkwyopc/kouubfr/uf3;->OooOoO0:Lkwyopc/kouubfr/op4;
+
+    sget-object v10, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    invoke-virtual {v1}, Lkwyopc/kouubfr/uf3;->OooOOO()Ljava/util/List;
+
+    move-result-object v11
+
+    invoke-virtual {v1}, Lkwyopc/kouubfr/uf3;->OoooOOO()Ljava/util/List;
+
+    move-result-object v0
+
+    move-object/from16 v2, p2
+
+    invoke-static {v2, v0, v7}, Lkwyopc/kouubfr/vr6;->OooOO0(Ljava/util/List;Ljava/util/List;Lkwyopc/kouubfr/sf3;)Ljava/util/ArrayList;
+
+    move-result-object v12
+
+    invoke-virtual {v1}, Lkwyopc/kouubfr/uf3;->OooO0oo()Lkwyopc/kouubfr/al5;
+
+    move-result-object v14
+
+    invoke-virtual {v1}, Lkwyopc/kouubfr/uf3;->OooO0o0()Lkwyopc/kouubfr/r72;
+
+    move-result-object v15
+
+    move-object/from16 v13, p3
+
+    invoke-virtual/range {v7 .. v15}, Lkwyopc/kouubfr/uf3;->o0000OO(Lkwyopc/kouubfr/op4;Lkwyopc/kouubfr/op4;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkwyopc/kouubfr/wk4;Lkwyopc/kouubfr/al5;Lkwyopc/kouubfr/r72;)V
+
+    if-eqz p4, :cond_1
+
+    invoke-virtual/range {p4 .. p4}, Lkwyopc/kouubfr/xn6;->OooO0OO()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkwyopc/kouubfr/l82;
+
+    invoke-virtual/range {p4 .. p4}, Lkwyopc/kouubfr/xn6;->OooO0Oo()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v7, v0, v2}, Lkwyopc/kouubfr/uf3;->o0000OOo(Lkwyopc/kouubfr/l82;Ljava/lang/Object;)V
+
+    :cond_1
+    return-object v7
+.end method
+
+.method public final o0000Oo(Z)V
+    .locals 0
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lkwyopc/kouubfr/g64;->OoooOO0:Ljava/lang/Boolean;
+
+    return-void
+.end method
+
+.method public final o0000Oo0(Z)V
+    .locals 0
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lkwyopc/kouubfr/g64;->OoooO:Ljava/lang/Boolean;
+
+    return-void
+.end method
+
+.method public final bridge synthetic o0000o0(ILkwyopc/kouubfr/ko;Lkwyopc/kouubfr/w02;Lkwyopc/kouubfr/sf3;Lkwyopc/kouubfr/st5;Lkwyopc/kouubfr/rx8;)Lkwyopc/kouubfr/ux0;
+    .locals 0
+
+    move-object p5, p2
+
+    move-object p2, p3
+
+    move-object p3, p4
+
+    move p4, p1
+
+    move-object p1, p0
+
+    invoke-virtual/range {p1 .. p6}, Lkwyopc/kouubfr/g64;->o0000oo0(Lkwyopc/kouubfr/w02;Lkwyopc/kouubfr/sf3;ILkwyopc/kouubfr/ko;Lkwyopc/kouubfr/rx8;)Lkwyopc/kouubfr/g64;
+
+    move-result-object p2
+
+    return-object p2
+.end method
+
+.method public final o0000oo0(Lkwyopc/kouubfr/w02;Lkwyopc/kouubfr/sf3;ILkwyopc/kouubfr/ko;Lkwyopc/kouubfr/rx8;)Lkwyopc/kouubfr/g64;
+    .locals 7
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_6
+
+    if-eqz p3, :cond_5
+
+    if-eqz p4, :cond_4
+
+    if-eqz p5, :cond_3
+
+    const/4 v1, 0x1
+
+    if-eq p3, v1, :cond_1
+
+    const/4 v1, 0x4
+
+    if-ne p3, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    new-instance p4, Ljava/lang/StringBuilder;
+
+    const-string p5, "Attempt at creating a constructor that is not a declaration: \ncopy from: "
+
+    invoke-direct {p4, p5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p5, "\nnewOwner: "
+
+    invoke-virtual {p4, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, "\nkind: "
+
+    invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {p3}, Lkwyopc/kouubfr/hx8;->OooOoO(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    :cond_1
+    :goto_0
+    move-object v1, p1
+
+    check-cast v1, Lkwyopc/kouubfr/by0;
+
+    move-object v2, p2
+
+    check-cast v2, Lkwyopc/kouubfr/g64;
+
+    if-eqz p3, :cond_2
+
+    new-instance v0, Lkwyopc/kouubfr/g64;
+
+    iget-boolean v4, p0, Lkwyopc/kouubfr/ux0;->OoooO0O:Z
+
+    move v5, p3
+
+    move-object v3, p4
+
+    move-object v6, p5
+
+    invoke-direct/range {v0 .. v6}, Lkwyopc/kouubfr/g64;-><init>(Lkwyopc/kouubfr/by0;Lkwyopc/kouubfr/g64;Lkwyopc/kouubfr/ko;ZILkwyopc/kouubfr/rx8;)V
+
+    iget-object p1, p0, Lkwyopc/kouubfr/g64;->OoooO:Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iput-object p1, v0, Lkwyopc/kouubfr/g64;->OoooO:Ljava/lang/Boolean;
+
+    iget-object p1, p0, Lkwyopc/kouubfr/g64;->OoooOO0:Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iput-object p1, v0, Lkwyopc/kouubfr/g64;->OoooOO0:Ljava/lang/Boolean;
+
+    return-object v0
+
+    :cond_2
+    const/16 p1, 0xd
+
+    invoke-static {p1}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_3
+    const/16 p1, 0xa
+
+    invoke-static {p1}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_4
+    const/16 p1, 0x9
+
+    invoke-static {p1}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_5
+    const/16 p1, 0x8
+
+    invoke-static {p1}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+
+    :cond_6
+    const/4 p1, 0x7
+
+    invoke-static {p1}, Lkwyopc/kouubfr/g64;->o00000O0(I)V
+
+    throw v0
+.end method
+
+.method public final bridge synthetic o000OO(ILkwyopc/kouubfr/ko;Lkwyopc/kouubfr/w02;Lkwyopc/kouubfr/sf3;Lkwyopc/kouubfr/st5;Lkwyopc/kouubfr/rx8;)Lkwyopc/kouubfr/uf3;
+    .locals 0
+
+    move-object p5, p2
+
+    move-object p2, p3
+
+    move-object p3, p4
+
+    move p4, p1
+
+    move-object p1, p0
+
+    invoke-virtual/range {p1 .. p6}, Lkwyopc/kouubfr/g64;->o0000oo0(Lkwyopc/kouubfr/w02;Lkwyopc/kouubfr/sf3;ILkwyopc/kouubfr/ko;Lkwyopc/kouubfr/rx8;)Lkwyopc/kouubfr/g64;
+
+    move-result-object p2
+
+    return-object p2
+.end method

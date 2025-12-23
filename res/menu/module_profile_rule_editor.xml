@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/module_profile_ic_baseline_undo_24" android:id="@id/action_undo" android:title="" app:showAsAction="always" />
+    <item android:icon="@drawable/module_profile_ic_baseline_redo_24" android:id="@id/action_redo" android:title="" app:showAsAction="always" />
+    <item android:icon="@drawable/module_common_ic_outline_info_24" android:id="@id/action_info" android:title="Tips" app:showAsAction="ifRoom" />
+</menu>

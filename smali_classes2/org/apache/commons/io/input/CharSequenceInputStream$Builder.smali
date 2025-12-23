@@ -1,0 +1,193 @@
+.class public Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;
+.super Lorg/apache/commons/io/build/AbstractStreamBuilder;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/commons/io/input/CharSequenceInputStream;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lorg/apache/commons/io/build/AbstractStreamBuilder<",
+        "Lorg/apache/commons/io/input/CharSequenceInputStream;",
+        "Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private charsetEncoder:Ljava/nio/charset/CharsetEncoder;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Lorg/apache/commons/io/build/AbstractStreamBuilder;-><init>()V
+
+    invoke-virtual {p0}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->getCharset()Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lorg/apache/commons/io/input/CharSequenceInputStream;->access$000(Ljava/nio/charset/Charset;)Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->charsetEncoder:Ljava/nio/charset/CharsetEncoder;
+
+    return-void
+.end method
+
+.method public static synthetic OooO0O0(Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;)Lorg/apache/commons/io/input/CharSequenceInputStream;
+    .locals 0
+
+    invoke-direct {p0}, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->lambda$get$0()Lorg/apache/commons/io/input/CharSequenceInputStream;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic OooO0OO(Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;)Ljava/nio/charset/CharsetEncoder;
+    .locals 0
+
+    invoke-direct {p0}, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->lambda$setCharsetEncoder$1()Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private synthetic lambda$get$0()Lorg/apache/commons/io/input/CharSequenceInputStream;
+    .locals 5
+
+    new-instance v0, Lorg/apache/commons/io/input/CharSequenceInputStream;
+
+    invoke-virtual {p0}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->getCharSequence()Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->getBufferSize()I
+
+    move-result v2
+
+    iget-object v3, p0, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->charsetEncoder:Ljava/nio/charset/CharsetEncoder;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lorg/apache/commons/io/input/CharSequenceInputStream;-><init>(Ljava/lang/CharSequence;ILjava/nio/charset/CharsetEncoder;Lorg/apache/commons/io/input/CharSequenceInputStream$1;)V
+
+    return-object v0
+.end method
+
+.method private synthetic lambda$setCharsetEncoder$1()Ljava/nio/charset/CharsetEncoder;
+    .locals 1
+
+    invoke-virtual {p0}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->getCharsetDefault()Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lorg/apache/commons/io/input/CharSequenceInputStream;->access$000(Ljava/nio/charset/Charset;)Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->get()Lorg/apache/commons/io/input/CharSequenceInputStream;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public get()Lorg/apache/commons/io/input/CharSequenceInputStream;
+    .locals 2
+
+    new-instance v0, Lkwyopc/kouubfr/oOO000o;
+
+    const/16 v1, 0x9
+
+    invoke-direct {v0, p0, v1}, Lkwyopc/kouubfr/oOO000o;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {v0}, Lorg/apache/commons/io/function/Uncheck;->get(Lorg/apache/commons/io/function/IOSupplier;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/apache/commons/io/input/CharSequenceInputStream;
+
+    return-object v0
+.end method
+
+.method public getCharsetEncoder()Ljava/nio/charset/CharsetEncoder;
+    .locals 1
+
+    iget-object v0, p0, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->charsetEncoder:Ljava/nio/charset/CharsetEncoder;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic setCharset(Ljava/nio/charset/Charset;)Lorg/apache/commons/io/build/AbstractStreamBuilder;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->setCharset(Ljava/nio/charset/Charset;)Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setCharset(Ljava/nio/charset/Charset;)Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;
+    .locals 0
+
+    invoke-super {p0, p1}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->setCharset(Ljava/nio/charset/Charset;)Lorg/apache/commons/io/build/AbstractStreamBuilder;
+
+    invoke-virtual {p0}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->getCharset()Ljava/nio/charset/Charset;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/apache/commons/io/input/CharSequenceInputStream;->access$000(Ljava/nio/charset/Charset;)Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->charsetEncoder:Ljava/nio/charset/CharsetEncoder;
+
+    return-object p0
+.end method
+
+.method public setCharsetEncoder(Ljava/nio/charset/CharsetEncoder;)Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;
+    .locals 2
+
+    new-instance v0, Lkwyopc/kouubfr/st0;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lkwyopc/kouubfr/st0;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {p1, v0}, Lorg/apache/commons/io/charset/CharsetEncoders;->toCharsetEncoder(Ljava/nio/charset/CharsetEncoder;Ljava/util/function/Supplier;)Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/apache/commons/io/input/CharSequenceInputStream$Builder;->charsetEncoder:Ljava/nio/charset/CharsetEncoder;
+
+    invoke-virtual {p1}, Ljava/nio/charset/CharsetEncoder;->charset()Ljava/nio/charset/Charset;
+
+    move-result-object p1
+
+    invoke-super {p0, p1}, Lorg/apache/commons/io/build/AbstractStreamBuilder;->setCharset(Ljava/nio/charset/Charset;)Lorg/apache/commons/io/build/AbstractStreamBuilder;
+
+    return-object p0
+.end method

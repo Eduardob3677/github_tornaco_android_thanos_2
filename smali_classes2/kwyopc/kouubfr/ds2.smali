@@ -1,0 +1,37 @@
+.class public abstract Lkwyopc/kouubfr/ds2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final OooO00o:Ljava/util/Set;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lkwyopc/kouubfr/ic3;
+
+    const-string v1, "kotlin.internal.NoInfer"
+
+    invoke-direct {v0, v1}, Lkwyopc/kouubfr/ic3;-><init>(Ljava/lang/String;)V
+
+    new-instance v1, Lkwyopc/kouubfr/ic3;
+
+    const-string v2, "kotlin.internal.Exact"
+
+    invoke-direct {v1, v2}, Lkwyopc/kouubfr/ic3;-><init>(Ljava/lang/String;)V
+
+    filled-new-array {v0, v1}, [Lkwyopc/kouubfr/ic3;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/sy;->o0000O0O([Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object v0
+
+    sput-object v0, Lkwyopc/kouubfr/ds2;->OooO00o:Ljava/util/Set;
+
+    return-void
+.end method

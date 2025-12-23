@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_common_export_selections">
+        <item>剪貼簿</item>
+        <item>匯出為文件</item>
+    </string-array>
+    <string-array name="module_common_import_selections">
+        <item>剪貼簿</item>
+        <item>從文件導入</item>
+    </string-array>
+    <string-array name="module_ops2_app_ops_labels">
+        <item>粗略位置</item>
+        <item>精確位置</item>
+        <item>GPS</item>
+        <item>振動</item>
+        <item>讀取聯絡人</item>
+        <item>修改聯絡人</item>
+        <item>讀取通話記錄</item>
+        <item>修改通話記錄</item>
+        <item>讀取日曆</item>
+        <item>修改日曆</item>
+        <item>位置</item>
+        <item>發布通知</item>
+        <item>位置</item>
+        <item>撥打電話</item>
+        <item>讀取簡訊/彩信</item>
+        <item>寫簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>發送簡訊/彩信</item>
+        <item>讀取簡訊/彩信</item>
+        <item>寫簡訊/彩信</item>
+        <item>修改設定</item>
+        <item>在最上層顯示內容</item>
+        <item>訪問通知</item>
+        <item>相機</item>
+        <item>錄製音訊</item>
+        <item>播放音訊</item>
+        <item>讀取剪貼簿內容</item>
+        <item>修改剪貼簿內容</item>
+        <item>媒體按鈕</item>
+        <item>音訊焦點</item>
+        <item>主音量</item>
+        <item>語音音量</item>
+        <item>鈴聲音量</item>
+        <item>媒體音量</item>
+        <item>鬧鐘音量</item>
+        <item>通知音量</item>
+        <item>藍牙音量</item>
+        <item>保持喚醒狀態</item>
+        <item>位置</item>
+        <item>位置資訊</item>
+        <item>取得使用狀況統計資料</item>
+        <item>將麥克風靜音或取消靜音</item>
+        <item>顯示問候語</item>
+        <item>投影媒體</item>
+        <item>啟動 VPN</item>
+        <item>寫入壁紙</item>
+        <item>輔助結構</item>
+        <item>輔助螢幕截圖</item>
+        <item>讀取手機狀態</item>
+        <item>新增語音信箱</item>
+        <item>使用 SIP</item>
+        <item>處理撥出電話</item>
+        <item>指紋</item>
+        <item>身體感應器</item>
+        <item>讀取小區廣播</item>
+        <item>模擬位置</item>
+        <item>讀取儲存空間</item>
+        <item>寫入儲存空間</item>
+        <item>開啟螢幕</item>
+        <item>取得帳號</item>
+        <item>在背景運行</item>
+        <item>無障礙功能音量</item>
+        <item>Read phone number</item>
+        <item>安裝應用</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>在背景運行任務</item>
+        <item>變更Wifi連線狀態</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Blue tooth scan</item>
+        <item>Use BiometricPrompt</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app sms read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy view of storage</item>
+        <item>使用輔助功能</item>
+        <item>讀取設備資訊</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Active platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+    </string-array>
+    <string-array name="module_ops2_app_ops_summaries">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>振動</item>
+        <item>讀取聯絡人</item>
+        <item>修改聯絡人</item>
+        <item>讀取通話記錄</item>
+        <item>修改通話記錄</item>
+        <item>讀取日曆</item>
+        <item>修改日曆</item>
+        <item>WLAN掃描</item>
+        <item>通知</item>
+        <item>手機網路掃描</item>
+        <item>撥打電話</item>
+        <item>讀取簡訊</item>
+        <item>寫簡訊</item>
+        <item>接收簡訊</item>
+        <item>接收緊急簡訊</item>
+        <item>接收彩信</item>
+        <item>接收 WAP PUSH 訊息</item>
+        <item>傳簡訊</item>
+        <item>讀取 ICC 簡訊</item>
+        <item>寫入 ICC 簡訊</item>
+        <item>修改設定</item>
+        <item>在最上層顯示內容</item>
+        <item>訪問通知</item>
+        <item>相機</item>
+        <item>錄製音訊</item>
+        <item>播放音訊</item>
+        <item>讀取剪貼簿內容</item>
+        <item>修改剪貼簿內容</item>
+        <item>媒體按鈕</item>
+        <item>音訊焦點</item>
+        <item>主音量</item>
+        <item>語音音量</item>
+        <item>鈴聲音量</item>
+        <item>媒體音量</item>
+        <item>鬧鐘音量</item>
+        <item>通知音量</item>
+        <item>藍牙音量</item>
+        <item>保持喚醒狀態</item>
+        <item>監測位置</item>
+        <item>監控高電耗位置資訊服務</item>
+        <item>取得使用狀況統計資料</item>
+        <item>將麥克風靜音或取消靜音</item>
+        <item>顯示問候語</item>
+        <item>投影媒體</item>
+        <item>啟動 VPN</item>
+        <item>寫入壁紙</item>
+        <item>輔助結構</item>
+        <item>輔助螢幕截圖</item>
+        <item>讀取手機狀態</item>
+        <item>新增語音信箱</item>
+        <item>使用 SIP</item>
+        <item>處理撥出電話</item>
+        <item>指紋</item>
+        <item>身體感應器</item>
+        <item>讀取小區廣播</item>
+        <item>模擬位置</item>
+        <item>讀取儲存空間</item>
+        <item>寫入儲存空間</item>
+        <item>開啟螢幕</item>
+        <item>取得帳號</item>
+        <item>在背景運行</item>
+        <item>無障礙功能音量</item>
+        <item>Read phone number</item>
+        <item>請求安裝應用</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>在背景運行任務</item>
+        <item>變更Wifi連線狀態</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Blue tooth scan</item>
+        <item>Use the BiometricPrompt/BiometricManager APIs</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app sms read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy (non-isolated) view of storage</item>
+        <item>使用輔助功能</item>
+        <item>讀取設備資訊(IMEI / MEID, IMSI, SIM / Build serial)</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Active platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+    </string-array>
+    <string-array name="module_ops_app_ops_labels">
+        <item>位置</item>
+        <item>位置</item>
+        <item>位置</item>
+        <item>振動</item>
+        <item>讀取聯絡人</item>
+        <item>修改聯絡人</item>
+        <item>讀取通話記錄</item>
+        <item>修改通話記錄</item>
+        <item>讀取日曆</item>
+        <item>修改日曆</item>
+        <item>位置</item>
+        <item>發布通知</item>
+        <item>位置</item>
+        <item>撥打電話</item>
+        <item>讀取簡訊/彩信</item>
+        <item>寫簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>接收簡訊/彩信</item>
+        <item>發送簡訊/彩信</item>
+        <item>讀取簡訊/彩信</item>
+        <item>寫簡訊/彩信</item>
+        <item>修改設定</item>
+        <item>在最上層顯示內容</item>
+        <item>訪問通知</item>
+        <item>相機</item>
+        <item>錄製音訊</item>
+        <item>播放音訊</item>
+        <item>讀取剪貼簿內容</item>
+        <item>修改剪貼簿內容</item>
+        <item>媒體按鈕</item>
+        <item>音訊焦點</item>
+        <item>主音量</item>
+        <item>語音音量</item>
+        <item>鈴聲音量</item>
+        <item>媒體音量</item>
+        <item>鬧鐘音量</item>
+        <item>通知音量</item>
+        <item>藍牙音量</item>
+        <item>保持喚醒狀態</item>
+        <item>位置</item>
+        <item>位置資訊</item>
+        <item>取得使用狀況統計資料</item>
+        <item>將麥克風靜音或取消靜音</item>
+        <item>顯示問候語</item>
+        <item>投影媒體</item>
+        <item>啟動 VPN</item>
+        <item>寫入壁紙</item>
+        <item>輔助結構</item>
+        <item>輔助螢幕截圖</item>
+        <item>讀取手機狀態</item>
+        <item>新增語音信箱</item>
+        <item>使用 SIP</item>
+        <item>處理撥出電話</item>
+        <item>指紋</item>
+        <item>身體感應器</item>
+        <item>讀取小區廣播</item>
+        <item>模擬位置</item>
+        <item>讀取儲存空間</item>
+        <item>寫入儲存空間</item>
+        <item>開啟螢幕</item>
+        <item>取得帳號</item>
+        <item>在背景運行</item>
+        <item>無障礙功能音量</item>
+        <item>Read phone number</item>
+        <item>安裝應用</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>在背景運行任務</item>
+        <item>變更Wifi連線狀態</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Blue tooth scan</item>
+        <item>Use BiometricPrompt</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app sms read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy view of storage</item>
+        <item>使用輔助功能</item>
+        <item>讀取設備資訊</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Active platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+        <item>查詢其他應用程式信息</item>
+        <item>螢幕亮度</item>
+        <item>取得已安裝應用程式列表</item>
+        <item>查詢意圖活動</item>
+        <item>定位</item>
+        <item>接收感測器數據</item>
+    </string-array>
+    <string-array name="module_ops_app_ops_summaries">
+        <item>粗略位置</item>
+        <item>精確位置</item>
+        <item>GPS</item>
+        <item>振動</item>
+        <item>讀取聯絡人</item>
+        <item>修改聯絡人</item>
+        <item>讀取通話記錄</item>
+        <item>修改通話記錄</item>
+        <item>讀取日曆</item>
+        <item>修改日曆</item>
+        <item>WLAN掃描</item>
+        <item>通知</item>
+        <item>手機網路掃描</item>
+        <item>撥打電話</item>
+        <item>讀取簡訊</item>
+        <item>寫簡訊</item>
+        <item>接收簡訊</item>
+        <item>接收緊急簡訊</item>
+        <item>接收彩信</item>
+        <item>接收 WAP PUSH 訊息</item>
+        <item>傳簡訊</item>
+        <item>讀取 ICC 簡訊</item>
+        <item>寫入 ICC 簡訊</item>
+        <item>修改設定</item>
+        <item>在最上層顯示內容</item>
+        <item>訪問通知</item>
+        <item>相機</item>
+        <item>錄製音訊</item>
+        <item>播放音訊</item>
+        <item>讀取剪貼簿內容</item>
+        <item>修改剪貼簿內容</item>
+        <item>媒體按鈕</item>
+        <item>音訊焦點</item>
+        <item>主音量</item>
+        <item>語音音量</item>
+        <item>鈴聲音量</item>
+        <item>媒體音量</item>
+        <item>鬧鐘音量</item>
+        <item>通知音量</item>
+        <item>藍牙音量</item>
+        <item>保持喚醒狀態</item>
+        <item>監測位置</item>
+        <item>監控高電耗位置資訊服務</item>
+        <item>取得使用狀況統計資料</item>
+        <item>將麥克風靜音或取消靜音</item>
+        <item>顯示問候語</item>
+        <item>投影媒體</item>
+        <item>啟動 VPN</item>
+        <item>寫入壁紙</item>
+        <item>輔助結構</item>
+        <item>輔助螢幕截圖</item>
+        <item>讀取手機狀態</item>
+        <item>新增語音信箱</item>
+        <item>使用 SIP</item>
+        <item>處理撥出電話</item>
+        <item>指紋</item>
+        <item>身體感應器</item>
+        <item>讀取小區廣播</item>
+        <item>模擬位置</item>
+        <item>讀取儲存空間</item>
+        <item>寫入儲存空間</item>
+        <item>開啟螢幕</item>
+        <item>取得帳號</item>
+        <item>在背景運行</item>
+        <item>無障礙功能音量</item>
+        <item>Read phone number</item>
+        <item>請求安裝應用</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>在背景運行任務</item>
+        <item>變更Wifi連線狀態</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Blue tooth scan</item>
+        <item>Use the BiometricPrompt/BiometricManager APIs</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app sms read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy (non-isolated) view of storage</item>
+        <item>使用輔助功能</item>
+        <item>讀取設備資訊(IMEI / MEID, IMSI, SIM / Build serial)</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Active platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+        <item>透過套件名稱查詢其他已安裝應用程式的信息，請謹慎設定，停用該權限可能導致該應用程式無法與其他應用程式交互，甚至造成其他異常問題</item>
+        <item>調整螢幕亮度</item>
+        <item>取得已安裝應用</item>
+        <item>Query intent(LAUNCHER, 常用於查詢應用程式清單) activities</item>
+        <item>獲取您的位置信息</item>
+        <item>接收感測器數據，禁止後應用的搖一搖等依賴感測器的功能將會失效；拒絕該權限需要xposed中勾選該目標應用的作用域</item>
+    </string-array>
+    <string-array name="themes_entry">
+        <item>淺色 藍</item>
+        <item>淺色 靛青</item>
+        <item>淺色 紅</item>
+        <item>淺色 綠</item>
+        <item>淺色 黃</item>
+        <item>淺色 黑</item>
+        <item>淺色 鴨綠</item>
+        <item>淺色 粉</item>
+        <item>深色 藍</item>
+        <item>深色 靛青</item>
+        <item>深色 紅</item>
+        <item>深色 黃</item>
+        <item>深色 灰</item>
+        <item>自動切換</item>
+        <item>材料設計 3</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/status_text" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:layout_gravity="end|bottom" android:id="@id/pass_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:tint="?colorPrimary" app:icon="@drawable/ic_arrow_right_line_white" style="@style/FloatingActionButtonStyle" />
+</LinearLayout>

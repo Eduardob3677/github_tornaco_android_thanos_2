@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Notification events",
+    "description": "通知事件",
+    "priority": 1,
+    "condition": "notificationAdded || notificationRemoved || notificationUpdated",
+    "actions": [
+      "ui.showShortToast(\"通知事件 \" + pkgName + notificationContent);"
+    ]
+  }
+]

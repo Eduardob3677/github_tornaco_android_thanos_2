@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="github.tornaco.android.thanos" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="github.tornaco.android.thanos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="github.tornaco.android.thanos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="moe.shizuku.manager.permission.API_V23"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:description="@string/app_description" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name_thanox" android:name="now.fortuitous.thanos.ThanosApp" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/ThemeMD3Light.App.NoActionBar">
+        <activity android:exported="true" android:label="@string/nav_title_thanox" android:name="now.fortuitous.thanos.main.NavActivity" android:theme="@style/Theme.AppSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="github.tornaco.android.thanos.action.NAV_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/activity_title_process_manage" android:name="now.fortuitous.thanos.process.v2.ProcessManageActivityV2">
+            <intent-filter>
+                <action android:name="thanox.a.running_process.viewer"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="now.fortuitous.thanos.process.v2.ProcessManageActivityV2Delegate" android:taskAffinity="ui.shortcut.pm" android:theme="@style/AppThemeShortcut"/>
+        <activity android:exported="false" android:label="@string/activity_title_process_manage" android:name="now.fortuitous.thanos.process.v2.RunningAppStateDetailsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.privacy.CheatFieldSettingsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.start.BgRestrictSettingsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.task.RecentTaskBlurSettingsActivity"/>
+        <activity android:enabled="true" android:exported="true" android:name="now.fortuitous.thanos.apps.AppDetailsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.start.StartRuleActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.power.StandByRuleActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="now.fortuitous.thanos.main.NeedToRestartActivity" android:theme="@style/AppThemeNeedRestart"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="now.fortuitous.thanos.power.ShortcutStubActivity" android:taskAffinity="ui.shortcut.freeze" android:theme="@style/AppThemeShortcut"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="now.fortuitous.thanos.power.FreezeAllShortcutActivity" android:taskAffinity="ui.shortcut.freeze.all" android:theme="@style/AppThemeShortcut"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.power.SmartFreezeSettingsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.power.SmartStandbySettingsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.privacy.CheatRecordViewerActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.start.DetailedStartRecordsActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="now.fortuitous.thanos.main.OneKeyBoostShortcutActivity" android:taskAffinity="ui.shortcut.boost" android:theme="@style/AppThemeShortcut"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.infinite.InfiniteZActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.infinite.InfiniteZActivity2"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.privacy.FieldsTemplateListActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.apps.PackageSetListActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.apps.PackageSetEditorActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.settings.BuildPropActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.onboarding.OnBoardingActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.start.chart.ComposeStartChartActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="now.fortuitous.thanos.main.PrebuiltFeatureShortcutActivity" android:taskAffinity="ui.shortcut.feat" android:theme="@style/UiTheme.ActivityDialog"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.power.wakelock.WakeLockBlockerActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.settings.FeatureToggleActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="now.fortuitous.thanos.launchother.LaunchOtherAppAskActivity" android:taskAffinity="ui.verify.LaunchOtherAppActivity" android:theme="@style/UiTheme.ActivityDialog">
+            <intent-filter>
+                <action android:name="github.tornaco.action.launcher.other.app"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="now.fortuitous.thanos.launchother.LaunchOtherAppDenyActivity" android:taskAffinity="ui.verify.LaunchOtherAppActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="github.tornaco.action.launcher.other.app.deny"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.launchother.LaunchOtherAppRuleActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.main.ChooserActivity"/>
+        <activity android:exported="true" android:name="now.fortuitous.thanos.launchother.AllowListActivity"/>
+        <activity android:exported="true" android:name="now.fortuitous.thanos.recovery.RecoveryUtilsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.main.OneKeyBoostSettingsActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.apps.AioAppListActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.android.thanox.module.notification.recorder.NotificationRecordSettingsActivity"/>
+        <activity android:exported="false" android:label="@string/module_notification_recorder_feature_title_notification_recorder" android:name="github.tornaco.android.thanox.module.notification.recorder.ui.NotificationRecordActivity"/>
+        <activity android:exported="false" android:label="@string/module_notification_recorder_stats" android:name="github.tornaco.android.thanox.module.notification.recorder.ui.stats.StatsActivity"/>
+        <activity android:exported="false" android:label="@string/app_picker_title" android:name="github.tornaco.android.thanox.module.notification.recorder.AppListActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.module.component.manager.redesign.ComponentsActivity"/>
+        <activity android:exported="false" android:label="@string/module_activity_trampoline_app_name" android:name="github.tornaco.android.thanox.module.activity.trampoline.ActivityTrampolineActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="github.tornaco.practice.honeycomb.locker.ui.verify.VerifyActivity" android:taskAffinity="ui.verify.VerifyActivity">
+            <intent-filter>
+                <action android:name="github.tornaco.practice.honeycomb.locker.action.VERIFY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/module_locker_title_settings" android:name="github.tornaco.practice.honeycomb.locker.ui.setup.LockSettingsActivity"/>
+        <activity android:excludeFromRecents="false" android:name="github.tornaco.practice.honeycomb.locker.ui.setup.WhiteListComponentViewerActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.practice.honeycomb.locker.ui.verify.PatternSettingsActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.android.plugin.push.message.delegate.WechatPushDeleteMainActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.RuleListActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.RuleEditorActivity" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.RuleEngineSettingsActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.GlobalVarListActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.GlobalVarEditorActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="github.tornaco.thanos.android.module.profile.ProfileShortcutEngineActivity" android:theme="@style/AppThemeShortcut"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.LogActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.engine.DateTimeEngineActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.ConsoleActivity" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.engine.NewRegularIntervalActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.example.ProfileExampleActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.online.OnlineProfileActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.module.profile.engine.danmu.DanmuUISettingsActivity"/>
+        <activity android:exported="false" android:label="@string/module_ops_activity_title_app_ops_list" android:name="github.tornaco.thanos.android.ops.ops.by.app.AppOpsListActivity"/>
+        <activity android:exported="false" android:label="@string/module_ops_activity_title_app_ops_list" android:name="github.tornaco.thanos.android.ops.ops.by.app.AppListActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.ops.ops.by.ops.OpsAppListActivity"/>
+        <activity android:exported="false" android:label="@string/module_ops_feature_title_ops_remind_list" android:name="github.tornaco.thanos.android.ops.ops.remind.RemindOpsActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.ops.ops.by.ops.OpsBottomNavActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.ops.ops.by.ops.ThanoxOpsBottomNavActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.ops2.byop.Ops2Activity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.ops2.byop.AppListActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.thanos.android.ops2.byapp.AppOpsListActivity"/>
+        <activity android:exported="false" android:name="now.fortuitous.thanos.sf.SFActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.practice.honeycomb.locker.ui.setup.AppLockListActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="github.tornaco.practice.honeycomb.locker.ui.verify.PinSettingsActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="github.tornaco.practice.honeycomb.locker.ui.verify.TimeSettingsActivity"/>
+        <meta-data android:name="xposedmodule" android:value="true"/>
+        <meta-data android:name="xposeddescription" android:value="I am thanos!"/>
+        <meta-data android:name="xposedminversion" android:value="53"/>
+        <meta-data android:name="xposedscope" android:resource="@array/scope"/>
+        <provider android:authorities="github.tornaco.android.thanos.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <service android:exported="true" android:icon="@drawable/ic_settings_line_black" android:label="@string/feature_title_apps_manager" android:name="now.fortuitous.thanos.qs.QuickConfigAppTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_radio_button_fill_black" android:label="@string/title_show_current_activity" android:name="now.fortuitous.thanos.qs.ShowCurrentActivityTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_numbers_fill_black" android:label="@string/title_net_stats" android:name="now.fortuitous.thanos.qs.ShowNetStatsTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/module_profile_ic_thunderstorms_fill" android:label="@string/module_profile_feature_name" android:name="now.fortuitous.thanos.qs.ProfileOnOffTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_guide_fill" android:label="@string/module_activity_trampoline_app_name" android:name="now.fortuitous.thanos.qs.TrampolineOnOffTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_rocket_line" android:label="@string/feature_title_one_key_boost" android:name="now.fortuitous.thanos.qs.OnyKeyClearTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="now.fortuitous.thanos.service.SuSupportService"/>
+        <receiver android:description="@string/device_admin_description" android:enabled="false" android:exported="true" android:name="now.fortuitous.thanos.infinite.InfiniteZDeviceAdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.PROFILE_PROVISIONING_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="github.tornaco.android.thanos.XposedService" android:exported="true" android:name="io.github.libxposed.service.XposedProvider"/>
+        <receiver android:exported="false" android:name="now.fortuitous.thanos.widget.SmartFreezeAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/smart_freeze_widget_info"/>
+        </receiver>
+        <activity android:exported="false" android:label="@string/app_name_thanox" android:name="com.nononsenseapps.filepicker.FilePickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="tornaco.apps.thanox.ThanosShizukuMainActivity" android:theme="@style/ThemeMD3Light.App.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="tornaco.apps.thanox.picker.PkgPickerActivity" android:theme="@style/ThemeMD3Light.App.NoActionBar"/>
+        <activity android:exported="false" android:name="tornaco.apps.thanox.running.detail.RunningAppStateDetailsActivity" android:theme="@style/ThemeMD3Light.App.NoActionBar"/>
+        <activity android:exported="false" android:name="github.tornaco.android.thanos.support.subscribe.LVLCheckActivity" android:theme="@style/ThemeMD3Light.App.NoActionBar"/>
+        <provider android:authorities="github.tornaco.android.thanos.shizuku" android:enabled="true" android:exported="true" android:multiprocess="false" android:name="rikka.shizuku.ShizukuProvider" android:permission="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <activity android:exported="false" android:name="github.tornaco.android.thanos.support.subscribe.SubscribeActivity"/>
+        <activity android:exported="false" android:name="github.tornaco.android.thanos.picker.AppPickerActivity"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <provider android:authorities="github.tornaco.android.thanos.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="moe.shizuku.client.V3_SUPPORT" android:value="true"/>
+    </application>
+</manifest>

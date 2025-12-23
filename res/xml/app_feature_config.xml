@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/pre_category_app_feature_info">
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_app_info_detailed" app:title="@android:string/ok" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/pre_category_app_feature_config">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_start_restrict" app:summary="@string/feature_desc_start_restrict" app:title="@string/feature_title_start_restrict" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_bg_restrict" app:summary="@string/feature_desc_bg_restrict" app:title="@string/feature_title_bg_restrict" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_task_clean_up" app:summary="@string/feature_desc_clean_when_task_removed" app:title="@string/feature_title_clean_when_task_removed" />
+        <github.tornaco.android.thanos.widget.pref.ViewAwarePreference android:persistent="false" app:key="@string/key_app_feature_config_privacy_cheat" app:summary="@string/feature_desc_data_cheat" app:title="@string/feature_title_data_cheat" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_op_remind" app:summary="@string/module_ops_feature_summary_ops_remind" app:title="@string/module_ops_title_op_remind_apps" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_screen_on_notification" app:title="@string/feature_title_light_on_notification" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_recent_task_blur" app:summary="@string/feature_summary_recent_task_blur" app:title="@string/feature_title_recent_task_blur" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_smart_standby" app:summary="@string/feature_summary_smart_app_standby" app:title="@string/feature_title_smart_app_standby" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/pre_category_app_disable_enable">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_smart_freeze" app:summary="@string/feature_summary_smart_app_freeze" app:title="@string/feature_title_smart_app_freeze" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_app_to_disable" app:summary="@string/pref_title_app_state_enabled" app:title="@string/pref_title_app_to_disable" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_app_to_enable" app:summary="@string/pref_title_app_state_disabled" app:title="@string/pref_title_app_to_enable" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_enable_package_on_launch" app:summary="@string/feature_summary_enable_package_on_launch" app:title="@string/feature_title_enable_package_on_launch" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/launch_other_app">
+        <DropDownPreference android:entries="@array/launch_other_app_options" android:entryValues="@array/launch_other_app_options_values" app:key="@string/key_launch_other_app" app:persistent="false" app:title="@string/launch_other_app" app:useSimpleSummaryProvider="true" />
+        <Preference app:isPreferenceVisible="false" app:key="@string/key_launch_other_app_allow_list_settings" app:persistent="false" app:summary="@string/launch_other_app" app:title="@string/launch_other_app_options_allow_listed" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/feature_category_privacy">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_app_lock" app:summary="@string/feature_summary_app_lock" app:title="@string/feature_title_app_lock" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_ops" app:title="@string/module_ops_feature_title_app_ops_list" />
+        <DropDownPreference android:entries="@array/recent_task_exclude_entry_default_include_exclude" android:entryValues="@array/recent_task_exclude_value_default_include_exclude" app:key="@string/key_recent_task_exclude_settings" app:persistent="false" app:summary="@string/pre_summary_exclude_recent_task" app:title="@string/pre_title_exclude_recent_task" app:useSimpleSummaryProvider="true" />
+        <DropDownPreference android:entries="@array/sensor_off_options" android:entryValues="@array/sensor_off_options_values" app:key="@string/key_sensor_off" app:persistent="false" app:title="@string/sensor_off" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/feature_category_manage">
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_a_manage" app:title="@string/module_ops_feature_title_a_manage" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_r_manage" app:title="@string/module_ops_feature_title_r_manage" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_s_manage" app:title="@string/module_ops_feature_title_s_manage" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_p_manage" app:title="@string/module_ops_feature_title_p_manage" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/feature_category_protect">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_block_uninstall" app:title="@string/module_ops_feature_title_block_uninstall" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_block_clear_data" app:title="@string/module_ops_feature_title_block_clear_data" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_block_update" app:title="@string/module_ops_feature_title_block_update" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/module_notification_recorder_feature_title_notification_center">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_redaction_notification" app:summary="@string/pre_summary_redaction_notification" app:title="@string/pre_title_redaction_notification" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_redaction_notification_title" app:title="@string/pre_title_redaction_notification_title" />
+        <Preference android:persistent="false" app:key="@string/key_app_feature_config_redaction_notification_text" app:title="@string/pre_title_redaction_notification_text" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/feature_category_misc">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_dialog_force_cancelable" app:summary="@string/pre_summary_force_dialog_cancelable" app:title="@string/pre_title_force_dialog_cancelable" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_app_feature_config_resident" app:summary="@string/pre_summary_resident" app:title="@string/pre_title_resident" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_shortcut_block" app:summary="@string/pre_summary_shortcut_block" app:title="@string/pre_title_shortcut_block" />
+    </PreferenceCategory>
+</PreferenceScreen>

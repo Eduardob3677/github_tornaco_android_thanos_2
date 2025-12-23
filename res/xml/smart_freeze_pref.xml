@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/pre_category_general">
+        <Preference android:summary="@string/pre_category_summary_smart_freeze" />
+        <Preference android:persistent="false" app:key="@string/key_smart_freeze_method" app:title="@string/pre_title_smart_freeze_freeze_method" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_smart_freeze_screen_off_clean_up" app:summary="@string/pre_summary_smart_freeze_screen_off_clean_up_delay" app:title="@string/pre_title_smart_freeze_screen_off_clean_up_delay" />
+        <DropDownPreference android:entries="@array/smart_freeze_screen_off_clean_delay_entry" android:entryValues="@array/smart_freeze__screen_off_clean_delay_value" app:key="@string/key_smart_freeze_screen_off_clean_up_delay" app:persistent="false" app:title="@string/pre_title_smart_freeze_screen_off_clean_up" app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_smart_freeze_tips" app:summary="@string/pre_summary_smart_freeze_tip" app:title="@string/pre_title_smart_freeze_tip" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pre_category_strategy">
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_smart_freeze_enable_on_launch_by_default" app:summary="@string/pref_summary_enable_package_on_launch_by_default" app:title="@string/pref_title_enable_package_on_launch_by_default" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_smart_freeze_dol_tips" app:title="@string/pref_title_dol_tips" />
+        <SwitchPreferenceCompat android:persistent="false" app:key="@string/key_smart_freeze_hide_package_change_event" app:summary="@string/pre_summary_smart_freeze_hide_package_change_event" app:title="@string/pre_title_smart_freeze_hide_package_change_event" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/feature_category_app_clean_up">
+        <Preference android:persistent="false" app:icon="@drawable/ic_ac_unit_black_24dp" app:key="@string/key_smart_freeze_create_freeze_all_shortcut" app:title="@string/create_one_key_freeze_shortcut" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_item_root" android:tag="layout/standby_rule_list_item_0" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dashboard_category_bot_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/common_view_margin_default" android:layout_marginEnd="@dimen/dashboard_category_title_margin_end">
+        <TextView android:textAppearance="@style/TextAppearance.TileTitle" android:ellipsize="middle" android:id="@id/name" android:tag="binding_1" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/common_view_margin_default" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:tag="binding_2" android:background="?android:dividerVertical" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/common_view_margin_default" android:layout_marginEnd="@dimen/common_view_margin_default" />
+</RelativeLayout>

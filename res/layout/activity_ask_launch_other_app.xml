@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/common_view_margin_default" android:paddingRight="@dimen/common_view_margin_default" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/common_view_margin_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/remember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/launch_other_pkg_remember" />
+</LinearLayout>

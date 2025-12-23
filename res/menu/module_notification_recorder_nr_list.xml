@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/module_common_ic_search_2_line" android:id="@id/action_search" android:title="@string/common_menu_title_search" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/module_notification_recorder_ic_delete_bin_6_fill" android:id="@id/action_clear_all" android:title="@string/module_notification_recorder_clear_all" app:showAsAction="never" />
+    <item android:icon="@drawable/module_common_ic_settings_fill" android:id="@id/action_stats" android:title="@string/module_notification_recorder_stats" app:showAsAction="never" />
+    <item android:icon="@drawable/module_common_ic_settings_fill" android:id="@id/action_export" android:title="@string/module_notification_recorder_export" app:showAsAction="never" />
+    <item android:icon="@drawable/module_common_ic_settings_fill" android:id="@id/action_settings" android:title="@string/module_notification_recorder_settings" app:showAsAction="never" />
+</menu>

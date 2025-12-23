@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/module_profile_global_var_list_activity_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="?android:windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:elevation="@dimen/common_toolbar_elevation">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/module_profile_title_global_var" app:titleTextAppearance="@style/TextAppearance.AppCompat.Subhead" app:titleTextColor="?colorControlNormal" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/appbar">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView android:id="@id/var_list_view" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/common_view_margin_default" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:icon="@drawable/module_profile_ic_add_fill" style="@style/FloatingActionButtonStyle" />
+</RelativeLayout>

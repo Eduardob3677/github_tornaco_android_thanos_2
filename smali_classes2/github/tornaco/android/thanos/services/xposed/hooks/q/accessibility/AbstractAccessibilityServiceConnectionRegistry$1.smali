@@ -1,0 +1,42 @@
+.class Lgithub/tornaco/android/thanos/services/xposed/hooks/q/accessibility/AbstractAccessibilityServiceConnectionRegistry$1;
+.super Lde/robv/android/xposed/XC_MethodHook;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgithub/tornaco/android/thanos/services/xposed/hooks/q/accessibility/AbstractAccessibilityServiceConnectionRegistry;->hookNotifyAccessibilityEvent(Lgithub/tornaco/android/thanos/services/xposed/ISystemServerLoaded$Param;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lgithub/tornaco/android/thanos/services/xposed/hooks/q/accessibility/AbstractAccessibilityServiceConnectionRegistry;)V
+    .locals 0
+
+    invoke-direct {p0}, Lde/robv/android/xposed/XC_MethodHook;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public afterHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
+    .locals 1
+
+    invoke-super {p0, p1}, Lde/robv/android/xposed/XC_MethodHook;->afterHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
+
+    iget-object p1, p1, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->args:[Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    aget-object p1, p1, v0
+
+    check-cast p1, Landroid/view/accessibility/AccessibilityEvent;
+
+    return-void
+.end method

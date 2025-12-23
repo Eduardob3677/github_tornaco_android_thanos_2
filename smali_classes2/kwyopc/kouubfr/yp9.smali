@@ -1,0 +1,6229 @@
+.class public final Lkwyopc/kouubfr/yp9;
+.super Lkwyopc/kouubfr/sd9;
+.source "SourceFile"
+
+# interfaces
+.implements Lgithub/tornaco/android/thanos/core/IThanosLite;
+
+
+# instance fields
+.field public OooOO0:Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+.field public OooOO0O:Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;
+
+.field public final OooOO0o:Ljava/util/HashMap;
+
+.field public final OooOOO:Lkwyopc/kouubfr/sc9;
+
+.field public final OooOOO0:Lkwyopc/kouubfr/sc9;
+
+.field public final OooOOOO:Lkwyopc/kouubfr/uo1;
+
+.field public final OooOOOo:Lkwyopc/kouubfr/sc9;
+
+.field public final OooOOo:Lkwyopc/kouubfr/ot5;
+
+.field public final OooOOo0:Lkwyopc/kouubfr/r29;
+
+.field public final OooOOoo:Lkwyopc/kouubfr/mp9;
+
+.field public OooOo0:Lkwyopc/kouubfr/q09;
+
+.field public final OooOo00:Landroid/os/RemoteCallbackList;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    invoke-direct {p0}, Lkwyopc/kouubfr/sd9;-><init>()V
+
+    invoke-static {}, Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;->getDefaultInstance()Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+    move-result-object v0
+
+    const-string v1, "getDefaultInstance(...)"
+
+    invoke-static {v0, v1}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOO0:Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+    invoke-static {}, Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;->getDefaultInstance()Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;
+
+    move-result-object v0
+
+    invoke-static {v0, v1}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOO0O:Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOO0o:Ljava/util/HashMap;
+
+    new-instance v0, Lkwyopc/kouubfr/na9;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Lkwyopc/kouubfr/na9;-><init>(I)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/ip8;->Oooo0(Lkwyopc/kouubfr/me3;)Lkwyopc/kouubfr/sc9;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOO0:Lkwyopc/kouubfr/sc9;
+
+    new-instance v0, Lkwyopc/kouubfr/jp9;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, v1}, Lkwyopc/kouubfr/jp9;-><init>(Lkwyopc/kouubfr/yp9;I)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/ip8;->Oooo0(Lkwyopc/kouubfr/me3;)Lkwyopc/kouubfr/sc9;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOO:Lkwyopc/kouubfr/sc9;
+
+    invoke-static {}, Lkwyopc/kouubfr/vl6;->OooO0Oo()Lkwyopc/kouubfr/u99;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/x34;->OooO0oO(Lkwyopc/kouubfr/pr1;)Lkwyopc/kouubfr/uo1;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOOO:Lkwyopc/kouubfr/uo1;
+
+    new-instance v0, Lkwyopc/kouubfr/jp9;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, p0, v1}, Lkwyopc/kouubfr/jp9;-><init>(Lkwyopc/kouubfr/yp9;I)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/ip8;->Oooo0(Lkwyopc/kouubfr/me3;)Lkwyopc/kouubfr/sc9;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOOo:Lkwyopc/kouubfr/sc9;
+
+    const-string v0, "android"
+
+    invoke-static {v0}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->systemUserPkg(Ljava/lang/String;)Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/s02;->OooO0Oo(Ljava/lang/Object;)Lkwyopc/kouubfr/r29;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOo0:Lkwyopc/kouubfr/r29;
+
+    new-instance v0, Lkwyopc/kouubfr/ot5;
+
+    invoke-direct {v0}, Lkwyopc/kouubfr/ot5;-><init>()V
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOo:Lkwyopc/kouubfr/ot5;
+
+    new-instance v0, Lkwyopc/kouubfr/mp9;
+
+    invoke-direct {v0, p0}, Lkwyopc/kouubfr/mp9;-><init>(Lkwyopc/kouubfr/yp9;)V
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOoo:Lkwyopc/kouubfr/mp9;
+
+    new-instance v0, Landroid/os/RemoteCallbackList;
+
+    invoke-direct {v0}, Landroid/os/RemoteCallbackList;-><init>()V
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOo00:Landroid/os/RemoteCallbackList;
+
+    new-instance v0, Lkwyopc/kouubfr/jp9;
+
+    const/4 v1, 0x3
+
+    invoke-direct {v0, p0, v1}, Lkwyopc/kouubfr/jp9;-><init>(Lkwyopc/kouubfr/yp9;I)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/ip8;->Oooo0(Lkwyopc/kouubfr/me3;)Lkwyopc/kouubfr/sc9;
+
+    return-void
+.end method
+
+.method public static final OooO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+    .locals 2
+
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0O0()Landroid/app/IActivityManager;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getUserId()I
+
+    move-result p0
+
+    invoke-interface {v0, v1, p0}, Landroid/app/IActivityManager;->forceStopPackage(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static final OooO0oo(Lkwyopc/kouubfr/yp9;Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+    .locals 3
+
+    invoke-virtual {p0, p1}, Lkwyopc/kouubfr/yp9;->OooOOo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    return v1
+
+    :cond_0
+    sget-object v0, Lkwyopc/kouubfr/rg9;->OooO00o:Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {p1}, Lgithub/tornaco/android/thanos/core/ExtensionsKt;->toAppPkg(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Ltornaco/apps/thanox/core/proto/common/AppPkg;
+
+    move-result-object p1
+
+    const-string v2, "pkg"
+
+    invoke-static {p1, v2}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p1}, Lkwyopc/kouubfr/s02;->OooOo(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lkwyopc/kouubfr/rg9;->OooO0O0(Landroid/content/Context;Ljava/util/List;)Ljava/util/ArrayList;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    return v1
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static final OooOO0O([BLkwyopc/kouubfr/yp9;)Landroid/app/ActivityManager$MemoryInfo;
+    .locals 17
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x1
+
+    const-string v2, "|"
+
+    invoke-static/range {p0 .. p0}, Ltornaco/apps/thanox/core/proto/common/RequestPayload;->parseFrom([B)Ltornaco/apps/thanox/core/proto/common/RequestPayload;
+
+    move-result-object v3
+
+    invoke-virtual/range {p1 .. p1}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-static {v3}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
+    invoke-virtual {v3}, Ltornaco/apps/thanox/core/proto/common/RequestPayload;->getDataList()Lcom/google/protobuf/ProtocolStringList;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    new-instance v0, Landroid/app/ActivityManager$MemoryInfo;
+
+    invoke-direct {v0}, Landroid/app/ActivityManager$MemoryInfo;-><init>()V
+
+    return-object v0
+
+    :cond_0
+    new-instance v3, Landroid/app/ActivityManager$MemoryInfo;
+
+    invoke-direct {v3}, Landroid/app/ActivityManager$MemoryInfo;-><init>()V
+
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0O0()Landroid/app/IActivityManager;
+
+    move-result-object v4
+
+    invoke-interface {v4, v3}, Landroid/app/IActivityManager;->getMemoryInfo(Landroid/app/ActivityManager$MemoryInfo;)V
+
+    invoke-virtual/range {p1 .. p1}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v4
+
+    :try_start_0
+    invoke-static {v4}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v4
+
+    array-length v6, v4
+
+    move v8, v1
+
+    const/4 v7, 0x0
+
+    const/4 v9, 0x0
+
+    :goto_0
+    if-ge v7, v6, :cond_3
+
+    aget-object v10, v4, v7
+
+    add-int/lit8 v11, v9, 0x1
+
+    const-string v12, "SHA1"
+
+    invoke-static {v12}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v12
+
+    invoke-virtual {v10}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v10
+
+    invoke-virtual {v12, v10}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v12}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v10
+
+    new-array v12, v0, [C
+
+    fill-array-data v12, :array_0
+
+    array-length v13, v10
+
+    mul-int/lit8 v13, v13, 0x2
+
+    new-array v13, v13, [C
+
+    array-length v14, v10
+
+    const/4 v15, 0x0
+
+    :goto_1
+    if-ge v15, v14, :cond_1
+
+    aget-byte v5, v10, v15
+
+    and-int/lit16 v0, v5, 0xff
+
+    mul-int/lit8 v16, v15, 0x2
+
+    ushr-int/lit8 v0, v0, 0x4
+
+    aget-char v0, v12, v0
+
+    aput-char v0, v13, v16
+
+    add-int/lit8 v16, v16, 0x1
+
+    and-int/lit8 v0, v5, 0xf
+
+    aget-char v0, v12, v0
+
+    aput-char v0, v13, v16
+
+    add-int/2addr v15, v1
+
+    const/16 v0, 0x10
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v13}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v5, 0x3
+
+    new-array v5, v5, [B
+
+    fill-array-data v5, :array_1
+
+    new-instance v10, Ljava/lang/String;
+
+    sget-object v12, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v10, v5, v12}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v10}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v5
+
+    new-instance v10, Ljava/math/BigInteger;
+
+    invoke-virtual {v0, v12}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v0
+
+    const-string v12, "getBytes(...)"
+
+    invoke-static {v0, v12}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v5, v0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v0
+
+    invoke-direct {v10, v1, v0}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v0, 0x10
+
+    invoke-virtual {v10, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v10, "toString(...)"
+
+    invoke-static {v5, v10}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v10, 0x20
+
+    invoke-static {v10, v5}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v10, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v10, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    invoke-static {v10, v5}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_2
+
+    const-string v10, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v10, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    invoke-static {v10, v5}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_2
+
+    const-string v10, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v10, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    invoke-static {v9, v5}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v5, :cond_2
+
+    const/4 v8, 0x0
+
+    :cond_2
+    add-int/2addr v7, v1
+
+    move v9, v11
+
+    goto/16 :goto_0
+
+    :cond_3
+    move v5, v8
+
+    goto :goto_2
+
+    :catchall_0
+    const/4 v5, 0x0
+
+    :goto_2
+    if-eqz v5, :cond_4
+
+    goto :goto_3
+
+    :cond_4
+    const/4 v3, 0x0
+
+    :goto_3
+    return-object v3
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public static final OooOOoo(J)V
+    .locals 0
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Landroid/os/Process;->killProcessQuiet(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final OooOO0()Lkwyopc/kouubfr/c57;
+    .locals 1
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOO0:Lkwyopc/kouubfr/sc9;
+
+    invoke-virtual {v0}, Lkwyopc/kouubfr/sc9;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkwyopc/kouubfr/c57;
+
+    return-object v0
+.end method
+
+.method public final OooOO0o(I)Lkwyopc/kouubfr/iw6;
+    .locals 1
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOO0o:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lkwyopc/kouubfr/iw6;
+
+    return-object p1
+.end method
+
+.method public final OooOOO()Ljava/util/List;
+    .locals 19
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x1
+
+    sget-object v2, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    const-string v3, "|"
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v4
+
+    :try_start_0
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v6
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-static {v6}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v6
+
+    array-length v8, v6
+
+    move v10, v1
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x0
+
+    :goto_0
+    if-ge v9, v8, :cond_2
+
+    aget-object v12, v6, v9
+
+    add-int/lit8 v13, v11, 0x1
+
+    const-string v14, "SHA1"
+
+    invoke-static {v14}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v14
+
+    invoke-virtual {v12}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v12
+
+    invoke-virtual {v14, v12}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v14}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v12
+
+    new-array v14, v0, [C
+
+    fill-array-data v14, :array_0
+
+    array-length v15, v12
+
+    mul-int/lit8 v15, v15, 0x2
+
+    new-array v15, v15, [C
+
+    array-length v7, v12
+
+    const/4 v0, 0x0
+
+    :goto_1
+    if-ge v0, v7, :cond_0
+
+    move/from16 v16, v1
+
+    aget-byte v1, v12, v0
+
+    move/from16 v17, v0
+
+    and-int/lit16 v0, v1, 0xff
+
+    mul-int/lit8 v18, v17, 0x2
+
+    ushr-int/lit8 v0, v0, 0x4
+
+    aget-char v0, v14, v0
+
+    aput-char v0, v15, v18
+
+    add-int/lit8 v18, v18, 0x1
+
+    and-int/lit8 v0, v1, 0xf
+
+    aget-char v0, v14, v0
+
+    aput-char v0, v15, v18
+
+    add-int/lit8 v0, v17, 0x1
+
+    move/from16 v1, v16
+
+    goto :goto_1
+
+    :cond_0
+    move/from16 v16, v1
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v15}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [B
+
+    fill-array-data v1, :array_1
+
+    new-instance v7, Ljava/lang/String;
+
+    sget-object v12, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v7, v1, v12}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v7}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    new-instance v7, Ljava/math/BigInteger;
+
+    invoke-virtual {v0, v12}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v0
+
+    const-string v12, "getBytes(...)"
+
+    invoke-static {v0, v12}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v0
+
+    move/from16 v1, v16
+
+    invoke-direct {v7, v1, v0}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v0, 0x10
+
+    invoke-virtual {v7, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "toString(...)"
+
+    invoke-static {v1, v7}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v7, 0x20
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v7, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
+    const-string v7, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v7, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
+    const-string v7, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v7, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-nez v1, :cond_1
+
+    const/4 v10, 0x0
+
+    :cond_1
+    const/16 v16, 0x1
+
+    add-int/lit8 v9, v9, 0x1
+
+    move v11, v13
+
+    const/4 v1, 0x1
+
+    goto/16 :goto_0
+
+    :catchall_0
+    const/4 v10, 0x0
+
+    :cond_2
+    if-eqz v10, :cond_9
+
+    :try_start_2
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0O0()Landroid/app/IActivityManager;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/app/IActivityManager;->getRunningAppProcesses()Ljava/util/List;
+
+    move-result-object v0
+
+    const-string v1, "getRunningAppProcesses(...)"
+
+    invoke-static {v0, v1}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    const/16 v3, 0xa
+
+    invoke-static {v0, v3}, Lkwyopc/kouubfr/f21;->o000oOoO(Ljava/lang/Iterable;I)I
+
+    move-result v3
+
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/app/ActivityManager$RunningAppProcessInfo;
+
+    invoke-static {v3}, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->from(Landroid/app/ActivityManager$RunningAppProcessInfo;)Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception v0
+
+    goto :goto_8
+
+    :cond_3
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_4
+    :goto_3
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_a
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    move-object v6, v3
+
+    check-cast v6, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;
+
+    iget-object v6, v6, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->pkgList:[Ljava/lang/String;
+
+    if-eqz v6, :cond_7
+
+    array-length v7, v6
+
+    const/4 v8, 0x0
+
+    :goto_4
+    if-ge v8, v7, :cond_6
+
+    aget-object v9, v6, v8
+
+    sget-object v10, Lkwyopc/kouubfr/ema;->OooO00o:Ljava/util/LinkedHashSet;
+
+    invoke-static {v9}, Lkwyopc/kouubfr/x34;->OooOo0o(Ljava/lang/Object;)V
+
+    invoke-static {v9}, Lkwyopc/kouubfr/ema;->OooO00o(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_5
+
+    const/4 v6, 0x0
+
+    const/16 v16, 0x1
+
+    goto :goto_5
+
+    :cond_5
+    const/16 v16, 0x1
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_4
+
+    :cond_6
+    const/16 v16, 0x1
+
+    move/from16 v6, v16
+
+    :goto_5
+    if-eqz v6, :cond_8
+
+    move/from16 v6, v16
+
+    goto :goto_6
+
+    :cond_7
+    const/16 v16, 0x1
+
+    :cond_8
+    const/4 v6, 0x0
+
+    :goto_6
+    if-eqz v6, :cond_4
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    goto :goto_3
+
+    :cond_9
+    const/4 v0, 0x0
+
+    :cond_a
+    if-nez v0, :cond_b
+
+    goto :goto_7
+
+    :cond_b
+    move-object v2, v0
+
+    :goto_7
+    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return-object v2
+
+    :goto_8
+    :try_start_3
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v1
+
+    invoke-static {v0}, Lkwyopc/kouubfr/bp7;->Oooo0o(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "getRunningAppProcesses: "
+
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Object;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return-object v2
+
+    :catchall_2
+    move-exception v0
+
+    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw v0
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final OooOOO0(Lkwyopc/kouubfr/pe3;)Ljava/util/ArrayList;
+    .locals 10
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/yp9;->OooOOO()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    const-string v3, "getRunningAppPackagesFilter"
+
+    if-eqz v2, :cond_3
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;
+
+    :try_start_0
+    iget-object v4, v2, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->pkgList:[Ljava/lang/String;
+
+    const-string v5, "pkgList"
+
+    invoke-static {v4, v5}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget v2, v2, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->uid:I
+
+    array-length v5, v4
+
+    if-nez v5, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    array-length v5, v4
+
+    const/4 v6, 0x0
+
+    :goto_1
+    if-ge v6, v5, :cond_0
+
+    aget-object v7, v4, v6
+
+    invoke-static {v7}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_2
+
+    new-instance v8, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    invoke-static {v2}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result v9
+
+    invoke-direct {v8, v7, v9}, Lgithub/tornaco/android/thanos/core/pm/Pkg;-><init>(Ljava/lang/String;I)V
+
+    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_2
+
+    invoke-interface {p1, v8}, Lkwyopc/kouubfr/pe3;->OooO0o(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Boolean;
+
+    invoke-virtual {v7}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception v2
+
+    goto :goto_3
+
+    :cond_2
+    :goto_2
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_1
+
+    :goto_3
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2, v3}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_3
+    const/16 v1, 0xc8
+
+    invoke-virtual {p0, v1}, Lkwyopc/kouubfr/yp9;->getRunningServiceLegacy(I)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_4
+    :goto_4
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/app/ActivityManager$RunningServiceInfo;
+
+    :try_start_1
+    iget-object v4, v2, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
+
+    invoke-virtual {v4}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "getPackageName(...)"
+
+    invoke-static {v4, v5}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_4
+
+    iget v2, v2, Landroid/app/ActivityManager$RunningServiceInfo;->uid:I
+
+    new-instance v5, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    invoke-static {v2}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result v2
+
+    invoke-direct {v5, v4, v2}, Lgithub/tornaco/android/thanos/core/pm/Pkg;-><init>(Ljava/lang/String;I)V
+
+    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    invoke-interface {p1, v5}, Lkwyopc/kouubfr/pe3;->OooO0o(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    goto :goto_4
+
+    :catchall_1
+    move-exception v2
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2, v3}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    goto :goto_4
+
+    :cond_5
+    return-object v0
+.end method
+
+.method public final OooOOOO()Ljava/util/List;
+    .locals 4
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0OO()Landroid/os/IUserManager;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-interface {v1, v2, v0, v2}, Landroid/os/IUserManager;->getUsers(ZZZ)Ljava/util/List;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    sget-object v1, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    invoke-static {v1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object v1
+
+    :cond_0
+    :goto_0
+    invoke-static {v1}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v2
+
+    if-nez v2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v1
+
+    const-string v3, "Fallback to USER_SYSTEM."
+
+    invoke-virtual {v1, v2, v3}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0OO()Landroid/os/IUserManager;
+
+    move-result-object v1
+
+    invoke-interface {v1, v0}, Landroid/os/IUserManager;->getUserInfo(I)Landroid/content/pm/UserInfo;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/s02;->OooOo(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    :goto_1
+    check-cast v1, Ljava/util/List;
+
+    return-object v1
+.end method
+
+.method public final OooOOOo(Landroid/content/pm/UserInfo;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    iget-object v0, p1, Landroid/content/pm/UserInfo;->name:Ljava/lang/String;
+
+    iget v0, p1, Landroid/content/pm/UserInfo;->id:I
+
+    iget v0, p1, Landroid/content/pm/UserInfo;->id:I
+
+    invoke-virtual {p0, v0}, Lkwyopc/kouubfr/yp9;->OooOO0o(I)Lkwyopc/kouubfr/iw6;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object p1
+
+    const-string v0, "PMS PkgPoolForUserId already init."
+
+    invoke-virtual {p1, v0}, Lgithub/tornaco/android/thanos/core/Logger;->w(Ljava/lang/Object;)V
+
+    return-void
+
+    :cond_0
+    new-instance v0, Lkwyopc/kouubfr/iw6;
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v1
+
+    iget v2, p1, Landroid/content/pm/UserInfo;->id:I
+
+    invoke-direct {v0, v1, v2}, Lkwyopc/kouubfr/iw6;-><init>(Landroid/content/Context;I)V
+
+    iget-object v1, p0, Lkwyopc/kouubfr/yp9;->OooOO0o:Ljava/util/HashMap;
+
+    iget p1, p1, Landroid/content/pm/UserInfo;->id:I
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public final OooOOo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+    .locals 1
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOo0:Lkwyopc/kouubfr/r29;
+
+    invoke-virtual {v0}, Lkwyopc/kouubfr/r29;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0, p1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final OooOOo0()V
+    .locals 5
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v0
+
+    const-string v1, "PMS initPkgPools"
+
+    invoke-virtual {v0, v1}, Lgithub/tornaco/android/thanos/core/Logger;->w(Ljava/lang/Object;)V
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/yp9;->OooOOOO()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/content/pm/UserInfo;
+
+    invoke-virtual {p0, v3}, Lkwyopc/kouubfr/yp9;->OooOOOo(Landroid/content/pm/UserInfo;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v2
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v3
+
+    sub-long/2addr v3, v0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "PMS initPkgPools taken: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, " ms"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Lgithub/tornaco/android/thanos/core/Logger;->w(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final OooOo00()V
+    .locals 4
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    iget-object v1, p0, Lkwyopc/kouubfr/yp9;->OooOo0:Lkwyopc/kouubfr/q09;
+
+    if-eqz v1, :cond_0
+
+    const-string v2, "Screen off"
+
+    new-instance v3, Ljava/util/concurrent/CancellationException;
+
+    invoke-direct {v3, v2}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    invoke-virtual {v1, v3}, Lkwyopc/kouubfr/m84;->OooO0oO(Ljava/util/concurrent/CancellationException;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    invoke-static {v1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    :cond_0
+    :goto_0
+    invoke-static {p0}, Lkwyopc/kouubfr/lh8;->OooOOO(Lkwyopc/kouubfr/sd9;)Lkwyopc/kouubfr/yr1;
+
+    move-result-object v1
+
+    new-instance v2, Lkwyopc/kouubfr/sp9;
+
+    invoke-direct {v2, p0, v0}, Lkwyopc/kouubfr/sp9;-><init>(Lkwyopc/kouubfr/yp9;Lkwyopc/kouubfr/zo1;)V
+
+    invoke-static {v1, v2}, Lkwyopc/kouubfr/lh8;->OooOOoo(Lkwyopc/kouubfr/yr1;Lkwyopc/kouubfr/af3;)Lkwyopc/kouubfr/q09;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOo0:Lkwyopc/kouubfr/q09;
+
+    return-void
+.end method
+
+.method public final asBinder()Landroid/os/IBinder;
+    .locals 2
+
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Wrong call."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final attachAppBinder(Lgithub/tornaco/android/thanos/core/IApp;)V
+    .locals 3
+
+    const-string v0, "binder"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "App binder attached: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lgithub/tornaco/android/thanos/core/Logger;->w(Ljava/lang/Object;)V
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOO:Lkwyopc/kouubfr/sc9;
+
+    invoke-virtual {v0}, Lkwyopc/kouubfr/sc9;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkwyopc/kouubfr/s92;
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Lkwyopc/kouubfr/s92;->OooO0O0:Z
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOOoo:Lkwyopc/kouubfr/mp9;
+
+    invoke-virtual {v0}, Landroid/os/RemoteCallbackList;->kill()V
+
+    invoke-virtual {v0, p1}, Landroid/os/RemoteCallbackList;->register(Landroid/os/IInterface;)Z
+
+    return-void
+.end method
+
+.method public final destroy()V
+    .locals 2
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/System;->exit(I)V
+
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    const-string v1, "System.exit returned normally, while it was supposed to halt JVM."
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final fingerPrint()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "thanox@tornaco:c61b5d2e-114b-4b05-8561-3c3bdab30ac3"
+
+    return-object v0
+.end method
+
+.method public final forceStopPackage(Lgithub/tornaco/android/thanos/core/pm/Pkg;Ljava/lang/String;)V
+    .locals 4
+
+    const-string v0, "pkg"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v0, Lkwyopc/kouubfr/ema;->OooO00o:Ljava/util/LinkedHashSet;
+
+    invoke-virtual {p1}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "getPkgName(...)"
+
+    invoke-static {v0, v1}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/ema;->OooO00o(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "forceStopPackage: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, " "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {v0, p2}, Lgithub/tornaco/android/thanos/core/Logger;->i(Ljava/lang/Object;)V
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v0
+
+    :try_start_0
+    invoke-static {p1}, Lkwyopc/kouubfr/yp9;->OooO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    sget-object p1, Lkwyopc/kouubfr/c9a;->OooO00o:Lkwyopc/kouubfr/c9a;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-static {p1}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_1
+
+    :cond_1
+    new-instance p2, Lgithub/tornaco/android/thanos/core/Logger;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    invoke-direct {p2, v2, v3, v2}, Lgithub/tornaco/android/thanos/core/Logger;-><init>(Ljava/lang/String;ILkwyopc/kouubfr/o12;)V
+
+    const-string v2, "runClearCallingIdentity"
+
+    invoke-virtual {p2, p1, v2}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public final forceStopPackages(Ljava/util/List;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "pkgs"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "reason"
+
+    invoke-static {p2, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    invoke-virtual {p0, v0, p2}, Lkwyopc/kouubfr/yp9;->forceStopPackage(Lgithub/tornaco/android/thanos/core/pm/Pkg;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final declared-synchronized freezePkgs(Ljava/util/List;Z)V
+    .locals 5
+
+    monitor-enter p0
+
+    :try_start_0
+    const-string v0, "pkgs"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    sget-object v2, Lkwyopc/kouubfr/ema;->OooO00o:Ljava/util/LinkedHashSet;
+
+    invoke-virtual {v1}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "getPkgName(...)"
+
+    invoke-static {v2, v3}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v2}, Lkwyopc/kouubfr/ema;->OooO00o(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    invoke-virtual {p0, v1}, Lkwyopc/kouubfr/yp9;->OooOOo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    iget-object v2, p0, Lkwyopc/kouubfr/yp9;->OooOO0:Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+    invoke-virtual {v2}, Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;->getMethod()Ltornaco/apps/thanox/core/proto/common/FreezeMethod;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    iget-object v3, p0, Lkwyopc/kouubfr/yp9;->OooOOo0:Lkwyopc/kouubfr/r29;
+
+    invoke-virtual {v3}, Lkwyopc/kouubfr/r29;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v1}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->toString()Ljava/lang/String;
+
+    invoke-static {v3}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
+    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
+    if-nez v2, :cond_1
+
+    const/4 v2, -0x1
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v3, Lkwyopc/kouubfr/kp9;->OooO00o:[I
+
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aget v2, v3, v2
+
+    :goto_1
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_4
+
+    invoke-static {v1}, Lkwyopc/kouubfr/yx6;->OooO0Oo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    invoke-static {v1}, Lkwyopc/kouubfr/yx6;->OooO0O0(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_5
+
+    :cond_2
+    :goto_2
+    if-eqz p2, :cond_3
+
+    sget-object v2, Lkwyopc/kouubfr/ay6;->OooOOO0:Lkwyopc/kouubfr/ay6;
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/ay6;->OooO0OO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/ay6;->OooOoo0(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    :goto_3
+    move v0, v3
+
+    goto :goto_4
+
+    :cond_3
+    if-nez p2, :cond_7
+
+    sget-object v2, Lkwyopc/kouubfr/ay6;->OooOOO0:Lkwyopc/kouubfr/ay6;
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/ay6;->OooO0OO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_7
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/ay6;->OooO00o(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    goto :goto_3
+
+    :cond_4
+    sget-object v2, Lkwyopc/kouubfr/ay6;->OooOOO0:Lkwyopc/kouubfr/ay6;
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/ay6;->OooO0OO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_5
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/ay6;->OooO00o(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    :cond_5
+    if-eqz p2, :cond_6
+
+    invoke-static {v1}, Lkwyopc/kouubfr/yx6;->OooO0Oo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    invoke-static {v1}, Lkwyopc/kouubfr/yx6;->OooO00o(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    goto :goto_3
+
+    :cond_6
+    if-nez p2, :cond_7
+
+    invoke-static {v1}, Lkwyopc/kouubfr/yx6;->OooO0Oo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_7
+
+    invoke-static {v1}, Lkwyopc/kouubfr/yx6;->OooO0O0(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    goto :goto_3
+
+    :cond_7
+    :goto_4
+    invoke-virtual {v1}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getUserId()I
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Lkwyopc/kouubfr/yp9;->OooOO0o(I)Lkwyopc/kouubfr/iw6;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v1}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v1}, Lkwyopc/kouubfr/iw6;->OooO00o(Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    :cond_8
+    if-eqz v0, :cond_9
+
+    iget-object p1, p0, Lkwyopc/kouubfr/yp9;->OooOo00:Landroid/os/RemoteCallbackList;
+
+    new-instance p2, Lkwyopc/kouubfr/cy2;
+
+    const/4 v0, 0x2
+
+    invoke-direct {p2, v0}, Lkwyopc/kouubfr/cy2;-><init>(I)V
+
+    invoke-virtual {p1, p2}, Landroid/os/RemoteCallbackList;->broadcast(Ljava/util/function/Consumer;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_9
+    monitor-exit p0
+
+    return-void
+
+    :goto_5
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public final getActivities(ILjava/lang/String;)Ljava/util/List;
+    .locals 5
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0, p2}, Lgithub/tornaco/android/thanos/core/pm/ComponentUtil;->getActivities(Landroid/content/Context;Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object p2
+
+    const-string v0, "getActivities(...)"
+
+    invoke-static {p2, v0}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    const/16 v1, 0xa
+
+    invoke-static {p2, v1}, Lkwyopc/kouubfr/f21;->o000oOoO(Ljava/lang/Iterable;I)I
+
+    move-result v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :goto_0
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/pm/ActivityInfo;
+
+    invoke-static {v1}, Lgithub/tornaco/android/thanos/core/util/PkgUtils;->getComponentName(Landroid/content/pm/ActivityInfo;)Landroid/content/ComponentName;
+
+    move-result-object v2
+
+    invoke-static {}, Lgithub/tornaco/android/thanos/core/pm/ComponentInfo;->builder()Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;
+
+    move-result-object v3
+
+    iget-object v4, v1, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;->name(Ljava/lang/String;)Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;->componentName(Landroid/content/ComponentName;)Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Landroid/content/pm/PackageItemInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v1}, Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;->label(Ljava/lang/String;)Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p0, p1, v2}, Lkwyopc/kouubfr/yp9;->getComponentEnabledSetting(ILandroid/content/ComponentName;)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;->enableSetting(I)Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lgithub/tornaco/android/thanos/core/pm/ComponentInfo$ComponentInfoBuilder;->build()Lgithub/tornaco/android/thanos/core/pm/ComponentInfo;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final getActivitiesInBatch(ILjava/lang/String;II)Ljava/util/List;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lkwyopc/kouubfr/yp9;->getActivities(ILjava/lang/String;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-static {p1, p3}, Lutil/ListBatchUtils;->toArrayBatch(Ljava/util/List;I)Lutil/ListBatchUtils$Batch;
+
+    move-result-object p1
+
+    const-string p2, "toArrayBatch(...)"
+
+    invoke-static {p1, p2}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lutil/ListBatchUtils$Batch;->getBatches()Ljava/util/List;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result p2
+
+    if-lt p4, p2, :cond_0
+
+    sget-object p1, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    return-object p1
+
+    :cond_0
+    invoke-virtual {p1}, Lutil/ListBatchUtils$Batch;->getBatches()Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-interface {p1, p4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string p2, "get(...)"
+
+    invoke-static {p1, p2}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Ljava/util/List;
+
+    return-object p1
+.end method
+
+.method public final getAllPkgs([B)Ljava/util/List;
+    .locals 18
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x1
+
+    const-string v2, "|"
+
+    const-string v3, "data"
+
+    move-object/from16 v4, p1
+
+    invoke-static {v4, v3}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object/from16 v3, p0
+
+    iget-object v4, v3, Lkwyopc/kouubfr/yp9;->OooOO0o:Ljava/util/HashMap;
+
+    invoke-virtual {v4}, Ljava/util/HashMap;->values()Ljava/util/Collection;
+
+    move-result-object v5
+
+    const-string v6, "<get-values>(...)"
+
+    invoke-static {v5, v6}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v5, Ljava/lang/Iterable;
+
+    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v5
+
+    :cond_0
+    :goto_0
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    const/4 v7, 0x0
+
+    if-eqz v6, :cond_1
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lkwyopc/kouubfr/iw6;
+
+    iget-object v8, v6, Lkwyopc/kouubfr/iw6;->OooOO0O:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v8, v7, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    iget-object v8, v6, Lkwyopc/kouubfr/iw6;->OooO0O0:Landroid/content/Context;
+
+    iget v9, v6, Lkwyopc/kouubfr/iw6;->OooO0OO:I
+
+    invoke-static {v8, v9, v7}, Lgithub/tornaco/android/thanos/core/util/PkgUtils;->getInstalledApplicationsAsUser(Landroid/content/Context;II)Ljava/util/List;
+
+    move-result-object v7
+
+    new-instance v8, Lkwyopc/kouubfr/oOO0OO0O;
+
+    const/4 v9, 0x7
+
+    invoke-direct {v8, v6, v9}, Lkwyopc/kouubfr/oOO0OO0O;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {v7, v8}, Lutil/CollectionUtils;->consumeRemaining(Ljava/util/Collection;Lutil/Consumer;)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v3}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v5
+
+    :try_start_0
+    invoke-static {v5}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v5
+
+    array-length v6, v5
+
+    move v9, v1
+
+    move v8, v7
+
+    move v10, v8
+
+    :goto_1
+    if-ge v8, v6, :cond_4
+
+    aget-object v11, v5, v8
+
+    add-int/lit8 v12, v10, 0x1
+
+    const-string v13, "SHA1"
+
+    invoke-static {v13}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v13
+
+    invoke-virtual {v11}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v11
+
+    invoke-virtual {v13, v11}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v13}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v11
+
+    new-array v13, v0, [C
+
+    fill-array-data v13, :array_0
+
+    array-length v14, v11
+
+    mul-int/lit8 v14, v14, 0x2
+
+    new-array v14, v14, [C
+
+    array-length v15, v11
+
+    :goto_2
+    if-ge v7, v15, :cond_2
+
+    aget-byte v0, v11, v7
+
+    move/from16 v16, v1
+
+    and-int/lit16 v1, v0, 0xff
+
+    mul-int/lit8 v17, v7, 0x2
+
+    ushr-int/lit8 v1, v1, 0x4
+
+    aget-char v1, v13, v1
+
+    aput-char v1, v14, v17
+
+    add-int/lit8 v17, v17, 0x1
+
+    and-int/lit8 v0, v0, 0xf
+
+    aget-char v0, v13, v0
+
+    aput-char v0, v14, v17
+
+    add-int/lit8 v7, v7, 0x1
+
+    move/from16 v1, v16
+
+    const/16 v0, 0x10
+
+    goto :goto_2
+
+    :cond_2
+    move/from16 v16, v1
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v14}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [B
+
+    fill-array-data v1, :array_1
+
+    new-instance v7, Ljava/lang/String;
+
+    sget-object v11, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v7, v1, v11}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v7}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    new-instance v7, Ljava/math/BigInteger;
+
+    invoke-virtual {v0, v11}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v0
+
+    const-string v11, "getBytes(...)"
+
+    invoke-static {v0, v11}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v0
+
+    move/from16 v1, v16
+
+    invoke-direct {v7, v1, v0}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v0, 0x10
+
+    invoke-virtual {v7, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "toString(...)"
+
+    invoke-static {v1, v7}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v7, 0x20
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v7, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_3
+
+    const-string v7, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v7, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_3
+
+    const-string v7, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v7, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v1, :cond_3
+
+    const/4 v9, 0x0
+
+    :cond_3
+    const/16 v16, 0x1
+
+    add-int/lit8 v8, v8, 0x1
+
+    move v10, v12
+
+    move/from16 v1, v16
+
+    const/4 v7, 0x0
+
+    goto/16 :goto_1
+
+    :cond_4
+    move v7, v9
+
+    goto :goto_3
+
+    :catchall_0
+    const/4 v7, 0x0
+
+    :goto_3
+    if-eqz v7, :cond_8
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v4}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_4
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/Map$Entry;
+
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lkwyopc/kouubfr/iw6;
+
+    iget-object v2, v2, Lkwyopc/kouubfr/iw6;->OooO0oo:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Iterable;
+
+    invoke-static {v2, v0}, Lkwyopc/kouubfr/j21;->OoooOo0(Ljava/lang/Iterable;Ljava/util/Collection;)V
+
+    goto :goto_4
+
+    :cond_5
+    new-instance v1, Ljava/util/ArrayList;
+
+    const/16 v2, 0xa
+
+    invoke-static {v0, v2}, Lkwyopc/kouubfr/f21;->o000oOoO(Ljava/lang/Iterable;I)I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_5
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+
+    invoke-virtual {v2}, Lgithub/tornaco/android/thanos/core/pm/AppInfo;->getPkgName()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2}, Lgithub/tornaco/android/thanos/core/pm/AppInfo;->getUserId()I
+
+    move-result v2
+
+    invoke-static {v4, v2}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->newPkg(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_5
+
+    :cond_6
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_7
+    :goto_6
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_9
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v4, v2
+
+    check-cast v4, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    sget-object v5, Lkwyopc/kouubfr/ema;->OooO00o:Ljava/util/LinkedHashSet;
+
+    invoke-virtual {v4}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "getPkgName(...)"
+
+    invoke-static {v4, v5}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v4}, Lkwyopc/kouubfr/ema;->OooO00o(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_7
+
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_6
+
+    :cond_8
+    const/4 v0, 0x0
+
+    :cond_9
+    if-nez v0, :cond_a
+
+    sget-object v0, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    :cond_a
+    return-object v0
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final getAppIcon(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    .locals 2
+
+    new-instance v0, Lkwyopc/kouubfr/hv6;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, p0, p1, p2, v1}, Lkwyopc/kouubfr/hv6;-><init>(Landroid/os/IInterface;Ljava/lang/Object;II)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/lh8;->OooOoO(Lkwyopc/kouubfr/me3;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/graphics/Bitmap;
+
+    return-object p1
+.end method
+
+.method public final getAppInfoForUid(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+    .locals 1
+
+    const-string v0, "pkgName"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p2}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, p2}, Lkwyopc/kouubfr/yp9;->getAppInfoForUser(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final getAppInfoForUser(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+    .locals 4
+
+    const-string v0, "pkgName"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :try_start_0
+    invoke-virtual {p0, p2}, Lkwyopc/kouubfr/yp9;->OooOO0o(I)Lkwyopc/kouubfr/iw6;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    goto :goto_5
+
+    :cond_0
+    iget-object v2, v0, Lkwyopc/kouubfr/iw6;->OooO0oo:Ljava/util/concurrent/ConcurrentHashMap;
+
+    :try_start_1
+    invoke-virtual {v2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v0, p1}, Lkwyopc/kouubfr/iw6;->OooO00o(Ljava/lang/String;)V
+
+    :goto_0
+    invoke-virtual {v2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+
+    if-eqz v0, :cond_5
+
+    invoke-static {p1, p2}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->newPkg(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lkwyopc/kouubfr/x34;->OooOo0o(Ljava/lang/Object;)V
+
+    invoke-static {p1}, Lkwyopc/kouubfr/yx6;->OooO0Oo(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_3
+
+    sget-object p2, Lkwyopc/kouubfr/ay6;->OooOOO0:Lkwyopc/kouubfr/ay6;
+
+    invoke-virtual {p2, p1}, Lkwyopc/kouubfr/ay6;->OooO0OO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    const/4 p1, 0x0
+
+    goto :goto_2
+
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
+
+    :goto_2
+    if-eqz p1, :cond_4
+
+    const/16 p1, 0xc8
+
+    invoke-virtual {v0, p1}, Lgithub/tornaco/android/thanos/core/pm/AppInfo;->setState(I)V
+
+    goto :goto_3
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_4
+
+    :cond_4
+    const/16 p1, 0x64
+
+    invoke-virtual {v0, p1}, Lgithub/tornaco/android/thanos/core/pm/AppInfo;->setState(I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_3
+    move-object v1, v0
+
+    goto :goto_5
+
+    :goto_4
+    invoke-static {p1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object v1
+
+    :cond_5
+    :goto_5
+    invoke-static {v1}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    if-nez p1, :cond_6
+
+    check-cast v1, Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+
+    return-object v1
+
+    :cond_6
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    invoke-static {p1}, Lkwyopc/kouubfr/bp7;->Oooo0o(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method
+
+.method public final getComponentEnabledSetting(ILandroid/content/ComponentName;)I
+    .locals 0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final getMemoryInfo([B)Landroid/app/ActivityManager$MemoryInfo;
+    .locals 5
+
+    const-string v0, "data"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v0
+
+    :try_start_0
+    invoke-static {p1, p0}, Lkwyopc/kouubfr/yp9;->OooOO0O([BLkwyopc/kouubfr/yp9;)Landroid/app/ActivityManager$MemoryInfo;
+
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-static {p1}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_1
+
+    :cond_0
+    new-instance p1, Lgithub/tornaco/android/thanos/core/Logger;
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    invoke-direct {p1, v4, v3, v4}, Lgithub/tornaco/android/thanos/core/Logger;-><init>(Ljava/lang/String;ILkwyopc/kouubfr/o12;)V
+
+    const-string v3, "runClearCallingIdentity"
+
+    invoke-virtual {p1, v2, v3}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    move-object p1, v4
+
+    :goto_1
+    check-cast p1, Landroid/app/ActivityManager$MemoryInfo;
+
+    if-nez p1, :cond_1
+
+    new-instance p1, Landroid/app/ActivityManager$MemoryInfo;
+
+    invoke-direct {p1}, Landroid/app/ActivityManager$MemoryInfo;-><init>()V
+
+    :cond_1
+    return-object p1
+.end method
+
+.method public final getPid(Lgithub/tornaco/android/thanos/core/os/ProcessName;)I
+    .locals 6
+
+    const-string v0, "processName"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/yp9;->OooOOO()Ljava/util/List;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v3, v2
+
+    check-cast v3, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;
+
+    invoke-virtual {p1}, Lgithub/tornaco/android/thanos/core/os/ProcessName;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    iget-object v5, v3, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->processName:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {p1}, Lgithub/tornaco/android/thanos/core/os/ProcessName;->getUserId()I
+
+    move-result v4
+
+    iget v3, v3, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->uid:I
+
+    invoke-static {v3}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result v3
+
+    if-ne v4, v3, :cond_0
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_1
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/16 v0, 0xa
+
+    invoke-static {v1, v0}, Lkwyopc/kouubfr/f21;->o000oOoO(Ljava/lang/Iterable;I)I
+
+    move-result v0
+
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;
+
+    iget v1, v1, Lgithub/tornaco/android/thanos/core/app/RunningAppProcessInfoCompat;->pid:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {p1}, Lkwyopc/kouubfr/d21;->oo000o(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    return p1
+
+    :cond_3
+    const/4 p1, -0x1
+
+    return p1
+.end method
+
+.method public final getProcessPss([I)[J
+    .locals 18
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x1
+
+    const-string v2, "|"
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v3
+
+    :try_start_0
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v6
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-static {v6}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v6
+
+    array-length v7, v6
+
+    move v9, v1
+
+    const/4 v8, 0x0
+
+    const/4 v10, 0x0
+
+    :goto_0
+    if-ge v8, v7, :cond_2
+
+    aget-object v11, v6, v8
+
+    add-int/lit8 v12, v10, 0x1
+
+    const-string v13, "SHA1"
+
+    invoke-static {v13}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v13
+
+    invoke-virtual {v11}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v11
+
+    invoke-virtual {v13, v11}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v13}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v11
+
+    new-array v13, v0, [C
+
+    fill-array-data v13, :array_0
+
+    array-length v14, v11
+
+    mul-int/lit8 v14, v14, 0x2
+
+    new-array v14, v14, [C
+
+    array-length v15, v11
+
+    const/4 v5, 0x0
+
+    :goto_1
+    if-ge v5, v15, :cond_0
+
+    aget-byte v0, v11, v5
+
+    move/from16 v16, v1
+
+    and-int/lit16 v1, v0, 0xff
+
+    mul-int/lit8 v17, v5, 0x2
+
+    ushr-int/lit8 v1, v1, 0x4
+
+    aget-char v1, v13, v1
+
+    aput-char v1, v14, v17
+
+    add-int/lit8 v17, v17, 0x1
+
+    and-int/lit8 v0, v0, 0xf
+
+    aget-char v0, v13, v0
+
+    aput-char v0, v14, v17
+
+    add-int/lit8 v5, v5, 0x1
+
+    move/from16 v1, v16
+
+    const/16 v0, 0x10
+
+    goto :goto_1
+
+    :cond_0
+    move/from16 v16, v1
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v14}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [B
+
+    fill-array-data v1, :array_1
+
+    new-instance v5, Ljava/lang/String;
+
+    sget-object v11, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v5, v1, v11}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v5}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    new-instance v5, Ljava/math/BigInteger;
+
+    invoke-virtual {v0, v11}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v0
+
+    const-string v11, "getBytes(...)"
+
+    invoke-static {v0, v11}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v0
+
+    move/from16 v1, v16
+
+    invoke-direct {v5, v1, v0}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v0, 0x10
+
+    invoke-virtual {v5, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v5, "toString(...)"
+
+    invoke-static {v1, v5}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v5, 0x20
+
+    invoke-static {v5, v1}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v5, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v5, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v5
+
+    invoke-interface {v5, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-static {v5, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_1
+
+    const-string v5, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v5, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v5
+
+    invoke-interface {v5, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-static {v5, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_1
+
+    const-string v5, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v5, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v5
+
+    invoke-interface {v5, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-static {v5, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-nez v1, :cond_1
+
+    const/4 v9, 0x0
+
+    :cond_1
+    const/16 v16, 0x1
+
+    add-int/lit8 v8, v8, 0x1
+
+    move v10, v12
+
+    move/from16 v1, v16
+
+    goto/16 :goto_0
+
+    :catchall_0
+    const/4 v9, 0x0
+
+    :cond_2
+    if-eqz v9, :cond_3
+
+    :try_start_2
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0O0()Landroid/app/IActivityManager;
+
+    move-result-object v0
+
+    move-object/from16 v1, p1
+
+    invoke-interface {v0, v1}, Landroid/app/IActivityManager;->getProcessPss([I)[J
+
+    move-result-object v0
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception v0
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v0, 0x0
+
+    :goto_2
+    if-nez v0, :cond_4
+
+    const/4 v1, 0x0
+
+    new-array v0, v1, [J
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    :cond_4
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return-object v0
+
+    :goto_3
+    :try_start_3
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v1
+
+    invoke-static {v0}, Lkwyopc/kouubfr/bp7;->Oooo0o(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "getProcessPss: "
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Object;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    const/4 v1, 0x0
+
+    new-array v0, v1, [J
+
+    return-object v0
+
+    :catchall_2
+    move-exception v0
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw v0
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final getRunningAppPackages([B)Ljava/util/List;
+    .locals 1
+
+    const-string v0, "data"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p1, Lkwyopc/kouubfr/wm8;
+
+    const/16 v0, 0x17
+
+    invoke-direct {p1, v0}, Lkwyopc/kouubfr/wm8;-><init>(I)V
+
+    invoke-virtual {p0, p1}, Lkwyopc/kouubfr/yp9;->OooOOO0(Lkwyopc/kouubfr/pe3;)Ljava/util/ArrayList;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final getRunningAppProcess([B)[Lgithub/tornaco/android/thanos/core/process/ProcessRecord;
+    .locals 1
+
+    const-string v0, "data"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    new-array p1, p1, [Lgithub/tornaco/android/thanos/core/process/ProcessRecord;
+
+    return-object p1
+.end method
+
+.method public final getRunningAppProcessLegacy([ILjava/lang/String;Ljava/lang/String;Lgithub/tornaco/android/thanos/core/ICallback;)Ljava/util/List;
+    .locals 2
+
+    const-string p1, "deviceId"
+
+    invoke-static {p3, p1}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "callback"
+
+    invoke-static {p4, p1}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p2, :cond_0
+
+    invoke-static {p0}, Lkwyopc/kouubfr/lh8;->OooOOO(Lkwyopc/kouubfr/sd9;)Lkwyopc/kouubfr/yr1;
+
+    move-result-object p1
+
+    new-instance v0, Lkwyopc/kouubfr/np9;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p2, p3, p4, v1}, Lkwyopc/kouubfr/np9;-><init>(Ljava/lang/String;Ljava/lang/String;Lgithub/tornaco/android/thanos/core/ICallback;Lkwyopc/kouubfr/zo1;)V
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/lh8;->OooOOoo(Lkwyopc/kouubfr/yr1;Lkwyopc/kouubfr/af3;)Lkwyopc/kouubfr/q09;
+
+    :cond_0
+    invoke-virtual {p0}, Lkwyopc/kouubfr/yp9;->OooOOO()Ljava/util/List;
+
+    move-result-object p1
+
+    if-nez p2, :cond_1
+
+    const/4 p2, 0x6
+
+    invoke-static {p1, p2}, Lkwyopc/kouubfr/d21;->o0000oo(Ljava/lang/Iterable;I)Ljava/util/List;
+
+    move-result-object p1
+
+    :cond_1
+    return-object p1
+.end method
+
+.method public final getRunningAppsCount([B)I
+    .locals 17
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x1
+
+    const-string v2, "|"
+
+    const-string v3, "data"
+
+    move-object/from16 v4, p1
+
+    invoke-static {v4, v3}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v3
+
+    :try_start_0
+    invoke-static {v3}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v3
+
+    array-length v5, v3
+
+    move v7, v1
+
+    const/4 v6, 0x0
+
+    const/4 v8, 0x0
+
+    :goto_0
+    if-ge v6, v5, :cond_2
+
+    aget-object v9, v3, v6
+
+    add-int/lit8 v10, v8, 0x1
+
+    const-string v11, "SHA1"
+
+    invoke-static {v11}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v11
+
+    invoke-virtual {v9}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v9
+
+    invoke-virtual {v11, v9}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v11}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v9
+
+    new-array v11, v0, [C
+
+    fill-array-data v11, :array_0
+
+    array-length v12, v9
+
+    mul-int/lit8 v12, v12, 0x2
+
+    new-array v12, v12, [C
+
+    array-length v13, v9
+
+    const/4 v14, 0x0
+
+    :goto_1
+    if-ge v14, v13, :cond_0
+
+    aget-byte v15, v9, v14
+
+    and-int/lit16 v4, v15, 0xff
+
+    mul-int/lit8 v16, v14, 0x2
+
+    ushr-int/lit8 v4, v4, 0x4
+
+    aget-char v4, v11, v4
+
+    aput-char v4, v12, v16
+
+    add-int/lit8 v16, v16, 0x1
+
+    and-int/lit8 v4, v15, 0xf
+
+    aget-char v4, v11, v4
+
+    aput-char v4, v12, v16
+
+    add-int/2addr v14, v1
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v4, Ljava/lang/String;
+
+    invoke-direct {v4, v12}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v9, 0x3
+
+    new-array v9, v9, [B
+
+    fill-array-data v9, :array_1
+
+    new-instance v11, Ljava/lang/String;
+
+    sget-object v12, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v11, v9, v12}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v11}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v9
+
+    new-instance v11, Ljava/math/BigInteger;
+
+    invoke-virtual {v4, v12}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v4
+
+    const-string v12, "getBytes(...)"
+
+    invoke-static {v4, v12}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v9, v4}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v4
+
+    invoke-direct {v11, v1, v4}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    invoke-virtual {v11, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v9, "toString(...)"
+
+    invoke-static {v4, v9}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v9, 0x20
+
+    invoke-static {v9, v4}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v9, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v9, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v9
+
+    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    invoke-static {v9, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_1
+
+    const-string v9, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v9, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v9
+
+    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    invoke-static {v9, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_1
+
+    const-string v9, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v9, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v9
+
+    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v4, :cond_1
+
+    const/4 v7, 0x0
+
+    :cond_1
+    add-int/2addr v6, v1
+
+    move v8, v10
+
+    goto/16 :goto_0
+
+    :catchall_0
+    const/4 v7, 0x0
+
+    :cond_2
+    if-eqz v7, :cond_3
+
+    new-instance v0, Lkwyopc/kouubfr/wm8;
+
+    const/16 v1, 0x18
+
+    invoke-direct {v0, v1}, Lkwyopc/kouubfr/wm8;-><init>(I)V
+
+    move-object/from16 v1, p0
+
+    invoke-virtual {v1, v0}, Lkwyopc/kouubfr/yp9;->OooOOO0(Lkwyopc/kouubfr/pe3;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    goto :goto_2
+
+    :cond_3
+    move-object/from16 v1, p0
+
+    const/4 v0, 0x0
+
+    :goto_2
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    goto :goto_3
+
+    :cond_4
+    const/4 v4, 0x0
+
+    :goto_3
+    return v4
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final getRunningServiceLegacy(I)Ljava/util/List;
+    .locals 19
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x1
+
+    sget-object v2, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    const-string v3, "|"
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v4
+
+    :try_start_0
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v6
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-static {v6}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v6
+
+    array-length v8, v6
+
+    move v10, v1
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x0
+
+    :goto_0
+    if-ge v9, v8, :cond_2
+
+    aget-object v12, v6, v9
+
+    add-int/lit8 v13, v11, 0x1
+
+    const-string v14, "SHA1"
+
+    invoke-static {v14}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v14
+
+    invoke-virtual {v12}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v12
+
+    invoke-virtual {v14, v12}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v14}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v12
+
+    new-array v14, v0, [C
+
+    fill-array-data v14, :array_0
+
+    array-length v15, v12
+
+    mul-int/lit8 v15, v15, 0x2
+
+    new-array v15, v15, [C
+
+    array-length v7, v12
+
+    const/4 v0, 0x0
+
+    :goto_1
+    if-ge v0, v7, :cond_0
+
+    move/from16 v16, v1
+
+    aget-byte v1, v12, v0
+
+    move/from16 v17, v0
+
+    and-int/lit16 v0, v1, 0xff
+
+    mul-int/lit8 v18, v17, 0x2
+
+    ushr-int/lit8 v0, v0, 0x4
+
+    aget-char v0, v14, v0
+
+    aput-char v0, v15, v18
+
+    add-int/lit8 v18, v18, 0x1
+
+    and-int/lit8 v0, v1, 0xf
+
+    aget-char v0, v14, v0
+
+    aput-char v0, v15, v18
+
+    add-int/lit8 v0, v17, 0x1
+
+    move/from16 v1, v16
+
+    goto :goto_1
+
+    :cond_0
+    move/from16 v16, v1
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v15}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [B
+
+    fill-array-data v1, :array_1
+
+    new-instance v7, Ljava/lang/String;
+
+    sget-object v12, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v7, v1, v12}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v7}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    new-instance v7, Ljava/math/BigInteger;
+
+    invoke-virtual {v0, v12}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v0
+
+    const-string v12, "getBytes(...)"
+
+    invoke-static {v0, v12}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v0
+
+    move/from16 v1, v16
+
+    invoke-direct {v7, v1, v0}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v0, 0x10
+
+    invoke-virtual {v7, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "toString(...)"
+
+    invoke-static {v1, v7}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v7, 0x20
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v7, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
+    const-string v7, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v7, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
+    const-string v7, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v7, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v1}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-nez v1, :cond_1
+
+    const/4 v10, 0x0
+
+    :cond_1
+    const/16 v16, 0x1
+
+    add-int/lit8 v9, v9, 0x1
+
+    move v11, v13
+
+    move/from16 v1, v16
+
+    goto/16 :goto_0
+
+    :catchall_0
+    const/4 v10, 0x0
+
+    :cond_2
+    if-eqz v10, :cond_3
+
+    :try_start_2
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0O0()Landroid/app/IActivityManager;
+
+    move-result-object v0
+
+    move/from16 v1, p1
+
+    const/4 v3, 0x0
+
+    invoke-interface {v0, v1, v3}, Landroid/app/IActivityManager;->getServices(II)Ljava/util/List;
+
+    move-result-object v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception v0
+
+    goto :goto_4
+
+    :cond_3
+    const/4 v0, 0x0
+
+    :goto_2
+    if-nez v0, :cond_4
+
+    goto :goto_3
+
+    :cond_4
+    move-object v2, v0
+
+    :goto_3
+    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return-object v2
+
+    :goto_4
+    :try_start_3
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v1
+
+    invoke-static {v0}, Lkwyopc/kouubfr/bp7;->Oooo0o(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "Fail getRunningServices: "
+
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Object;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return-object v2
+
+    :catchall_2
+    move-exception v0
+
+    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw v0
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final getSFUnSelectedPkgs()Ljava/util/List;
+    .locals 18
+
+    move-object/from16 v0, p0
+
+    const/16 v1, 0x10
+
+    const/4 v2, 0x1
+
+    const-string v3, "|"
+
+    iget-object v4, v0, Lkwyopc/kouubfr/yp9;->OooOO0o:Ljava/util/HashMap;
+
+    invoke-virtual {v4}, Ljava/util/HashMap;->values()Ljava/util/Collection;
+
+    move-result-object v5
+
+    const-string v6, "<get-values>(...)"
+
+    invoke-static {v5, v6}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v5, Ljava/lang/Iterable;
+
+    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v5
+
+    :cond_0
+    :goto_0
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    const/4 v7, 0x0
+
+    if-eqz v6, :cond_1
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lkwyopc/kouubfr/iw6;
+
+    iget-object v8, v6, Lkwyopc/kouubfr/iw6;->OooOO0O:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v8, v7, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    iget-object v8, v6, Lkwyopc/kouubfr/iw6;->OooO0O0:Landroid/content/Context;
+
+    iget v9, v6, Lkwyopc/kouubfr/iw6;->OooO0OO:I
+
+    invoke-static {v8, v9, v7}, Lgithub/tornaco/android/thanos/core/util/PkgUtils;->getInstalledApplicationsAsUser(Landroid/content/Context;II)Ljava/util/List;
+
+    move-result-object v7
+
+    new-instance v8, Lkwyopc/kouubfr/oOO0OO0O;
+
+    const/4 v9, 0x7
+
+    invoke-direct {v8, v6, v9}, Lkwyopc/kouubfr/oOO0OO0O;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {v7, v8}, Lutil/CollectionUtils;->consumeRemaining(Ljava/util/Collection;Lutil/Consumer;)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v5
+
+    :try_start_0
+    invoke-static {v5}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v5
+
+    array-length v6, v5
+
+    move v9, v2
+
+    move v8, v7
+
+    move v10, v8
+
+    :goto_1
+    if-ge v8, v6, :cond_4
+
+    aget-object v11, v5, v8
+
+    add-int/lit8 v12, v10, 0x1
+
+    const-string v13, "SHA1"
+
+    invoke-static {v13}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v13
+
+    invoke-virtual {v11}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v11
+
+    invoke-virtual {v13, v11}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v13}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v11
+
+    new-array v13, v1, [C
+
+    fill-array-data v13, :array_0
+
+    array-length v14, v11
+
+    mul-int/lit8 v14, v14, 0x2
+
+    new-array v14, v14, [C
+
+    array-length v15, v11
+
+    :goto_2
+    if-ge v7, v15, :cond_2
+
+    aget-byte v1, v11, v7
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move/from16 v16, v2
+
+    and-int/lit16 v2, v1, 0xff
+
+    mul-int/lit8 v17, v7, 0x2
+
+    ushr-int/lit8 v2, v2, 0x4
+
+    :try_start_1
+    aget-char v2, v13, v2
+
+    aput-char v2, v14, v17
+
+    add-int/lit8 v17, v17, 0x1
+
+    and-int/lit8 v1, v1, 0xf
+
+    aget-char v1, v13, v1
+
+    aput-char v1, v14, v17
+
+    add-int/lit8 v7, v7, 0x1
+
+    move/from16 v2, v16
+
+    const/16 v1, 0x10
+
+    goto :goto_2
+
+    :catchall_0
+    move/from16 v16, v2
+
+    goto/16 :goto_4
+
+    :cond_2
+    move/from16 v16, v2
+
+    new-instance v1, Ljava/lang/String;
+
+    invoke-direct {v1, v14}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v2, 0x3
+
+    new-array v2, v2, [B
+
+    fill-array-data v2, :array_1
+
+    new-instance v7, Ljava/lang/String;
+
+    sget-object v11, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v7, v2, v11}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v7}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v2
+
+    new-instance v7, Ljava/math/BigInteger;
+
+    invoke-virtual {v1, v11}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v1
+
+    const-string v11, "getBytes(...)"
+
+    invoke-static {v1, v11}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v2, v1}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    move/from16 v2, v16
+
+    :try_start_2
+    invoke-direct {v7, v2, v1}, Ljava/math/BigInteger;-><init>(I[B)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    const/16 v1, 0x10
+
+    :try_start_3
+    invoke-virtual {v7, v1}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v7, "toString(...)"
+
+    invoke-static {v2, v7}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v7, 0x20
+
+    invoke-static {v7, v2}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v7, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v7, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v2}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_3
+
+    const-string v7, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v7, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v2}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_3
+
+    const-string v7, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v7, v11}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v7
+
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-static {v7, v2}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    if-nez v2, :cond_3
+
+    const/4 v9, 0x0
+
+    :cond_3
+    const/16 v16, 0x1
+
+    goto :goto_3
+
+    :catchall_1
+    const/16 v16, 0x1
+
+    goto :goto_4
+
+    :goto_3
+    add-int/lit8 v8, v8, 0x1
+
+    move v10, v12
+
+    move/from16 v2, v16
+
+    const/4 v7, 0x0
+
+    goto/16 :goto_1
+
+    :cond_4
+    move/from16 v16, v2
+
+    goto :goto_5
+
+    :catchall_2
+    :goto_4
+    const/4 v9, 0x0
+
+    :goto_5
+    if-eqz v9, :cond_9
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v4}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_6
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_5
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lkwyopc/kouubfr/iw6;
+
+    iget-object v3, v3, Lkwyopc/kouubfr/iw6;->OooO0oo:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Iterable;
+
+    invoke-static {v3, v1}, Lkwyopc/kouubfr/j21;->OoooOo0(Ljava/lang/Iterable;Ljava/util/Collection;)V
+
+    goto :goto_6
+
+    :cond_5
+    new-instance v2, Ljava/util/ArrayList;
+
+    const/16 v3, 0xa
+
+    invoke-static {v1, v3}, Lkwyopc/kouubfr/f21;->o000oOoO(Ljava/lang/Iterable;I)I
+
+    move-result v3
+
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_7
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+
+    invoke-virtual {v3}, Lgithub/tornaco/android/thanos/core/pm/AppInfo;->getPkgName()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3}, Lgithub/tornaco/android/thanos/core/pm/AppInfo;->getUserId()I
+
+    move-result v3
+
+    invoke-static {v4, v3}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->newPkg(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_7
+
+    :cond_6
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_7
+    :goto_8
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_a
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    move-object v4, v3
+
+    check-cast v4, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    iget-object v5, v0, Lkwyopc/kouubfr/yp9;->OooOO0:Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+    invoke-virtual {v5}, Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;->getFreezePkgList()Ljava/util/List;
+
+    move-result-object v5
+
+    invoke-static {}, Ltornaco/apps/thanox/core/proto/common/AppPkg;->newBuilder()Ltornaco/apps/thanox/core/proto/common/AppPkg$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v4}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Ltornaco/apps/thanox/core/proto/common/AppPkg$Builder;->setPkgName(Ljava/lang/String;)Ltornaco/apps/thanox/core/proto/common/AppPkg$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v4}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getUserId()I
+
+    move-result v7
+
+    invoke-virtual {v6, v7}, Ltornaco/apps/thanox/core/proto/common/AppPkg$Builder;->setUserId(I)Ltornaco/apps/thanox/core/proto/common/AppPkg$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ltornaco/apps/thanox/core/proto/common/AppPkg$Builder;->build()Ltornaco/apps/thanox/core/proto/common/AppPkg;
+
+    move-result-object v6
+
+    invoke-interface {v5, v6}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_8
+
+    sget-object v5, Lkwyopc/kouubfr/ema;->OooO00o:Ljava/util/LinkedHashSet;
+
+    invoke-virtual {v4}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "getPkgName(...)"
+
+    invoke-static {v4, v5}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v4}, Lkwyopc/kouubfr/ema;->OooO00o(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_8
+
+    move/from16 v4, v16
+
+    goto :goto_9
+
+    :cond_8
+    const/4 v4, 0x0
+
+    :goto_9
+    if-eqz v4, :cond_7
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_8
+
+    :cond_9
+    const/4 v1, 0x0
+
+    :cond_a
+    if-nez v1, :cond_b
+
+    sget-object v1, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    :cond_b
+    return-object v1
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final getSwapInfo([B)Lgithub/tornaco/android/thanos/core/os/SwapInfo;
+    .locals 2
+
+    const-string v0, "data"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p1, Lkwyopc/kouubfr/jp9;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p1, p0, v0}, Lkwyopc/kouubfr/jp9;-><init>(Lkwyopc/kouubfr/yp9;I)V
+
+    invoke-static {p1}, Lkwyopc/kouubfr/lh8;->OooOoO(Lkwyopc/kouubfr/me3;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lgithub/tornaco/android/thanos/core/os/SwapInfo;
+
+    if-nez p1, :cond_0
+
+    new-instance p1, Lgithub/tornaco/android/thanos/core/os/SwapInfo;
+
+    const-wide/16 v0, 0x0
+
+    invoke-direct {p1, v0, v1, v0, v1}, Lgithub/tornaco/android/thanos/core/os/SwapInfo;-><init>(JJ)V
+
+    :cond_0
+    return-object p1
+.end method
+
+.method public final getTotalCpuPercent(Z)F
+    .locals 2
+
+    new-instance v0, Lkwyopc/kouubfr/nl5;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1, p0, p1}, Lkwyopc/kouubfr/nl5;-><init>(ILjava/lang/Object;Z)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/lh8;->OooOoO(Lkwyopc/kouubfr/me3;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v0
+
+    double-to-float p1, v0
+
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+
+    move-result p1
+
+    const/high16 v0, 0x42c80000    # 100.0f
+
+    invoke-static {p1, v0}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final getUidTrafficStats(I)Lgithub/tornaco/android/thanos/core/net/TrafficStats;
+    .locals 9
+
+    const/16 v0, 0x7d0
+
+    const-wide/16 v1, 0x0
+
+    if-ne p1, v0, :cond_0
+
+    new-instance p1, Lgithub/tornaco/android/thanos/core/net/TrafficStats;
+
+    invoke-direct {p1, v1, v2, v1, v2}, Lgithub/tornaco/android/thanos/core/net/TrafficStats;-><init>(JJ)V
+
+    return-object p1
+
+    :cond_0
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v3
+
+    :try_start_0
+    invoke-static {p1}, Landroid/net/TrafficStats;->getUidRxBytes(I)J
+
+    move-result-wide v5
+
+    invoke-static {p1}, Landroid/net/TrafficStats;->getUidTxBytes(I)J
+
+    move-result-wide v7
+
+    new-instance p1, Lgithub/tornaco/android/thanos/core/net/TrafficStats;
+
+    invoke-direct {p1, v5, v6, v7, v8}, Lgithub/tornaco/android/thanos/core/net/TrafficStats;-><init>(JJ)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-static {p1}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_1
+
+    :cond_1
+    new-instance p1, Lgithub/tornaco/android/thanos/core/Logger;
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    invoke-direct {p1, v6, v5, v6}, Lgithub/tornaco/android/thanos/core/Logger;-><init>(Ljava/lang/String;ILkwyopc/kouubfr/o12;)V
+
+    const-string v5, "runClearCallingIdentity"
+
+    invoke-virtual {p1, v0, v5}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    move-object p1, v6
+
+    :goto_1
+    check-cast p1, Lgithub/tornaco/android/thanos/core/net/TrafficStats;
+
+    if-nez p1, :cond_2
+
+    new-instance p1, Lgithub/tornaco/android/thanos/core/net/TrafficStats;
+
+    invoke-direct {p1, v1, v2, v1, v2}, Lgithub/tornaco/android/thanos/core/net/TrafficStats;-><init>(JJ)V
+
+    :cond_2
+    return-object p1
+.end method
+
+.method public final getVersionName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "8.7"
+
+    return-object v0
+.end method
+
+.method public final handleBroadcast(Landroid/content/Intent;)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "android.intent.action.SCREEN_OFF"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/yp9;->OooOo00()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final killProcessByName(Lgithub/tornaco/android/thanos/core/os/ProcessName;)I
+    .locals 6
+
+    invoke-static {p1}, Lkwyopc/kouubfr/x34;->OooOo0o(Ljava/lang/Object;)V
+
+    invoke-virtual {p0, p1}, Lkwyopc/kouubfr/yp9;->getPid(Lgithub/tornaco/android/thanos/core/os/ProcessName;)I
+
+    move-result v0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "killProcessByName, about to kill process:"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", "
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Lgithub/tornaco/android/thanos/core/Logger;->w(Ljava/lang/Object;)V
+
+    if-lez v0, :cond_1
+
+    int-to-long v1, v0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object p1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "killProcess: "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v3}, Lgithub/tornaco/android/thanos/core/Logger;->w(Ljava/lang/Object;)V
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v3
+
+    :try_start_0
+    invoke-static {v1, v2}, Lkwyopc/kouubfr/yp9;->OooOOoo(J)V
+
+    sget-object p1, Lkwyopc/kouubfr/c9a;->OooO00o:Lkwyopc/kouubfr/c9a;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p1}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-static {p1}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    if-nez p1, :cond_0
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v1, Lgithub/tornaco/android/thanos/core/Logger;
+
+    const/4 v2, 0x0
+
+    const/4 v5, 0x1
+
+    invoke-direct {v1, v2, v5, v2}, Lgithub/tornaco/android/thanos/core/Logger;-><init>(Ljava/lang/String;ILkwyopc/kouubfr/o12;)V
+
+    const-string v2, "runClearCallingIdentity"
+
+    invoke-virtual {v1, p1, v2}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    :cond_1
+    :goto_1
+    return v0
+.end method
+
+.method public final launchFreezedAppForUser(Ljava/lang/String;I)V
+    .locals 17
+
+    move-object/from16 v1, p1
+
+    const/16 v0, 0x10
+
+    const/4 v2, 0x1
+
+    const-string v3, "|"
+
+    const-string v4, "pkgName"
+
+    invoke-static {v1, v4}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v4
+
+    :try_start_0
+    invoke-static {v4}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v4
+
+    array-length v6, v4
+
+    move v8, v2
+
+    const/4 v7, 0x0
+
+    const/4 v9, 0x0
+
+    :goto_0
+    if-ge v7, v6, :cond_2
+
+    aget-object v10, v4, v7
+
+    add-int/lit8 v11, v9, 0x1
+
+    const-string v12, "SHA1"
+
+    invoke-static {v12}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v12
+
+    invoke-virtual {v10}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v10
+
+    invoke-virtual {v12, v10}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v12}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v10
+
+    new-array v12, v0, [C
+
+    fill-array-data v12, :array_0
+
+    array-length v13, v10
+
+    mul-int/lit8 v13, v13, 0x2
+
+    new-array v13, v13, [C
+
+    array-length v14, v10
+
+    const/4 v15, 0x0
+
+    :goto_1
+    if-ge v15, v14, :cond_0
+
+    aget-byte v5, v10, v15
+
+    and-int/lit16 v0, v5, 0xff
+
+    mul-int/lit8 v16, v15, 0x2
+
+    ushr-int/lit8 v0, v0, 0x4
+
+    aget-char v0, v12, v0
+
+    aput-char v0, v13, v16
+
+    add-int/lit8 v16, v16, 0x1
+
+    and-int/lit8 v0, v5, 0xf
+
+    aget-char v0, v12, v0
+
+    aput-char v0, v13, v16
+
+    add-int/2addr v15, v2
+
+    const/16 v0, 0x10
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v13}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v5, 0x3
+
+    new-array v5, v5, [B
+
+    fill-array-data v5, :array_1
+
+    new-instance v10, Ljava/lang/String;
+
+    sget-object v12, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v10, v5, v12}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v10}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v5
+
+    new-instance v10, Ljava/math/BigInteger;
+
+    invoke-virtual {v0, v12}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v0
+
+    const-string v12, "getBytes(...)"
+
+    invoke-static {v0, v12}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v5, v0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v0
+
+    invoke-direct {v10, v2, v0}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v0, 0x10
+
+    invoke-virtual {v10, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v10, "toString(...)"
+
+    invoke-static {v5, v10}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v10, 0x20
+
+    invoke-static {v10, v5}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v10, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v10, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    invoke-static {v10, v5}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_1
+
+    const-string v10, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v10, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    invoke-static {v10, v5}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_1
+
+    const-string v10, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v10, v12}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v10
+
+    invoke-interface {v10, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    invoke-static {v9, v5}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v5, :cond_1
+
+    const/4 v8, 0x0
+
+    :cond_1
+    add-int/2addr v7, v2
+
+    move v9, v11
+
+    goto/16 :goto_0
+
+    :catchall_0
+    const/4 v8, 0x0
+
+    :cond_2
+    if-eqz v8, :cond_6
+
+    invoke-static/range {p1 .. p2}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->newPkg(Ljava/lang/String;I)Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    move-result-object v0
+
+    sget-object v2, Lkwyopc/kouubfr/yx6;->OooO00o:Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-static {v0}, Lkwyopc/kouubfr/x34;->OooOo0o(Ljava/lang/Object;)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/yx6;->OooO0O0(Lgithub/tornaco/android/thanos/core/pm/Pkg;)V
+
+    :try_start_1
+    sget-object v2, Lkwyopc/kouubfr/ay6;->OooOOO0:Lkwyopc/kouubfr/ay6;
+
+    invoke-virtual {v2, v0}, Lkwyopc/kouubfr/ay6;->OooO0OO(Lgithub/tornaco/android/thanos/core/pm/Pkg;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v2, 0x0
+
+    invoke-static {v0, v2}, Lkwyopc/kouubfr/ay6;->OooO0Oo(Lgithub/tornaco/android/thanos/core/pm/Pkg;Z)V
+
+    sget-object v0, Lkwyopc/kouubfr/c9a;->OooO00o:Lkwyopc/kouubfr/c9a;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-static {v0}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    const-string v2, "PmSuspendApplicationPackageEnabler enable error"
+
+    invoke-static {v2, v0}, Lkwyopc/kouubfr/bta;->Oooo0OO(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :cond_4
+    :goto_3
+    :try_start_2
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v6
+
+    invoke-static {}, Lkwyopc/kouubfr/ig;->OooO0O0()Landroid/app/IActivityManager;
+
+    move-result-object v2
+
+    const-string v4, "com.android.shell"
+
+    invoke-virtual {v6}, Landroid/content/Intent;->getType()Ljava/lang/String;
+
+    move-result-object v7
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    move/from16 v14, p2
+
+    invoke-interface/range {v2 .. v14}, Landroid/app/IActivityManager;->startActivityAsUserWithFeature(Landroid/app/IApplicationThread;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/os/IBinder;Ljava/lang/String;IILandroid/app/ProfilerInfo;Landroid/os/Bundle;I)I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    goto :goto_4
+
+    :catchall_2
+    move-exception v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object v0
+
+    :goto_4
+    invoke-static {v0}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    move-result-object v2
+
+    const-string v3, "launchFreezedAppForUser"
+
+    invoke-virtual {v2, v0, v3}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    :cond_5
+    move-object/from16 v2, p0
+
+    move/from16 v14, p2
+
+    invoke-virtual {v2, v14}, Lkwyopc/kouubfr/yp9;->OooOO0o(I)Lkwyopc/kouubfr/iw6;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_7
+
+    invoke-virtual {v0, v1}, Lkwyopc/kouubfr/iw6;->OooO00o(Ljava/lang/String;)V
+
+    goto :goto_5
+
+    :cond_6
+    move-object/from16 v2, p0
+
+    :cond_7
+    :goto_5
+    return-void
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final queryCpuUsageRatio([JZ)F
+    .locals 2
+
+    const-string v0, "pids"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lkwyopc/kouubfr/ip9;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p2, p0, p1, v1}, Lkwyopc/kouubfr/ip9;-><init>(ZLkwyopc/kouubfr/yp9;[JI)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/lh8;->OooOoO(Lkwyopc/kouubfr/me3;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final queryProcessCpuUsageStats([JZ)Ljava/util/List;
+    .locals 2
+
+    const-string v0, "pids"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lkwyopc/kouubfr/ip9;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p2, p0, p1, v1}, Lkwyopc/kouubfr/ip9;-><init>(ZLkwyopc/kouubfr/yp9;[JI)V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/lh8;->OooOoO(Lkwyopc/kouubfr/me3;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/List;
+
+    if-nez p1, :cond_0
+
+    sget-object p1, Lkwyopc/kouubfr/bn2;->OooOOO0:Lkwyopc/kouubfr/bn2;
+
+    :cond_0
+    return-object p1
+.end method
+
+.method public final registerPkgStateChangeListener(Lgithub/tornaco/android/thanos/core/IPkgChangeListener;)V
+    .locals 1
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOo00:Landroid/os/RemoteCallbackList;
+
+    invoke-virtual {v0, p1}, Landroid/os/RemoteCallbackList;->register(Landroid/os/IInterface;)Z
+
+    return-void
+.end method
+
+.method public final setComponentEnabledSetting(ILandroid/content/ComponentName;II)V
+    .locals 0
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2, p3, p4}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+
+    return-void
+.end method
+
+.method public final stopService(Landroid/content/Intent;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final syncBCSettings([BLjava/lang/String;Ljava/lang/String;Lgithub/tornaco/android/thanos/core/ICallback;)V
+    .locals 20
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, p3
+
+    move-object/from16 v2, p4
+
+    const/16 v3, 0x10
+
+    const/4 v4, 0x1
+
+    const-string v5, "|"
+
+    const-string v6, "data"
+
+    move-object/from16 v7, p1
+
+    invoke-static {v7, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v6, "code"
+
+    invoke-static {v0, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v6, "deviceId"
+
+    invoke-static {v1, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v6, "callback"
+
+    invoke-static {v2, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v6
+
+    :try_start_0
+    invoke-static {v6}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v6
+
+    array-length v9, v6
+
+    move v11, v4
+
+    const/4 v10, 0x0
+
+    const/4 v12, 0x0
+
+    :goto_0
+    if-ge v10, v9, :cond_2
+
+    aget-object v13, v6, v10
+
+    add-int/lit8 v14, v12, 0x1
+
+    const-string v15, "SHA1"
+
+    invoke-static {v15}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v15
+
+    invoke-virtual {v13}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v13
+
+    invoke-virtual {v15, v13}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v15}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v13
+
+    new-array v15, v3, [C
+
+    fill-array-data v15, :array_0
+
+    array-length v8, v13
+
+    mul-int/lit8 v8, v8, 0x2
+
+    new-array v8, v8, [C
+
+    array-length v3, v13
+
+    move/from16 v16, v4
+
+    const/4 v4, 0x0
+
+    :goto_1
+    if-ge v4, v3, :cond_0
+
+    move/from16 v17, v3
+
+    aget-byte v3, v13, v4
+
+    move/from16 v18, v4
+
+    and-int/lit16 v4, v3, 0xff
+
+    mul-int/lit8 v19, v18, 0x2
+
+    ushr-int/lit8 v4, v4, 0x4
+
+    aget-char v4, v15, v4
+
+    aput-char v4, v8, v19
+
+    add-int/lit8 v19, v19, 0x1
+
+    and-int/lit8 v3, v3, 0xf
+
+    aget-char v3, v15, v3
+
+    aput-char v3, v8, v19
+
+    add-int/lit8 v4, v18, 0x1
+
+    move/from16 v3, v17
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v3, Ljava/lang/String;
+
+    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v4, 0x3
+
+    new-array v4, v4, [B
+
+    fill-array-data v4, :array_1
+
+    new-instance v8, Ljava/lang/String;
+
+    sget-object v13, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v8, v4, v13}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v8}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v4
+
+    new-instance v8, Ljava/math/BigInteger;
+
+    invoke-virtual {v3, v13}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v3
+
+    const-string v13, "getBytes(...)"
+
+    invoke-static {v3, v13}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v4, v3}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v3
+
+    move/from16 v4, v16
+
+    invoke-direct {v8, v4, v3}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v3, 0x10
+
+    invoke-virtual {v8, v3}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v8, "toString(...)"
+
+    invoke-static {v4, v8}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v8, 0x20
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v8, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v5}, [Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v8, v13}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v8
+
+    invoke-interface {v8, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_1
+
+    const-string v8, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v5}, [Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v8, v13}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v8
+
+    invoke-interface {v8, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_1
+
+    const-string v8, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v5}, [Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v8, v13}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v8
+
+    invoke-interface {v8, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v4, :cond_1
+
+    const/4 v11, 0x0
+
+    :cond_1
+    const/16 v16, 0x1
+
+    add-int/lit8 v10, v10, 0x1
+
+    move v12, v14
+
+    move/from16 v4, v16
+
+    goto/16 :goto_0
+
+    :cond_2
+    move v8, v11
+
+    goto :goto_2
+
+    :catchall_0
+    const/4 v8, 0x0
+
+    :goto_2
+    if-eqz v8, :cond_3
+
+    invoke-static/range {p0 .. p0}, Lkwyopc/kouubfr/lh8;->OooOOO(Lkwyopc/kouubfr/sd9;)Lkwyopc/kouubfr/yr1;
+
+    move-result-object v3
+
+    new-instance v4, Lkwyopc/kouubfr/np9;
+
+    const/4 v5, 0x0
+
+    invoke-direct {v4, v0, v1, v2, v5}, Lkwyopc/kouubfr/np9;-><init>(Ljava/lang/String;Ljava/lang/String;Lgithub/tornaco/android/thanos/core/ICallback;Lkwyopc/kouubfr/zo1;)V
+
+    invoke-static {v3, v4}, Lkwyopc/kouubfr/lh8;->OooOOoo(Lkwyopc/kouubfr/yr1;Lkwyopc/kouubfr/af3;)Lkwyopc/kouubfr/q09;
+
+    invoke-static {v7}, Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;->parseFrom([B)Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/x34;->OooOo0o(Ljava/lang/Object;)V
+
+    move-object/from16 v1, p0
+
+    iput-object v0, v1, Lkwyopc/kouubfr/yp9;->OooOO0O:Ltornaco/apps/thanox/core/proto/common/BgCleanSettings;
+
+    invoke-virtual {v1}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-virtual {v0}, Lcom/google/protobuf/AbstractMessage;->toString()Ljava/lang/String;
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v1, p0
+
+    :goto_3
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final syncSFSettings([BLjava/lang/String;Ljava/lang/String;Lgithub/tornaco/android/thanos/core/ICallback;)V
+    .locals 20
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, p3
+
+    move-object/from16 v2, p4
+
+    const/16 v3, 0x10
+
+    const/4 v4, 0x1
+
+    const-string v5, "|"
+
+    const-string v6, "data"
+
+    move-object/from16 v7, p1
+
+    invoke-static {v7, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v6, "code"
+
+    invoke-static {v0, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v6, "deviceId"
+
+    invoke-static {v1, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v6, "callback"
+
+    invoke-static {v2, v6}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual/range {p0 .. p0}, Lkwyopc/kouubfr/sd9;->OooO0o()Landroid/content/Context;
+
+    move-result-object v6
+
+    :try_start_0
+    invoke-static {v6}, Lkwyopc/kouubfr/pu6;->OooOo0O(Landroid/content/Context;)[Landroid/content/pm/Signature;
+
+    move-result-object v6
+
+    array-length v9, v6
+
+    move v11, v4
+
+    const/4 v10, 0x0
+
+    const/4 v12, 0x0
+
+    :goto_0
+    if-ge v10, v9, :cond_2
+
+    aget-object v13, v6, v10
+
+    add-int/lit8 v14, v12, 0x1
+
+    const-string v15, "SHA1"
+
+    invoke-static {v15}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v15
+
+    invoke-virtual {v13}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v13
+
+    invoke-virtual {v15, v13}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v15}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v13
+
+    new-array v15, v3, [C
+
+    fill-array-data v15, :array_0
+
+    array-length v8, v13
+
+    mul-int/lit8 v8, v8, 0x2
+
+    new-array v8, v8, [C
+
+    array-length v3, v13
+
+    move/from16 v16, v4
+
+    const/4 v4, 0x0
+
+    :goto_1
+    if-ge v4, v3, :cond_0
+
+    move/from16 v17, v3
+
+    aget-byte v3, v13, v4
+
+    move/from16 v18, v4
+
+    and-int/lit16 v4, v3, 0xff
+
+    mul-int/lit8 v19, v18, 0x2
+
+    ushr-int/lit8 v4, v4, 0x4
+
+    aget-char v4, v15, v4
+
+    aput-char v4, v8, v19
+
+    add-int/lit8 v19, v19, 0x1
+
+    and-int/lit8 v3, v3, 0xf
+
+    aget-char v3, v15, v3
+
+    aput-char v3, v8, v19
+
+    add-int/lit8 v4, v18, 0x1
+
+    move/from16 v3, v17
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v3, Ljava/lang/String;
+
+    invoke-direct {v3, v8}, Ljava/lang/String;-><init>([C)V
+
+    const/4 v4, 0x3
+
+    new-array v4, v4, [B
+
+    fill-array-data v4, :array_1
+
+    new-instance v8, Ljava/lang/String;
+
+    sget-object v13, Lkwyopc/kouubfr/eu0;->OooO00o:Ljava/nio/charset/Charset;
+
+    invoke-direct {v8, v4, v13}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    invoke-static {v8}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v4
+
+    new-instance v8, Ljava/math/BigInteger;
+
+    invoke-virtual {v3, v13}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v3
+
+    const-string v13, "getBytes(...)"
+
+    invoke-static {v3, v13}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v4, v3}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v3
+
+    move/from16 v4, v16
+
+    invoke-direct {v8, v4, v3}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    const/16 v3, 0x10
+
+    invoke-virtual {v8, v3}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v8, "toString(...)"
+
+    invoke-static {v4, v8}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v8, 0x20
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/y69;->OoooOoo(ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v8, "25cc0926b09a6e73798de05977c420f7"
+
+    filled-new-array {v5}, [Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v8, v13}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v8
+
+    invoke-interface {v8, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_1
+
+    const-string v8, "fbb0fffe49334e78f6f901c2a144314f"
+
+    filled-new-array {v5}, [Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v8, v13}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v8
+
+    invoke-interface {v8, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_1
+
+    const-string v8, "16d5c7e8d44ba3546f725b156a925cdb"
+
+    filled-new-array {v5}, [Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v8, v13}, Lkwyopc/kouubfr/y69;->OooooOo(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v8
+
+    invoke-interface {v8, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    invoke-static {v8, v4}, Lkwyopc/kouubfr/x34;->OooOOo0(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v4, :cond_1
+
+    const/4 v11, 0x0
+
+    :cond_1
+    const/16 v16, 0x1
+
+    add-int/lit8 v10, v10, 0x1
+
+    move v12, v14
+
+    move/from16 v4, v16
+
+    goto/16 :goto_0
+
+    :cond_2
+    move v8, v11
+
+    goto :goto_2
+
+    :catchall_0
+    const/4 v8, 0x0
+
+    :goto_2
+    if-eqz v8, :cond_3
+
+    invoke-static/range {p0 .. p0}, Lkwyopc/kouubfr/lh8;->OooOOO(Lkwyopc/kouubfr/sd9;)Lkwyopc/kouubfr/yr1;
+
+    move-result-object v3
+
+    new-instance v4, Lkwyopc/kouubfr/np9;
+
+    const/4 v5, 0x0
+
+    invoke-direct {v4, v0, v1, v2, v5}, Lkwyopc/kouubfr/np9;-><init>(Ljava/lang/String;Ljava/lang/String;Lgithub/tornaco/android/thanos/core/ICallback;Lkwyopc/kouubfr/zo1;)V
+
+    invoke-static {v3, v4}, Lkwyopc/kouubfr/lh8;->OooOOoo(Lkwyopc/kouubfr/yr1;Lkwyopc/kouubfr/af3;)Lkwyopc/kouubfr/q09;
+
+    invoke-static {v7}, Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;->parseFrom([B)Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkwyopc/kouubfr/x34;->OooOo0o(Ljava/lang/Object;)V
+
+    move-object/from16 v1, p0
+
+    iput-object v0, v1, Lkwyopc/kouubfr/yp9;->OooOO0:Ltornaco/apps/thanox/core/proto/common/SmartFreezeSettings;
+
+    invoke-virtual {v1}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-virtual {v0}, Lcom/google/protobuf/AbstractMessage;->toString()Ljava/lang/String;
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v1, p0
+
+    :goto_3
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x4dt
+        0x44t
+        0x35t
+    .end array-data
+.end method
+
+.method public final unregisterPkgStateChangeListener(Lgithub/tornaco/android/thanos/core/IPkgChangeListener;)V
+    .locals 1
+
+    iget-object v0, p0, Lkwyopc/kouubfr/yp9;->OooOo00:Landroid/os/RemoteCallbackList;
+
+    invoke-virtual {v0, p1}, Landroid/os/RemoteCallbackList;->unregister(Landroid/os/IInterface;)Z
+
+    return-void
+.end method
+
+.method public final updateProcessCpuUsageStats()V
+    .locals 6
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lkwyopc/kouubfr/yp9;->OooOO0()Lkwyopc/kouubfr/c57;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lkwyopc/kouubfr/c57;->OooOO0o()V
+
+    sget-object v2, Lkwyopc/kouubfr/c9a;->OooO00o:Lkwyopc/kouubfr/c9a;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v2
+
+    invoke-static {v2}, Lkwyopc/kouubfr/rl6;->OooO0o0(Ljava/lang/Throwable;)Lkwyopc/kouubfr/ss7;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-static {v2}, Lkwyopc/kouubfr/us7;->OooO00o(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v3, Lgithub/tornaco/android/thanos/core/Logger;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    invoke-direct {v3, v4, v5, v4}, Lgithub/tornaco/android/thanos/core/Logger;-><init>(Ljava/lang/String;ILkwyopc/kouubfr/o12;)V
+
+    const-string v4, "runClearCallingIdentity"
+
+    invoke-virtual {v3, v2, v4}, Lgithub/tornaco/android/thanos/core/Logger;->e(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public final writeLogsTo(Landroid/os/ParcelFileDescriptor;)V
+    .locals 5
+
+    const-string v0, "pfd"
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Ljava/io/File;
+
+    const-string v1, "data/local/tmp"
+
+    const-string v2, "logtmp"
+
+    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "Thanox-Log-"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, ".zip"
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    sget-object v2, Ltornaco/app/thanox/lite/service/api/ShizukuServiceStub;->Companion:Lkwyopc/kouubfr/pm8;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {}, Ltornaco/app/thanox/lite/service/api/ShizukuServiceStub;->access$getLogDir$cp()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3, v1}, Lgithub/tornaco/android/thanos/core/util/ZipUtils;->zip(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v2, Ljava/io/File;
+
+    invoke-direct {v2, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    :try_start_0
+    new-instance v1, Ljava/io/FileOutputStream;
+
+    invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
+
+    move-result-object v3
+
+    invoke-direct {v1, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_4
+
+    :try_start_1
+    new-instance v3, Ljava/io/FileInputStream;
+
+    invoke-direct {v3, v2}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    :try_start_2
+    invoke-static {v3, v1}, Lkwyopc/kouubfr/ng0;->OooOo00(Ljava/io/InputStream;Ljava/io/OutputStream;)J
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :try_start_3
+    invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    :try_start_4
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_4
+
+    invoke-interface {p1}, Ljava/io/Closeable;->close()V
+
+    invoke-static {v0}, Lkwyopc/kouubfr/e03;->Oooooo0(Ljava/io/File;)Z
+
+    invoke-virtual {p0}, Lkwyopc/kouubfr/sd9;->OooO0oO()Lgithub/tornaco/android/thanos/core/Logger;
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    :try_start_5
+    throw v0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    :catchall_1
+    move-exception v2
+
+    :try_start_6
+    invoke-static {v3, v0}, Lkwyopc/kouubfr/rs;->OooOOO(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    throw v2
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+
+    :catchall_2
+    move-exception v0
+
+    :try_start_7
+    throw v0
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+
+    :catchall_3
+    move-exception v2
+
+    :try_start_8
+    invoke-static {v1, v0}, Lkwyopc/kouubfr/rs;->OooOOO(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    throw v2
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_4
+
+    :catchall_4
+    move-exception v0
+
+    :try_start_9
+    throw v0
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_5
+
+    :catchall_5
+    move-exception v1
+
+    invoke-static {p1, v0}, Lkwyopc/kouubfr/rs;->OooOOO(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    throw v1
+.end method

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<github.tornaco.android.thanos.module.compose.common.widget.FeatureDescriptionAndroidView android:id="@id/featureDescView" android:tag="layout/common_feature_description_bar_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/common_view_margin_default"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

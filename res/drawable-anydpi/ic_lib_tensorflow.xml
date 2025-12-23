@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="1024.0" android:viewportHeight="1024.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_lib_tensorflow__0" android:pathData="M526.84,109L872,305.36L872,484.84L664.9,363.65L664.9,454.16L767.69,513.99L769.22,668.93L664.9,609.1L664.9,836.14L526.84,915.91L526.84,109ZM496.16,109L496.16,915.91L358.1,836.14L358.1,363.65L151,484.84L151,305.36L496.16,109Z" />
+</vector>

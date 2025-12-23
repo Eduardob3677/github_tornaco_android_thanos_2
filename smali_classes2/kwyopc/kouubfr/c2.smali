@@ -1,0 +1,123 @@
+.class public final synthetic Lkwyopc/kouubfr/c2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkwyopc/kouubfr/af3;
+
+
+# instance fields
+.field public final synthetic OooOOO:Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;
+
+.field public final synthetic OooOOO0:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;I)V
+    .locals 0
+
+    iput p2, p0, Lkwyopc/kouubfr/c2;->OooOOO0:I
+
+    iput-object p1, p0, Lkwyopc/kouubfr/c2;->OooOOO:Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lkwyopc/kouubfr/c2;->OooOOO:Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;
+
+    iget v1, p0, Lkwyopc/kouubfr/c2;->OooOOO0:I
+
+    packed-switch v1, :pswitch_data_0
+
+    check-cast p1, Lgithub/tornaco/android/thanos/core/app/ThanosManager;
+
+    check-cast p2, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    invoke-virtual {v0, p2}, Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;->getSensorOffSettingsForPackage(Lgithub/tornaco/android/thanos/core/pm/Pkg;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Lgithub/tornaco/android/thanos/core/app/ThanosManager;
+
+    check-cast p2, Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    invoke-virtual {p2}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->getPkgName()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;->getSelectedFieldsProfileIdForPackage(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, ""
+
+    :cond_0
+    return-object p1
+
+    :pswitch_1
+    check-cast p1, Lkwyopc/kouubfr/xw;
+
+    check-cast p2, Ljava/lang/String;
+
+    sget v1, Lnow/fortuitous/thanos/apps/AioAppListActivity;->OoooO:I
+
+    const-string v1, "app"
+
+    invoke-static {p1, v1}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "id"
+
+    invoke-static {p2, v1}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p2}, Lkwyopc/kouubfr/f79;->Oooo0OO(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_1
+
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p2, 0x0
+
+    :goto_0
+    iget-object p1, p1, Lkwyopc/kouubfr/xw;->OooO00o:Lgithub/tornaco/android/thanos/core/pm/AppInfo;
+
+    invoke-static {p1}, Lgithub/tornaco/android/thanos/core/pm/Pkg;->fromAppInfo(Lgithub/tornaco/android/thanos/core/pm/AppInfo;)Lgithub/tornaco/android/thanos/core/pm/Pkg;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1, p2}, Lgithub/tornaco/android/thanos/core/secure/PrivacyManager;->setSensorOffSettingsForPackage(Lgithub/tornaco/android/thanos/core/pm/Pkg;I)V
+
+    sget-object p1, Lkwyopc/kouubfr/c9a;->OooO00o:Lkwyopc/kouubfr/c9a;
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

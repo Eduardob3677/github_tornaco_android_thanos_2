@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/module_common_ic_search_2_line" android:id="@id/action_search" android:title="@string/common_menu_title_search" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_pull_from_server" android:visible="false" android:title="@string/module_activity_trampoline_title_pull_from_server" app:showAsAction="never" />
+    <item android:id="@id/action_export" android:title="@string/module_activity_trampoline_title_export_comp_replacements" app:showAsAction="never" />
+    <item android:id="@id/action_import" android:title="@string/module_activity_trampoline_title_import_comp_replacements" app:showAsAction="never" />
+</menu>

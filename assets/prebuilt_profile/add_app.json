@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Start app process",
+    "description": "检测到应用被杀死时，启动该应用进程",
+    "priority": 1,
+    "condition": "pkgKilled == true && pkgName == \"com.xx.xx\"",
+    "actions": [
+      "ui.showShortToast(\"启动XXX...\");",
+      "activity.launchProcessForPackage(\"com.xx.xx\")"
+    ]
+  }
+]

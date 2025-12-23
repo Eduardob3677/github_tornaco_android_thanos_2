@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_lock_white_list_activity">
+        <item>com.tencent.mm/com.tencent.mm.plugin.voip.ui.VideoActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.av.ui.VideoInviteFull</item>
+        <item>com.tencent.mobileqq/com.tencent.av.ui.AVActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.av.ui.VideoInviteLock</item>
+        <item>com.tencent.mobileqq/.activity.QQLSActivity</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <array name="common_swipe_refresh_colors">
+        <item>@color/md_amber_500</item>
+        <item>@color/md_lime_500</item>
+        <item>@color/md_green_500</item>
+        <item>@color/md_red_500</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="java_keywords">
+        <item>public</item>
+        <item>private</item>
+        <item>protected</item>
+        <item>package</item>
+        <item>abstract</item>
+        <item>boolean</item>
+        <item>break</item>
+        <item>byte</item>
+        <item>case</item>
+        <item>catch</item>
+        <item>char</item>
+        <item>class</item>
+        <item>continue</item>
+        <item>default</item>
+        <item>do</item>
+        <item>double</item>
+        <item>else</item>
+        <item>enum</item>
+        <item>extends</item>
+        <item>final</item>
+        <item>finally</item>
+        <item>float</item>
+        <item>for</item>
+        <item>if</item>
+        <item>implements</item>
+        <item>import</item>
+        <item>instanceof</item>
+        <item>int</item>
+        <item>interface</item>
+        <item>long</item>
+        <item>native</item>
+        <item>new</item>
+        <item>return</item>
+        <item>short</item>
+        <item>static</item>
+        <item>strictfp</item>
+        <item>super</item>
+        <item>switch</item>
+        <item>synchronized</item>
+        <item>this</item>
+        <item>throw</item>
+        <item>transient</item>
+        <item>try</item>
+        <item>void</item>
+        <item>volatile</item>
+        <item>while</item>
+        <item>ui</item>
+        <item>thanox</item>
+        <item>thanos</item>
+        <item>context</item>
+        <item>log</item>
+        <item>audio</item>
+        <item>killer</item>
+        <item>activity</item>
+        <item>power</item>
+        <item>task</item>
+        <item>data</item>
+        <item>input</item>
+        <item>hw</item>
+        <item>io</item>
+        <item>ringtone</item>
+        <item>sh</item>
+        <item>su</item>
+        <item>pkg</item>
+        <item>battery</item>
+        <item>actor</item>
+    </string-array>
+    <array name="keyguard_biometric_and_credential_exclude_vendors" />
+    <string-array name="launch_other_app_options">
+        <item>@string/launch_other_app_options_allow</item>
+        <item>@string/launch_other_app_options_ask</item>
+        <item>@string/launch_other_app_options_ignore</item>
+        <item>@string/launch_other_app_options_allow_listed</item>
+    </string-array>
+    <string-array name="launch_other_app_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="module_common_export_selections">
+        <item>Clipboard</item>
+        <item>Choose a file</item>
+    </string-array>
+    <string-array name="module_common_import_selections">
+        <item>Clipboard</item>
+        <item>Choose a file</item>
+    </string-array>
+    <string-array name="module_locker_verify_method_entries">
+        <item>@string/module_locker_title_verify_system</item>
+        <item>@string/module_locker_title_verify_custom_pattern</item>
+        <item>@string/module_locker_title_verify_custom_pin</item>
+        <item>@string/module_locker_title_verify_custom_time</item>
+    </string-array>
+    <string-array name="module_locker_verify_method_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="module_ops2_app_ops_labels">
+        <item>Coarse Location</item>
+        <item>Precise Location</item>
+        <item>GPS</item>
+        <item>Vibration</item>
+        <item>Read Contacts</item>
+        <item>Modify Contacts</item>
+        <item>Read Call Logs</item>
+        <item>Modify Call Logs</item>
+        <item>Read Calendar</item>
+        <item>Modify Calendar</item>
+        <item>Location</item>
+        <item>Post Notifications</item>
+        <item>Location</item>
+        <item>Make Phone Calls</item>
+        <item>Read SMS/MMS</item>
+        <item>Write SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Send SMS/MMS</item>
+        <item>Read SMS/MMS</item>
+        <item>Write SMS/MMS</item>
+        <item>Modify Settings</item>
+        <item>Display on Top</item>
+        <item>Access Notifications</item>
+        <item>Camera</item>
+        <item>Record Audio</item>
+        <item>Play Audio</item>
+        <item>Read Clipboard Content</item>
+        <item>Modify Clipboard Content</item>
+        <item>Media Buttons</item>
+        <item>Audio Focus</item>
+        <item>Master Volume</item>
+        <item>Voice Volume</item>
+        <item>Ringtone Volume</item>
+        <item>Media Volume</item>
+        <item>Alarm Volume</item>
+        <item>Notification Volume</item>
+        <item>Bluetooth Volume</item>
+        <item>Keep Awake</item>
+        <item>Location</item>
+        <item>Location Information</item>
+        <item>Get Usage Stats</item>
+        <item>Mute or Unmute Microphone</item>
+        <item>Display Greeting</item>
+        <item>Project Media</item>
+        <item>Activate VPN</item>
+        <item>Write Wallpaper</item>
+        <item>Assist Structure</item>
+        <item>Assist Screenshot</item>
+        <item>Read Phone State</item>
+        <item>Add Voicemail</item>
+        <item>Use SIP</item>
+        <item>Handle Outgoing Calls</item>
+        <item>Fingerprint</item>
+        <item>Body Sensors</item>
+        <item>Read Cell Broadcasts</item>
+        <item>Mock Location</item>
+        <item>Read Storage</item>
+        <item>Write Storage</item>
+        <item>Turn On Screen</item>
+        <item>Get Accounts</item>
+        <item>Run in Background</item>
+        <item>Accessibility Volume</item>
+        <item>Read phone number</item>
+        <item>Install applications</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>Run tasks in the background</item>
+        <item>Change Wifi connection state</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Bluetooth scan</item>
+        <item>Use BiometricPrompt</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app SMS read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy view of storage</item>
+        <item>Use accessibility features</item>
+        <item>Read device information</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Activate platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+    </string-array>
+    <string-array name="module_ops2_app_ops_summaries">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Vibration</item>
+        <item>Read Contacts</item>
+        <item>Modify Contacts</item>
+        <item>Read Call Logs</item>
+        <item>Modify Call Logs</item>
+        <item>Read Calendar</item>
+        <item>Modify Calendar</item>
+        <item>WLAN Scan</item>
+        <item>Notifications</item>
+        <item>Mobile Network Scan</item>
+        <item>Make Phone Calls</item>
+        <item>Read SMS</item>
+        <item>Write SMS</item>
+        <item>Receive SMS</item>
+        <item>Receive Emergency SMS</item>
+        <item>Receive MMS</item>
+        <item>Receive WAP PUSH Messages</item>
+        <item>Send SMS</item>
+        <item>Read ICC SMS</item>
+        <item>Write ICC SMS</item>
+        <item>Modify Settings</item>
+        <item>Display on Top</item>
+        <item>Access Notifications</item>
+        <item>Camera</item>
+        <item>Record Audio</item>
+        <item>Play Audio</item>
+        <item>Read Clipboard Content</item>
+        <item>Modify Clipboard Content</item>
+        <item>Media Buttons</item>
+        <item>Audio Focus</item>
+        <item>Master Volume</item>
+        <item>Voice Volume</item>
+        <item>Ringtone Volume</item>
+        <item>Media Volume</item>
+        <item>Alarm Volume</item>
+        <item>Notification Volume</item>
+        <item>Bluetooth Volume</item>
+        <item>Keep Awake</item>
+        <item>Monitor Location</item>
+        <item>Monitor High-Power Location Services</item>
+        <item>Get Usage Stats</item>
+        <item>Mute or Unmute Microphone</item>
+        <item>Display Greeting</item>
+        <item>Project Media</item>
+        <item>Activate VPN</item>
+        <item>Write Wallpaper</item>
+        <item>Assist Structure</item>
+        <item>Assist Screenshot</item>
+        <item>Read Phone State</item>
+        <item>Add Voicemail</item>
+        <item>Use SIP</item>
+        <item>Handle Outgoing Calls</item>
+        <item>Fingerprint</item>
+        <item>Body Sensors</item>
+        <item>Read Cell Broadcasts</item>
+        <item>Mock Location</item>
+        <item>Read Storage</item>
+        <item>Write Storage</item>
+        <item>Turn On Screen</item>
+        <item>Get Accounts</item>
+        <item>Run in Background</item>
+        <item>Accessibility Volume</item>
+        <item>Read phone number</item>
+        <item>Request to install applications</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>Run tasks in the background</item>
+        <item>Change Wifi connection state</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and manage IPsec tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Bluetooth scan</item>
+        <item>Use the BiometricPrompt/BiometricManager APIs</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app SMS read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy (non-isolated) view of storage</item>
+        <item>Use accessibility features</item>
+        <item>Read device information (IMEI/MEID, IMSI, SIM/Build serial)</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Activate platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+    </string-array>
+    <array name="module_ops2_op_icon">
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_volume_vibrate_fill</item>
+        <item>@drawable/ic_remix_contacts_fill</item>
+        <item>@drawable/ic_remix_user_add_fill</item>
+        <item>@drawable/ic_remix_arrow_right_down_fill</item>
+        <item>@drawable/ic_remix_arrow_right_down_fill</item>
+        <item>@drawable/ic_remix_calendar_2_fill</item>
+        <item>@drawable/ic_remix_calendar_2_fill</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_message_3_fill</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_phone_fill</item>
+        <item>@drawable/ic_remix_message_fill</item>
+        <item>@drawable/ic_remix_chat_new_fill</item>
+        <item>@drawable/ic_remix_chat_download_fill</item>
+        <item>@drawable/ic_remix_chat_download_fill</item>
+        <item>@drawable/ic_remix_chat_download_fill</item>
+        <item>@drawable/ic_remix_chat_download_fill</item>
+        <item>@drawable/ic_remix_chat_forward_fill</item>
+        <item>@drawable/ic_remix_message_fill</item>
+        <item>@drawable/ic_remix_chat_new_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_focus_fill</item>
+        <item>@drawable/ic_remix_notification_badge_fill</item>
+        <item>@drawable/ic_remix_camera_fill</item>
+        <item>@drawable/ic_remix_mic_2_fill</item>
+        <item>@drawable/ic_remix_music_fill</item>
+        <item>@drawable/ic_remix_clipboard_fill</item>
+        <item>@drawable/ic_remix_clipboard_fill</item>
+        <item>@drawable/ic_remix_speed_fill</item>
+        <item>@drawable/ic_remix_focus_fill</item>
+        <item>@drawable/ic_remix_volume_up_fill</item>
+        <item>@drawable/ic_remix_volume_up_fill</item>
+        <item>@drawable/ic_remix_volume_up_fill</item>
+        <item>@drawable/ic_remix_music_fill</item>
+        <item>@drawable/ic_remix_time_fill</item>
+        <item>@drawable/ic_remix_notification_badge_fill</item>
+        <item>@drawable/ic_remix_bluetooth_fill</item>
+        <item>@drawable/ic_remix_smartphone_line</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_file_list_fill</item>
+        <item>@drawable/ic_remix_mic_off_fill</item>
+        <item>@drawable/ic_remix_user_smile_fill</item>
+        <item>@drawable/ic_remix_cast_fill</item>
+        <item>@drawable/ic_remix_key_2_fill</item>
+        <item>@drawable/ic_remix_image_2_fill</item>
+        <item>@drawable/ic_remix_wheelchair_fill</item>
+        <item>@drawable/ic_remix_crop_fill</item>
+        <item>@drawable/ic_remix_cellphone_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_map_pin_fill</item>
+        <item>@drawable/ic_remix_hard_drive_2_fill</item>
+        <item>@drawable/ic_remix_hard_drive_2_fill</item>
+        <item>@drawable/ic_remix_smartphone_line</item>
+        <item>@drawable/ic_remix_account_circle_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_smartphone_line</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+        <item>@drawable/ic_remix_settings_2_fill</item>
+    </array>
+    <string-array name="module_ops_app_ops_labels">
+        <item>Location</item>
+        <item>Location</item>
+        <item>Location</item>
+        <item>Vibrate</item>
+        <item>Read contacts</item>
+        <item>Modify contacts</item>
+        <item>Read call log</item>
+        <item>Modify call log</item>
+        <item>Read calendar</item>
+        <item>Modify calendar</item>
+        <item>Location</item>
+        <item>Post notification</item>
+        <item>Location</item>
+        <item>Call phone</item>
+        <item>Read SMS/MMS</item>
+        <item>Write SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Send SMS/MMS</item>
+        <item>Read SMS/MMS</item>
+        <item>Write SMS/MMS</item>
+        <item>Modify settings</item>
+        <item>Draw on top</item>
+        <item>Access notifications</item>
+        <item>Camera</item>
+        <item>Record audio</item>
+        <item>Play audio</item>
+        <item>Read clipboard</item>
+        <item>Modify clipboard</item>
+        <item>Media buttons</item>
+        <item>Audio focus</item>
+        <item>Master volume</item>
+        <item>Voice volume</item>
+        <item>Ring volume</item>
+        <item>Media volume</item>
+        <item>Alarm volume</item>
+        <item>Notification volume</item>
+        <item>Bluetooth volume</item>
+        <item>Keep awake</item>
+        <item>Location</item>
+        <item>Location</item>
+        <item>Get usage stats</item>
+        <item>Mute/unmute microphone</item>
+        <item>Show toast</item>
+        <item>Project media</item>
+        <item>Activate VPN</item>
+        <item>Write wallpaper</item>
+        <item>Assist structure</item>
+        <item>Assist screenshot</item>
+        <item>Read phone state</item>
+        <item>Add voicemail</item>
+        <item>Use sip</item>
+        <item>Process outgoing call</item>
+        <item>Fingerprint</item>
+        <item>Body sensors</item>
+        <item>Read cell broadcasts</item>
+        <item>Mock location</item>
+        <item>Read storage</item>
+        <item>Write storage</item>
+        <item>Turn on screen</item>
+        <item>Get accounts</item>
+        <item>Run in background</item>
+        <item>Accessibility volume</item>
+        <item>Read phone number</item>
+        <item>Install packages</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>Run jobs when in background</item>
+        <item>Change Wi-Fi connectivity state</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Blue tooth scan</item>
+        <item>Use BiometricPrompt</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app sms read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy view of storage</item>
+        <item>Accessing accessibility features</item>
+        <item>Read the device identifiers</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Active platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+        <item>Get package info</item>
+        <item>Screen brightness</item>
+        <item>Get installed apps</item>
+        <item>Query intent activities</item>
+        <item>Location</item>
+        <item>Receive sensor event</item>
+    </string-array>
+    <string-array name="module_ops_app_ops_summaries">
+        <item>coarse location</item>
+        <item>fine location</item>
+        <item>GPS</item>
+        <item>vibrate</item>
+        <item>read contacts</item>
+        <item>modify contacts</item>
+        <item>read call log</item>
+        <item>modify call log</item>
+        <item>read calendar</item>
+        <item>modify calendar</item>
+        <item>wi-fi scan</item>
+        <item>notification</item>
+        <item>cell scan</item>
+        <item>call phone</item>
+        <item>read SMS</item>
+        <item>write SMS</item>
+        <item>receive SMS</item>
+        <item>receive emergency SMS</item>
+        <item>receive MMS</item>
+        <item>receive WAP push</item>
+        <item>send SMS</item>
+        <item>read ICC SMS</item>
+        <item>write ICC SMS</item>
+        <item>modify settings</item>
+        <item>draw on top</item>
+        <item>access notifications</item>
+        <item>camera</item>
+        <item>record audio</item>
+        <item>play audio</item>
+        <item>read clipboard</item>
+        <item>modify clipboard</item>
+        <item>media buttons</item>
+        <item>audio focus</item>
+        <item>master volume</item>
+        <item>voice volume</item>
+        <item>ring volume</item>
+        <item>media volume</item>
+        <item>alarm volume</item>
+        <item>notification volume</item>
+        <item>bluetooth volume</item>
+        <item>keep awake</item>
+        <item>monitor location</item>
+        <item>monitor high power location</item>
+        <item>get usage stats</item>
+        <item>mute/unmute microphone</item>
+        <item>show toast</item>
+        <item>project media</item>
+        <item>activate VPN</item>
+        <item>write wallpaper</item>
+        <item>assist structure</item>
+        <item>assist screenshot</item>
+        <item>read phone state</item>
+        <item>add voicemail</item>
+        <item>use sip</item>
+        <item>process outgoing call</item>
+        <item>fingerprint</item>
+        <item>body sensors</item>
+        <item>read cell broadcasts</item>
+        <item>mock location</item>
+        <item>read storage</item>
+        <item>write storage</item>
+        <item>turn on screen</item>
+        <item>get accounts</item>
+        <item>run in background</item>
+        <item>accessibility volume</item>
+        <item>Read phone number</item>
+        <item>Install packages</item>
+        <item>Picture in picture</item>
+        <item>Instant app start foreground</item>
+        <item>Answer incoming phone calls</item>
+        <item>Run jobs when in background</item>
+        <item>Change Wi-Fi connectivity state</item>
+        <item>Request package deletion through package installer</item>
+        <item>Bind an accessibility service</item>
+        <item>Continue handover of a call from another app</item>
+        <item>Create and Manage IPsec Tunnels</item>
+        <item>Any app start foreground service</item>
+        <item>Blue tooth scan</item>
+        <item>Use the BiometricPrompt/BiometricManager APIs</item>
+        <item>Physical activity recognition</item>
+        <item>Financial app sms read</item>
+        <item>Read media of audio type</item>
+        <item>Write media of audio type</item>
+        <item>Read media of video type</item>
+        <item>Write media of video type</item>
+        <item>Read media of image type</item>
+        <item>Write media of image type</item>
+        <item>Has a legacy (non-isolated) view of storage</item>
+        <item>Accessing accessibility features</item>
+        <item>Read the device identifiers (IMEI / MEID, IMSI, SIM / Build serial)</item>
+        <item>Access media location</item>
+        <item>Query all packages</item>
+        <item>Access all external storage</item>
+        <item>Interact across profiles</item>
+        <item>Active platform VPN</item>
+        <item>Loader usage stats</item>
+        <item>Placeholder</item>
+        <item>Auto revoke permissions if unused</item>
+        <item>Auto revoke managed by installer</item>
+        <item>No isolated storage</item>
+        <item>Query other installed package info by package name</item>
+        <item>Adjust screen brightness</item>
+        <item>Get installed apps</item>
+        <item>Query intent(LAUNCHER, usually used to query installed apps) activities</item>
+        <item>Access device location</item>
+        <item>Receive sensor event, remember select target app in scoped Xposed framework</item>
+    </string-array>
+    <string-array name="module_ops_filter_by_op_mode">
+        <item>@string/module_ops_mode_all</item>
+        <item>@string/module_ops_mode_allow</item>
+        <item>@string/module_ops_mode_ignore</item>
+    </string-array>
+    <array name="module_ops_op_icon">
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_vibration</item>
+        <item>@drawable/module_ops_ic_contacts_fill</item>
+        <item>@drawable/module_ops_ic_user_add_fill</item>
+        <item>@drawable/module_ops_ic_arrow_right_down_fill</item>
+        <item>@drawable/module_ops_ic_arrow_right_down_fill</item>
+        <item>@drawable/module_ops_ic_calendar_2_fill</item>
+        <item>@drawable/module_ops_ic_calendar_2_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_message_3_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_call</item>
+        <item>@drawable/module_ops_ic_message_fill</item>
+        <item>@drawable/module_ops_ic_chat_new_fill</item>
+        <item>@drawable/module_ops_ic_chat_download_fill</item>
+        <item>@drawable/module_ops_ic_chat_download_fill</item>
+        <item>@drawable/module_ops_ic_chat_download_fill</item>
+        <item>@drawable/module_ops_ic_chat_download_fill</item>
+        <item>@drawable/module_ops_ic_chat_forward_fill</item>
+        <item>@drawable/module_ops_ic_message_fill</item>
+        <item>@drawable/module_ops_ic_chat_new_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_ops_ic_focus_fill</item>
+        <item>@drawable/module_ops_ic_notification_badge_fill</item>
+        <item>@drawable/module_ops_ic_camera_fill</item>
+        <item>@drawable/module_ops_ic_mic_2_fill</item>
+        <item>@drawable/module_ops_ic_music_fill</item>
+        <item>@drawable/module_ops_ic_clipboard_fill</item>
+        <item>@drawable/module_ops_ic_clipboard_fill</item>
+        <item>@drawable/module_ops_ic_speed_fill</item>
+        <item>@drawable/module_ops_ic_focus_fill</item>
+        <item>@drawable/module_ops_ic_volume_up_fill</item>
+        <item>@drawable/module_ops_ic_hearing</item>
+        <item>@drawable/module_ops_ic_ring_volume</item>
+        <item>@drawable/module_ops_ic_music_fill</item>
+        <item>@drawable/module_ops_ic_time_fill</item>
+        <item>@drawable/module_ops_ic_notification_badge_fill</item>
+        <item>@drawable/module_ops_ic_bluetooth_fill</item>
+        <item>@drawable/module_ops_ic_smartphone_line</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_file_list_fill</item>
+        <item>@drawable/module_ops_ic_mic_off_fill</item>
+        <item>@drawable/module_ops_ic_user_smile_fill</item>
+        <item>@drawable/module_ops_ic_cast_fill</item>
+        <item>@drawable/module_ops_ic_vpn_key</item>
+        <item>@drawable/module_ops_ic_wallpaper</item>
+        <item>@drawable/module_ops_ic_accessibility</item>
+        <item>@drawable/module_ops_ic_crop_fill</item>
+        <item>@drawable/module_ops_ic_cellphone_fill</item>
+        <item>@drawable/module_ops_ic_voicemail</item>
+        <item>@drawable/module_ops_ic_call</item>
+        <item>@drawable/module_ops_ic_call</item>
+        <item>@drawable/moduel_ops_ic_fingerprint</item>
+        <item>@drawable/module_ops_ic_directions_run</item>
+        <item>@drawable/moduel_ops_ic_broadcast_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_hard_drive_2_fill</item>
+        <item>@drawable/module_ops_ic_hard_drive_2_fill</item>
+        <item>@drawable/module_ops_ic_smartphone_line</item>
+        <item>@drawable/module_ops_ic_account_circle_fill</item>
+        <item>@drawable/moduel_ops_ic_checkbox_blank_circle_fill</item>
+        <item>@drawable/module_ops_ic_accessibility</item>
+        <item>@drawable/module_ops_ic_call</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_ops_ic_smartphone_line</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_ops_ic_call</item>
+        <item>@drawable/moduel_ops_ic_checkbox_blank_circle_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_common_ic_settings_fill</item>
+        <item>@drawable/module_ops_ic_brightness_5_black_24dp</item>
+        <item>@drawable/module_ops_ic_apps_fill</item>
+        <item>@drawable/module_ops_ic_apps_fill</item>
+        <item>@drawable/module_ops_ic_map_pin_fill</item>
+        <item>@drawable/module_ops_ic_sensor</item>
+    </array>
+    <string-array name="module_profile_symbols_1">
+        <item>==</item>
+        <item>\\</item>
+        <item>[</item>
+        <item>]</item>
+        <item>(</item>
+        <item>)</item>
+        <item>()</item>
+        <item>,</item>
+        <item>$</item>
+    </string-array>
+    <string-array name="module_profile_symbols_2">
+        <item>:</item>
+        <item>.</item>
+        <item>;</item>
+        <item>\?</item>
+        <item>!</item>
+        <item>/</item>
+        <item>\\\\</item>
+        <item>\"</item>
+        <item>\"\"</item>
+    </string-array>
+    <string-array name="module_profile_symbols_3">
+        <item>&amp;</item>
+        <item>&lt;</item>
+        <item>></item>
+        <item>:</item>
+        <item>"'"</item>
+    </string-array>
+    <string-array name="nav_footer_tips">
+        <item>Thanox可以无限免费试用。先试用，觉得可用、满意再购买高级功能~</item>
+        <item>Magisk补丁和Xposed补丁只能选一个，不能同时使用，否则会出现🐛</item>
+        <item>使用之前多读读文档指南，通常能解决后面遇到的90%的问题💡</item>
+        <item>除非你在情景模式中使用了su API，否则Thanox无需保持后台即可工作！</item>
+        <item>你可以通过应用管理，创建应用集，对你的应用进行分类</item>
+        <item>应用耗电通常是由于消耗CPU，持有唤醒锁，频繁的网络请求，Wifi，蓝牙扫描</item>
+        <item>微信等常用应用不建议开启乖巧模式，否则可能会收不到消息💩</item>
+        <item>Thanox内置一些实验功能，例如：应用双开，非root模式，这些功能还尚在开发测试</item>
+        <item>Thanox的80%代码开源在github/thanox上</item>
+        <item>Thanox部分UI使用了Google最新推出的Jetpack Compose进行开发🎉</item>
+        <item>Thanox = Thanos + Xposed，后来又支持了Magisk补丁模式（实验性）🧪</item>
+    </string-array>
+    <string-array name="op_remind_whitelist">
+        <item>com.miui.face</item>
+        <item>com.miui.face</item>
+    </string-array>
+    <string-array name="process_manage_categories">
+        <item>@string/running_process_running</item>
+        <item>@string/running_process_background</item>
+        <item>@string/running_process_all</item>
+    </string-array>
+    <string-array name="recent_task_exclude_entry_default_exclude">
+        <item>@string/pre_entry_exclude_recent_task_default</item>
+        <item>@string/pre_entry_exclude_recent_task_exclude</item>
+    </string-array>
+    <string-array name="recent_task_exclude_entry_default_include_exclude">
+        <item>@string/pre_entry_exclude_recent_task_default</item>
+        <item>@string/pre_entry_exclude_recent_task_include</item>
+        <item>@string/pre_entry_exclude_recent_task_exclude</item>
+    </string-array>
+    <string-array name="recent_task_exclude_value_default_exclude">
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="recent_task_exclude_value_default_include_exclude">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="scope">
+        <item>android</item>
+    </string-array>
+    <string-array name="sensor_off_options">
+        <item>@string/sensor_off_default</item>
+        <item>@string/sensor_off_on_start</item>
+        <item>@string/sensor_off_always</item>
+    </string-array>
+    <string-array name="sensor_off_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="smart_freeze__screen_off_clean_delay_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+        <item>20</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="smart_freeze_screen_off_clean_delay_entry">
+        <item>No</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>8 min</item>
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>60 min</item>
+    </string-array>
+    <string-array name="start_blocker_caller_whitelist">
+        <item>com.xiaomi.xmsf</item>
+        <item>com.miui.notification</item>
+        <item>service:com.xiaomi.mipush.sdk.PushMessageHandler</item>
+    </string-array>
+    <string-array name="start_record_chart_categories">
+        <item>@string/start_record_blocked</item>
+        <item>@string/start_record_allowed</item>
+        <item>@string/start_record_merged</item>
+    </string-array>
+    <array name="swipe_refresh_colors">
+        <item>@color/md_amber_500</item>
+        <item>@color/md_lime_500</item>
+        <item>@color/md_green_500</item>
+        <item>@color/md_red_500</item>
+    </array>
+    <string-array name="task_removal_multiple_task_check_list">
+        <item>com.tencent.mm</item>
+        <item>com.android.chrome</item>
+    </string-array>
+    <string-array name="themes_entry">
+        <item>Light</item>
+        <item>Light indigo</item>
+        <item>Light red</item>
+        <item>Light green</item>
+        <item>Light amber</item>
+        <item>Light black</item>
+        <item>Light oppo</item>
+        <item>Light pink</item>
+        <item>Dark</item>
+        <item>Dark indigo</item>
+        <item>Dark red</item>
+        <item>Dark amber</item>
+        <item>Dark grey</item>
+        <item>Auto</item>
+        <item>Material you</item>
+    </string-array>
+    <string-array name="themes_value">
+        <item>Light</item>
+        <item>LightIndigo</item>
+        <item>LightRed</item>
+        <item>LightGreen</item>
+        <item>LightAmber</item>
+        <item>LightBlack</item>
+        <item>LightOppo</item>
+        <item>LightPink</item>
+        <item>Dark</item>
+        <item>DarkIndigo</item>
+        <item>DarkRed</item>
+        <item>DarkAmber</item>
+        <item>DarkGrey</item>
+        <item>Auto</item>
+        <item>MD3</item>
+    </string-array>
+    <string-array name="white_list_packages">
+        <item>android</item>
+        <item>com.android.systemui</item>
+        <item>com.android.phone</item>
+        <item>com.android.mtp</item>
+        <item>android.ext.shared</item>
+        <item>com.android.pacprocessor</item>
+        <item>com.android.server.telecom</item>
+        <item>com.android.carrierconfig</item>
+        <item>com.android.defcontainer</item>
+        <item>com.android.mms.service</item>
+        <item>com.validation</item>
+        <item>com.android.calllogbackup</item>
+        <item>com.android.server.telecom</item>
+        <item>com.android.carrierdefaultapp</item>
+        <item>com.android.cellbroadcastreceiver</item>
+        <item>android.ext.shared</item>
+        <item>com.android.egg</item>
+        <item>com.android.onetimeinitializer</item>
+        <item>jp.co.omronsoft.openwnn</item>
+        <item>com.android.defcontainer</item>
+        <item>com.android.packageinstaller</item>
+        <item>com.android.pacprocessor</item>
+        <item>com.android.proxyhandler</item>
+        <item>android.ext.services</item>
+        <item>com.android.statementservice</item>
+        <item>com.android.inputdevices</item>
+        <item>com.android.externalstorage</item>
+        <item>com.example.android.livecubes</item>
+        <item>com.android.emergency</item>
+        <item>com.android.development_settings</item>
+        <item>com.android.bips</item>
+        <item>com.android.customlocale2</item>
+        <item>com.android.companiondevicemanager</item>
+        <item>com.genymotion.systempatcher</item>
+        <item>com.android.wallpaperpicker</item>
+        <item>com.android.wallpaperbackup</item>
+        <item>com.android.wallpapercropper</item>
+        <item>com.android.provision</item>
+        <item>com.android.cts.priv.ctsshim</item>
+        <item>com.android.certinstaller</item>
+        <item>com.android.dreams.basic</item>
+        <item>com.android.gesture.builder</item>
+        <item>com.android.cts.ctsshim</item>
+        <item>com.android.captiveportallogin</item>
+        <item>com.android.bluetoothmidiservice</item>
+        <item>com.android.bluetooth</item>
+        <item>android.ext.services</item>
+        <item>com.android.proxyhandler</item>
+        <item>com.android.backupconfirm</item>
+        <item>com.android.sharedstoragebackup</item>
+        <item>com.android.smspush</item>
+        <item>om.genymotion.genyd</item>
+        <item>com.android.location.fused</item>
+        <item>com.android.htmlviewer</item>
+        <item>com.android.keychain</item>
+        <item>com.android.wallpaper.livepicker</item>
+        <item>com.android.nfc</item>
+        <item>com.android.localtransport</item>
+        <item>com.android.bookmarkprovider</item>
+        <item>com.android.providers.media</item>
+        <item>com.android.providers.calendar</item>
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.android.providers.settings</item>
+        <item>com.android.providers.telephony</item>
+        <item>com.android.providers.userdictionary</item>
+        <item>com.android.providers.phone</item>
+        <item>com.android.providers.blockednumber</item>
+        <item>com.android.providers.contacts</item>
+        <item>com.zui.incallui</item>
+        <item>github.tornaco.xposedmoduletest</item>
+        <item>de.robv.android.xposed.installer</item>
+        <item>com.qualcomm.uimremoteclient</item>
+        <item>com.qualcomm.qti.uceShimService</item>
+        <item>vendor.qti.hardware.cacert.server</item>
+        <item>com.qualcomm.qti.telephonyservice</item>
+        <item>vendor.qti.iwlan</item>
+        <item>com.qualcomm.uimremoteserver</item>
+        <item>com.qti.qualcomm.datastatusnotification</item>
+        <item>com.qualcomm.qti.callfeaturessetting</item>
+        <item>com.miui.vsimcore</item>
+        <item>com.qti.qualcomm.deviceinfo</item>
+        <item>com.android.ons</item>
+        <item>com.android.stk</item>
+        <item>org.codeaurora.ims</item>
+        <item>com.qualcomm.qti.dynamicddsservice</item>
+        <item>com.qualcomm.qcrilmsgtunnel</item>
+        <item>com.qti.dpmserviceapp</item>
+        <item>com.qti.xdivert</item>
+        <item>com.qualcomm.qti.cne</item>
+        <item>com.qualcomm.qti.lpa</item>
+        <item>com.qualcomm.qti.uim</item>
+        <item>com.qualcomm.qti.uimGbaApp</item>
+        <item>com.android.providers.telephony</item>
+        <item>com.android.mms.service</item>
+        <item>com.android.phone</item>
+        <item>com.miui.securitycore</item>
+        <item>com.mobiletools.systemhelper</item>
+        <item>com.milink.service</item>
+        <item>com.xiaomi.finddevice</item>
+        <item>com.android.permissioncontroller</item>
+        <item>com.google.android.webview</item>
+        <item>com.google.android.ext.services</item>
+        <item>vendor.qti.imsrcs</item>
+        <item>com.android.providers.media.module</item>
+        <item>com.miui.contentcatcher</item>
+        <item>com.google.android.webview</item>
+        <item>com.miui.securitycenter</item>
+        <item>com.miui.powerkeeper</item>
+        <item>com.xiaomi.mirror</item>
+        <item>com.xiaomi.NetworkBoost</item>
+        <item>com.qualcomm.qti.devicestatisticsservice</item>
+        <item>com.android.se</item>
+        <item>com.qti.phone</item>
+        <item>com.miui.home</item>
+        <item>com.android.settings</item>
+        <item>com.qualcomm.qti.poweroffalarm</item>
+        <item>com.xiaomi.bluetooth</item>
+        <item>com.qti.qcc</item>
+        <item>com.qualcomm.timeservice</item>
+        <item>com.android.providers.settings</item>
+    </string-array>
+    <string-array name="white_list_packages_hooks">
+        <item>com.tencent.pb</item>
+    </string-array>
+</resources>

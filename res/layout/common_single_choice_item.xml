@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_root" android:tag="layout/common_single_choice_item_0" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/icon" android:tag="binding_1" android:padding="@dimen/dashboard_tile_image_padding" android:layout_width="@dimen/list_item_app_icon_w" android:layout_height="@dimen/list_item_app_icon_h" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dashboard_tile_image_margin_start" android:layout_marginEnd="@dimen/dashboard_tile_image_margin_end" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_view_margin_small" android:layout_marginBottom="@dimen/dashboard_category_bot_margin" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dashboard_category_title_margin_end" android:layout_toEndOf="@id/icon">
+        <TextView android:textAppearance="@style/TextAppearance.TileTitle" android:id="@id/item_title" android:tag="binding_2" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/list_item_main_text_size_small" android:id="@id/desc_view" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_title" android:layout_alignStart="@id/item_title" />
+    </RelativeLayout>
+</RelativeLayout>

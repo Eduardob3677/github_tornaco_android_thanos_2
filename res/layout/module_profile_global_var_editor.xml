@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/module_profile_global_var_editor_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="?android:windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="@dimen/common_toolbar_elevation" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="scroll|enterAlways" app:titleTextAppearance="@style/TextAppearance.AppCompat.Subhead" app:titleTextColor="?colorControlNormal">
+            <androidx.appcompat.widget.AppCompatEditText android:layout_gravity="start" android:id="@id/toolbar_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/module_profile_edit_var_title_hint" android:fontFamily="sans-serif-condensed" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.amrdeveloper.codeview.CodeView android:textSize="@dimen/module_profile_editor_text_size" android:gravity="start|top" android:id="@id/codeView" android:background="@null" android:padding="@dimen/common_view_margin_default" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/editor_actions_toolbar" android:layout_below="@id/app_bar" android:dropDownWidth="150.0dp" android:dropDownHorizontalOffset="0.0dp" />
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:id="@id/editor_actions_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_alignParentBottom="true" app:layout_scrollFlags="scroll|enterAlways">
+        <com.google.android.material.button.MaterialButton android:textSize="@dimen/list_item_main_text_size_ext_small" android:id="@id/badge1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JSON" android:layout_toEndOf="@id/icon" style="@style/MaterialButtonBadged" />
+        <View android:layout_width="@dimen/common_view_margin_default" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/checkIndicator" android:layout_width="@dimen/module_profile_editor_rule_checker_indicator_size" android:layout_height="@dimen/module_profile_editor_rule_checker_indicator_size" android:src="@drawable/module_profile_ic_rule_valid_green_fill" />
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

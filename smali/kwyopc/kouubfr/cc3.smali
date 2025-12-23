@@ -1,0 +1,95 @@
+.class public final Lkwyopc/kouubfr/cc3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final OooO0Oo:Lkwyopc/kouubfr/cc3;
+
+.field public static final OooO0o0:Lkwyopc/kouubfr/cc3;
+
+
+# instance fields
+.field public final OooO00o:Ljava/lang/String;
+
+.field public final OooO0O0:Ljava/lang/String;
+
+.field public final OooO0OO:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    new-instance v0, Lkwyopc/kouubfr/cc3;
+
+    const-string v1, ""
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v1, v2}, Lkwyopc/kouubfr/cc3;-><init>(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    sput-object v0, Lkwyopc/kouubfr/cc3;->OooO0Oo:Lkwyopc/kouubfr/cc3;
+
+    new-instance v0, Lkwyopc/kouubfr/cc3;
+
+    const-string v1, "  "
+
+    const/4 v2, 0x1
+
+    const-string v3, "\n"
+
+    invoke-direct {v0, v3, v1, v2}, Lkwyopc/kouubfr/cc3;-><init>(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    sput-object v0, Lkwyopc/kouubfr/cc3;->OooO0o0:Lkwyopc/kouubfr/cc3;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Z)V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, "[\r\n]*"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "[ \t]*"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iput-object p1, p0, Lkwyopc/kouubfr/cc3;->OooO00o:Ljava/lang/String;
+
+    iput-object p2, p0, Lkwyopc/kouubfr/cc3;->OooO0O0:Ljava/lang/String;
+
+    iput-boolean p3, p0, Lkwyopc/kouubfr/cc3;->OooO0OO:Z
+
+    return-void
+
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Only combinations of spaces and tabs are allowed in indent."
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Only combinations of \\n and \\r are allowed in newline."
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

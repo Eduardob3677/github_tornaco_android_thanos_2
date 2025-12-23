@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/module_locker_title_settings">
+        <DropDownPreference android:entries="@array/module_locker_verify_method_entries" android:entryValues="@array/module_locker_verify_method_values" app:key="@string/module_locker_key_verify_method" app:persistent="false" app:title="@string/module_locker_title_verify_method" app:useSimpleSummaryProvider="true" />
+        <Preference app:key="@string/module_locker_key_verify_method_custom_pattern" app:persistent="false" app:title="@string/module_locker_title_verify_custom_pattern_settings" />
+        <SwitchPreferenceCompat app:key="@string/module_locker_key_verify_method_custom_pattern_hide_line" app:persistent="false" app:title="@string/module_locker_title_verify_custom_pattern_settings_hide_line" />
+        <EditTextPreference app:key="@string/module_locker_key_custom_hint" app:persistent="false" app:summary="@string/module_locker_summary_custom_hint" app:title="@string/module_locker_title_custom_hint" />
+        <Preference app:key="@string/module_locker_key_verify_method_custom_pin" app:persistent="false" app:title="@string/module_locker_title_verify_custom_pin_settings" />
+        <Preference app:key="@string/module_locker_key_verify_method_custom_time" app:persistent="false" app:summary="@string/module_locker_summary_custom_time" app:title="@string/module_locker_title_verify_custom_time_settings" />
+        <SwitchPreferenceCompat app:key="@string/module_locker_key_re_verify_on_screen_off" app:persistent="false" app:summary="@string/module_locker_summary_re_verify_on_screen_off" app:title="@string/module_locker_title_re_verify_on_screen_off" />
+        <SwitchPreferenceCompat app:key="@string/module_locker_key_re_verify_on_task_removed" app:persistent="false" app:summary="@string/module_locker_summary_re_verify_on_task_removed" app:title="@string/module_locker_title_re_verify_on_task_removed" />
+        <SwitchPreferenceCompat app:key="@string/module_locker_key_re_verify_on_app_switch" app:persistent="false" app:summary="@string/module_locker_summary_re_verify_on_app_switch" app:title="@string/module_locker_title_re_verify_on_app_switch" />
+        <Preference app:key="@string/module_locker_key_white_list_components" app:persistent="false" app:summary="@string/module_locker_summary_white_list_components" app:title="@string/module_locker_title_white_list_components" />
+    </PreferenceCategory>
+</PreferenceScreen>

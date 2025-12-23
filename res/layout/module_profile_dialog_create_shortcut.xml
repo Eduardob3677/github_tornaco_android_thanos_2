@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/common_view_margin_default" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/common_view_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Button" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/module_profile_title_shortcut_label" />
+        <androidx.appcompat.widget.AppCompatEditText android:textAppearance="@style/TextAppearance.AppCompat.Button" android:gravity="start|center" android:id="@id/label" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" android:layout_marginStart="@dimen/common_view_margin_small" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/common_view_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Button" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/module_profile_title_shortcut_fact_value" />
+        <androidx.appcompat.widget.AppCompatEditText android:textAppearance="@style/TextAppearance.AppCompat.Button" android:gravity="start|center" android:id="@id/fact_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" android:layout_marginStart="@dimen/common_view_margin_small" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/tip_container" android:padding="@dimen/common_view_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_view_margin_small">
+        <ImageView android:id="@id/tip_img" android:layout_width="@dimen/common_image_size_14dp" android:layout_height="@dimen/common_image_size_14dp" android:src="@drawable/module_common_ic_lightbulb_fill" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:tint="@color/md_grey_700" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textSize="@dimen/list_item_main_text_size_small" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_tips" android:layout_centerVertical="true" android:layout_marginStart="@dimen/common_view_margin_small" android:layout_toEndOf="@id/tip_img" />
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Menu" android:id="@id/message" android:padding="@dimen/common_view_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/module_profile_pref_summary_rule_engine_shortcut" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_item_root" android:tag="layout/item_smart_freeze_app_0" android:background="?selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:tag="binding_1" android:padding="@dimen/dashboard_tile_image_padding" android:layout_width="@dimen/smart_freeze_app_icon_w" android:layout_height="@dimen/smart_freeze_app_icon_h" android:layout_marginTop="@dimen/dashboard_tile_image_margin_end" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Small" android:textSize="@dimen/list_item_main_text_size_small" android:ellipsize="middle" android:gravity="center" android:id="@id/item_title" android:tag="binding_2" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_view_margin_small" android:layout_marginBottom="@dimen/common_view_margin_small" android:maxWidth="80.0dp" android:maxLines="8" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>
