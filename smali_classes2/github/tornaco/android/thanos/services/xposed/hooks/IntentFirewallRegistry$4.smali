@@ -89,7 +89,7 @@
     :cond_2
     if-gez v3, :cond_3
 
-    return-void
+    move v3, v2
 
     :cond_3
     sget-object v4, Lkwyopc/kouubfr/he0;->OooO00o:Lkwyopc/kouubfr/fo9;
