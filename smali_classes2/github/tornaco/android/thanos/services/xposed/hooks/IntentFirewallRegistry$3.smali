@@ -26,7 +26,7 @@
 
 # virtual methods
 .method public beforeHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
-    .locals 8
+    .locals 9
 
     invoke-super {p0, p1}, Lde/robv/android/xposed/XC_MethodHook;->beforeHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
 
@@ -43,9 +43,11 @@
     return-void
 
     :cond_0
-    const/4 v2, -0x1
+    const/4 v8, -0x1
 
-    const/4 v3, -0x1
+    move v2, v8
+
+    move v3, v8
 
     array-length v4, v0
 
