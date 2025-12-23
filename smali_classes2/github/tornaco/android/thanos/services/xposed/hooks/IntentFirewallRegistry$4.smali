@@ -26,7 +26,7 @@
 
 # virtual methods
 .method public beforeHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
-    .locals 5
+    .locals 8
 
     invoke-super {p0, p1}, Lde/robv/android/xposed/XC_MethodHook;->beforeHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
 
@@ -40,62 +40,82 @@
 
     if-nez v1, :cond_0
 
-    goto :goto_1
+    return-void
 
     :cond_0
-    const/4 v2, 0x2
+    const/4 v2, -0x1
 
-    aget-object v0, v0, v2
+    const/4 v3, -0x1
 
-    check-cast v0, Ljava/lang/Integer;
+    array-length v4, v0
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    const/4 v5, 0x1
 
-    move-result v0
+    :goto_0
+    if-ge v5, v4, :cond_2
 
-    iget-object v3, p1, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->args:[Ljava/lang/Object;
+    aget-object v6, v0, v5
 
-    const/4 v4, 0x6
+    instance-of v7, v6, Ljava/lang/Integer;
 
-    aget-object v3, v3, v4
+    if-eqz v7, :cond_1
 
-    check-cast v3, Ljava/lang/Integer;
+    check-cast v6, Ljava/lang/Integer;
 
-    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
-    move-result v3
+    move-result v6
 
+    if-gez v2, :cond_6
+
+    move v2, v6
+
+    :cond_6
+    move v3, v6
+
+    :cond_1
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    if-gez v3, :cond_3
+
+    return-void
+
+    :cond_3
     sget-object v4, Lkwyopc/kouubfr/he0;->OooO00o:Lkwyopc/kouubfr/fo9;
 
     iget-object v4, v4, Lkwyopc/kouubfr/fo9;->OooO:Lkwyopc/kouubfr/a;
 
-    invoke-virtual {v4, v1, v3, v0}, Lkwyopc/kouubfr/a;->checkBroadcast(Landroid/content/Intent;II)Z
+    invoke-virtual {v4, v1, v3, v2}, Lkwyopc/kouubfr/a;->checkBroadcast(Landroid/content/Intent;II)Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_2
+    if-nez v1, :cond_5
 
-    iget-object v0, p1, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->method:Ljava/lang/reflect/Member;
+    iget-object v1, p1, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->method:Ljava/lang/reflect/Member;
 
-    invoke-static {v0}, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry;->OooO00o(Ljava/lang/reflect/Member;)Z
+    invoke-static {v1}, Lgithub/tornaco/android/thanos/services/xposed/hooks/IntentFirewallRegistry;->OooO00o(Ljava/lang/reflect/Member;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_4
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v1, 0x2
 
-    move-result-object v0
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    goto :goto_0
+    move-result-object v1
 
-    :cond_1
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    goto :goto_1
 
-    :goto_0
-    invoke-virtual {p1, v0}, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->setResult(Ljava/lang/Object;)V
+    :cond_4
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    :cond_2
     :goto_1
+    invoke-virtual {p1, v1}, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->setResult(Ljava/lang/Object;)V
+
+    :cond_5
     return-void
 .end method
