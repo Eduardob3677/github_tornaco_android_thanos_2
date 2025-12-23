@@ -37,6 +37,16 @@
 .method public final OooO00o(Ljava/lang/String;Lkwyopc/kouubfr/ap1;)Ljava/lang/Object;
     .locals 5
 
+    new-instance v0, Lgithub/tornaco/android/thanos/support/subscribe/CommonApiResWrapper;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v2, v2, v2, v2, v2}, Lgithub/tornaco/android/thanos/support/subscribe/CommonApiResWrapper;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
+
     instance-of v0, p2, Lkwyopc/kouubfr/pq7;
 
     if-eqz v0, :cond_0
@@ -304,6 +314,16 @@
 
 .method public final OooO0O0(Lkwyopc/kouubfr/ap1;)Ljava/lang/Object;
     .locals 5
+
+    new-instance v0, Lgithub/tornaco/android/thanos/support/subscribe/CommonApiResWrapper;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v2, v2, v2, v2, v2}, Lgithub/tornaco/android/thanos/support/subscribe/CommonApiResWrapper;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
 
     instance-of v0, p1, Lkwyopc/kouubfr/qq7;
 
