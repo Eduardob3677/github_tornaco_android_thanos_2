@@ -97,7 +97,7 @@
 
     iget-object v4, v4, Lkwyopc/kouubfr/fo9;->OooO:Lkwyopc/kouubfr/a;
 
-    invoke-virtual {v4, v1, v3, v2}, Lkwyopc/kouubfr/a;->checkBroadcast(Landroid/content/Intent;II)Z
+    invoke-virtual {v4, v1, v2, v3}, Lkwyopc/kouubfr/a;->checkBroadcast(Landroid/content/Intent;II)Z
 
     move-result v1
 
