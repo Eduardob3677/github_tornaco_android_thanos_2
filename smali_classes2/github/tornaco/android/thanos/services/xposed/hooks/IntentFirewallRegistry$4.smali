@@ -78,7 +78,6 @@
     move v3, v6
 
     :goto_1
-    nop
 
     :cond_1
     add-int/lit8 v5, v5, 0x1

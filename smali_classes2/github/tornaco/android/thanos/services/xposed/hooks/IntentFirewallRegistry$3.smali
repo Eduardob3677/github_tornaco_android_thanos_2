@@ -78,7 +78,6 @@
     move v3, v6
 
     :goto_1
-    nop
 
     :cond_1
     add-int/lit8 v5, v5, 0x1
@@ -86,11 +85,11 @@
     goto :goto_0
 
     :cond_2
-    if-gez v3, :cond_4
+    if-gez v3, :cond_3
 
     return-void
 
-    :cond_4
+    :cond_3
     sget-object v4, Lkwyopc/kouubfr/he0;->OooO00o:Lkwyopc/kouubfr/fo9;
 
     iget-object v4, v4, Lkwyopc/kouubfr/fo9;->OooO:Lkwyopc/kouubfr/a;
