@@ -177,7 +177,7 @@
 .end method
 
 .method private hookPreStartProcess(Lgithub/tornaco/android/thanos/services/xposed/ISystemServerLoaded$Param;)V
-    .locals 6
+    .locals 7
 
     const-string v0, "hookPreStartProcess OK:"
 
@@ -202,6 +202,23 @@
 
     sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
+    filled-new-array {v2, v3, v4}, [Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-static {p1, v1, v5}, Lutil/XposedHelpers;->findMethodExactIfExists(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+
+    move-result-object v6
+
+    if-nez v6, :cond_0
+
+    const-string p1, "hookPreStartProcess skipped, method missing"
+
+    invoke-static {p1}, Lkwyopc/kouubfr/bta;->Oooo0O0(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
     new-instance v5, Lgithub/tornaco/android/thanos/services/xposed/hooks/q/core/AMSStartProcessLockedRegistry$1;
 
     invoke-direct {v5, p0}, Lgithub/tornaco/android/thanos/services/xposed/hooks/q/core/AMSStartProcessLockedRegistry$1;-><init>(Lgithub/tornaco/android/thanos/services/xposed/hooks/q/core/AMSStartProcessLockedRegistry;)V

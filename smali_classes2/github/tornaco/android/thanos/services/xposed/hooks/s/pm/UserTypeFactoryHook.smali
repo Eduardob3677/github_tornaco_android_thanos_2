@@ -141,10 +141,21 @@
 
     invoke-static {v3, v1}, Lkwyopc/kouubfr/x34;->OooOoO0(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v2, v3}, Lgithub/tornaco/android/thanos/core/os/Classes;->colorosLockSettingsServiceExtImplClass(Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    const-string v2, "com.android.server.locksettings.LockSettingsServiceExtImpl"
+
+    invoke-static {v2, v3}, Lutil/XposedHelpers;->findClassIfExists(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
     move-result-object v2
 
+    if-nez v2, :cond_lock_found
+
+    const-string v3, "hook hookLockSettings skip, LockSettingsServiceExtImpl missing"
+
+    invoke-static {v3}, Lkwyopc/kouubfr/bta;->Oooo0O0(Ljava/lang/String;)V
+
+    goto :goto_after_lock
+
+    :cond_lock_found
     const-string v3, "hookShouldUnlockProfile"
 
     new-instance v4, Lkwyopc/kouubfr/ey9;
@@ -160,6 +171,8 @@
     invoke-direct {v5, v6}, Lkwyopc/kouubfr/ey9;-><init>(I)V
 
     invoke-static {v2, v3, v4, v5}, Lgithub/tornaco/android/thanos/services/xposed/HooksKt;->afterMethod(Ljava/lang/Class;Ljava/lang/String;Lkwyopc/kouubfr/pe3;Lkwyopc/kouubfr/pe3;)V
+
+    :goto_after_lock
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -429,7 +442,7 @@
 .end method
 
 .method private final hookUserTypeFactory2(Lgithub/tornaco/android/thanos/services/xposed/ISystemServerLoaded$Param;)V
-    .locals 4
+    .locals 5
 
     const-string v0, "Thanox-UTF. hook."
 
@@ -450,6 +463,25 @@
 
     const-string v0, "getUserTypes"
 
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-static {p1, v0, v1}, Lutil/XposedHelpers;->findMethodExactIfExists(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/reflect/Method;
+
+    move-result-object v3
+
+    if-nez v3, :cond_1
+
+    const-string p1, "hook getUserTypes skipped, method missing"
+
+    invoke-static {p1}, Lkwyopc/kouubfr/bta;->Oooo0O0(Ljava/lang/String;)V
+
+    sget-object p1, Lkwyopc/kouubfr/c9a;->OooO00o:Lkwyopc/kouubfr/c9a;
+
+    goto :goto_0
+
+    :cond_1
     new-instance v1, Lkwyopc/kouubfr/ey9;
 
     const/4 v2, 0x2
@@ -482,7 +514,7 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_2
 
     const/4 v0, 0x0
 
@@ -492,7 +524,7 @@
 
     invoke-static {v1, v0, p1}, Lkwyopc/kouubfr/bta;->Oooo0o(Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/Throwable;)V
 
-    :cond_0
+    :cond_2
     return-void
 .end method
 
