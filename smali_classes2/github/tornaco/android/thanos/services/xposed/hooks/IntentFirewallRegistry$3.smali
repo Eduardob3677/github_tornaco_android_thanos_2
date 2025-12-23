@@ -70,8 +70,6 @@
 
     move v2, v6
 
-    move v3, v6
-
     goto :goto_1
 
     :cond_3
