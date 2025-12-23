@@ -220,11 +220,9 @@
 
     aget-object v0, v0, v3
 
-    const-string v1, "null cannot be cast to non-null type kotlin.String"
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lkwyopc/kouubfr/x34;->OooOo(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/String;
+    move-result-object v0
 
     iget-object p0, p0, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->args:[Ljava/lang/Object;
 
@@ -403,11 +401,9 @@
 
     aget-object v0, v0, v3
 
-    const-string v1, "null cannot be cast to non-null type kotlin.String"
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lkwyopc/kouubfr/x34;->OooOo(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/String;
+    move-result-object v0
 
     iget-object p0, p0, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->args:[Ljava/lang/Object;
 
