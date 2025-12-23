@@ -13,15 +13,17 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;ZZ)V
-    .locals 0
+    .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p2, p0, Lkwyopc/kouubfr/em4;->OooO00o:Z
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lkwyopc/kouubfr/em4;->OooO00o:Z
 
     iput-object p1, p0, Lkwyopc/kouubfr/em4;->OooO0O0:Ljava/lang/String;
 
-    iput-boolean p3, p0, Lkwyopc/kouubfr/em4;->OooO0OO:Z
+    iput-boolean v0, p0, Lkwyopc/kouubfr/em4;->OooO0OO:Z
 
     return-void
 .end method
