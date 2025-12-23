@@ -6853,33 +6853,19 @@
 .end method
 
 .method public static final OoooO00(Lkwyopc/kouubfr/qu7;ZZLkwyopc/kouubfr/pe3;)Ljava/lang/Object;
-    .locals 7
+    .locals 3
 
-    const-string v0, "db"
+    new-instance p0, Lkwyopc/kouubfr/ooOOOOoo;
 
-    invoke-static {p0, v0}, Lkwyopc/kouubfr/x34;->OooOoO(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p0}, Lkwyopc/kouubfr/qu7;->assertNotMainThread()V
+    const-string p1, "SUBSCRIBED"
 
-    invoke-virtual {p0}, Lkwyopc/kouubfr/qu7;->assertNotSuspendingTransaction()V
+    iput-object p1, p0, Lkwyopc/kouubfr/ooOOOOoo;->OooO00o:Ljava/lang/String;
 
-    new-instance v1, Lkwyopc/kouubfr/lv1;
+    const-wide p1, 0x75bcd1500L
 
-    const/4 v2, 0x0
-
-    move-object v4, p0
-
-    move v6, p1
-
-    move v5, p2
-
-    move-object v3, p3
-
-    invoke-direct/range {v1 .. v6}, Lkwyopc/kouubfr/lv1;-><init>(Lkwyopc/kouubfr/zo1;Lkwyopc/kouubfr/pe3;Lkwyopc/kouubfr/qu7;ZZ)V
-
-    invoke-static {v1}, Lkwyopc/kouubfr/zq6;->Oooo(Lkwyopc/kouubfr/af3;)Ljava/lang/Object;
-
-    move-result-object p0
+    iput-wide p1, p0, Lkwyopc/kouubfr/ooOOOOoo;->OooO0O0:J
 
     return-object p0
 .end method
