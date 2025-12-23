@@ -116,12 +116,12 @@
 
     move-result-object v1
 
-    goto :goto_1
+    goto :goto_result
 
     :cond_4
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    :goto_1
+    :goto_result
     invoke-virtual {p1, v1}, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->setResult(Ljava/lang/Object;)V
 
     :cond_5
