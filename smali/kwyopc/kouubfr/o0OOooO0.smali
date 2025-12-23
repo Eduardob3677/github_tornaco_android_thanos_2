@@ -470,86 +470,19 @@
     :pswitch_1a
     check-cast p1, Lkwyopc/kouubfr/i48;
 
-    const-string v1, "SELECT * FROM activation limit 1"
+    new-instance v0, Lkwyopc/kouubfr/ooOOOOoo;
 
-    invoke-interface {p1, v1}, Lkwyopc/kouubfr/i48;->o00000OO(Ljava/lang/String;)Lkwyopc/kouubfr/k48;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p1
+    const-string v1, "SUBSCRIBED"
 
-    :try_start_0
-    const-string v1, "id"
+    iput-object v1, v0, Lkwyopc/kouubfr/ooOOOOoo;->OooO00o:Ljava/lang/String;
 
-    invoke-static {p1, v1}, Lkwyopc/kouubfr/sd3;->OooOO0O(Lkwyopc/kouubfr/k48;Ljava/lang/String;)I
+    const-wide/16 v1, 0x0
 
-    move-result v1
-
-    const-string v2, "code"
-
-    invoke-static {p1, v2}, Lkwyopc/kouubfr/sd3;->OooOO0O(Lkwyopc/kouubfr/k48;Ljava/lang/String;)I
-
-    move-result v2
-
-    const-string v3, "activate_time_mills"
-
-    invoke-static {p1, v3}, Lkwyopc/kouubfr/sd3;->OooOO0O(Lkwyopc/kouubfr/k48;Ljava/lang/String;)I
-
-    move-result v3
-
-    invoke-interface {p1}, Lkwyopc/kouubfr/k48;->o000000()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    new-instance v4, Lkwyopc/kouubfr/ooOOOOoo;
-
-    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
-
-    invoke-interface {p1, v1}, Lkwyopc/kouubfr/k48;->getLong(I)J
-
-    invoke-interface {p1, v2}, Lkwyopc/kouubfr/k48;->Oooo0o0(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    invoke-interface {p1, v2}, Lkwyopc/kouubfr/k48;->OooooO0(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    iput-object v0, v4, Lkwyopc/kouubfr/ooOOOOoo;->OooO00o:Ljava/lang/String;
-
-    invoke-interface {p1, v3}, Lkwyopc/kouubfr/k48;->getLong(I)J
-
-    move-result-wide v0
-
-    iput-wide v0, v4, Lkwyopc/kouubfr/ooOOOOoo;->OooO0O0:J
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-object v0, v4
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception v0
-
-    goto :goto_2
-
-    :cond_2
-    :goto_1
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
+    iput-wide v1, v0, Lkwyopc/kouubfr/ooOOOOoo;->OooO0O0:J
 
     return-object v0
-
-    :goto_2
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    throw v0
 
     :pswitch_1b
     check-cast p1, Lkwyopc/kouubfr/i48;
