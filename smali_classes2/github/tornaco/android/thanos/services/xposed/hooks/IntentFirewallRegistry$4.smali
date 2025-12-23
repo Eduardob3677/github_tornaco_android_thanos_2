@@ -66,16 +66,16 @@
 
     move-result v6
 
-    if-ltz v2, :cond_set_first
+    if-gez v2, :cond_check_second
 
-    if-gez v3, :cond_1
-
-    move v3, v6
+    move v2, v6
 
     goto :goto_1
 
-    :cond_set_first
-    move v2, v6
+    :cond_check_second
+    if-gez v3, :cond_1
+
+    move v3, v6
 
     :goto_1
     nop
